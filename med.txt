@@ -1,26 +1,32 @@
+# Most information from the History file from MED 3.21
+
 med_100
 	Name: MED 1.00
 	Author: Teijo Kinnunen
 	Date: 1989-04
+	Comment: 'looks very pitiful'
 	Influenced by soundtracker_vi
 
 med_111
 	Name: MED 1.11
 	Author: Teijo Kinnunen
 	Date: 1989-07
+	Comment: unreleased
 	Based on med_100
 
 med_112
 	Name: MED 1.12
 	Author: Teijo Kinnunen
 	Date: 1989-09
-	Based on med_111
+	Comment: Fish 225
+	Based on med_111 [ MED2 format ]
 
 med_200
 	Name: MED 2.00
 	Author: Teijo Kinnunen
 	Date: 1990-04-08
-	Based on med_112
+	Comment: Fish 349
+	Based on med_112 [ MIDI, MOD import/export, MED3 format ]
 
 med_201
 	Name: MED 2.01
@@ -32,7 +38,7 @@ med_210
 	Name: MED 2.10
 	Author: Teijo Kinnunen
 	Date: 1990-07-17
-	Based on med_201
+	Based on med_201 [ Command 3 4 B FFA/B/D, MMD0 format ]
 
 med_211
 	Name: MED 2.11
@@ -56,19 +62,19 @@ med_300
 	Name: MED 3.00
 	Author: Teijo Kinnunen
 	Date: 1991-01-31
-	Based on med_213
+	Based on med_213 [ Synth, Hybrid, Hold/Decay, Command 8 9 ]
 
 octamed_100
 	Name: OctaMED 1.00
 	Author: Teijo Kinnunen
 	Date: 1991-04-02
-	Based on med_300 100
+	Based on med_300 100 [ 8 channel, Med-res ]
 
 med_310
 	Name: MED 3.10
 	Author: Teijo Kinnunen
 	Date: 1991-04-14
-	Based on med_300 1000
+	Based on med_300 1000 [ Med-res ]
 
 med_311
 	Name: MED 3.11
@@ -80,14 +86,14 @@ octamed_200
 	Name: OctaMED 2.00
 	Author: Teijo Kinnunen
 	Date: 1991-08-17
-	Based on octamed_100
+	Based on octamed_100 [ Synth envelope, Synth vibrato ]
 	Based on med_311 100
 
 med_320
 	Name: MED 3.20
 	Author: Teijo Kinnunen
 	Date: 1991-08-25
-	Based on med_311 1000
+	Based on med_311 1000 [ Synth envelope, Synth vibrato ]
 
 med_321
 	Name: MED 3.21
