@@ -8,7 +8,6 @@ soundtracker_121
 	Author: Karsten Obarski
 	Date: 1987-12
 	Based on soundtracker_10
-	Improves ?
 
 soundtracker_18
 	Name: The Ultimate Soundtracker 1.8
@@ -20,29 +19,27 @@ doc_soundtracker_2
 	Name: D.O.C Soundtracker II
 	Author: Unknown of D.O.C
 	Date: 1988-08
-	Based on master_soundtracker_10
-	Improves Pattern break, Pattern jump
+	Based on master_soundtracker_10 [ Pattern break, Pattern jump ]
 
 soundtracker_ii
 	Name: Soundtracker II
 	Author: The Exterminator
 	Date: 1988-03-01
-	Based on soundtracker_121
-	Improves Enh portamento, Modulation, Volume, Volume slide
+	Based on soundtracker_121 [
+		Enh portamento, Modulation, Volume, Volume slide
+	]
 
 soundtracker_iii
 	Name: Soundtracker III
 	Author: Il Scuro
 	Date: 1988-04
 	Based on soundtracker_ii
-	Improves ?
 
 soundtracker_iv
 	Name: Soundtracker IV
 	Author: Unknown of D.O.C
 	Date: 1988-04-09
-	Based on soundtracker_iii
-	Improves Set speed
+	Based on soundtracker_iii [ Set speed ]
 
 afl_soundtracker_iv
 	Name: AFL Soundtracker IV
@@ -74,8 +71,7 @@ master_soundtracker_10
 	Author: TIP of TNM
 	Date: 1988-07-30	# 1998-07
 	Comment: 0, 1, 2, C, E, F
-	Based on soundtracker_ix
-	Improves Filter, 32KB samples
+	Based on soundtracker_ix [ Filter, 32KB samples ]
 
 master_soundtracker_30
 	Name: Master Soundtracker 3.0
@@ -88,14 +84,14 @@ doc_soundtracker_22
 	Author: Unknown of D.O.C
 	Date: 1988-12
 	Based on doc_soundtracker_2
-]
 
 soundtracker_23
 	Name: Soundtracker 2.3
 	Author: MnemoTroN
 	Date: 1989-04
-	Based on doc_soundtracker_22
-	Improves 31-instrument M.K. file, Modern mouse pointer
+	Based on doc_soundtracker_22 [
+		31-instrument M.K. file, Modern mouse pointer
+	]
 
 soundtracker_24
 	Name: Soundtracker 2.4
@@ -107,14 +103,12 @@ soundtracker_25
 	Name: Soundtracker 2.5
 	Author: MnemoTroN
 	Date: 1989-08-27
-	Based on soundtracker_24
-	Improves New playroutine, Tone portamento, Vibrato
+	Based on soundtracker_24 [ New playroutine, Tone portamento, Vibrato ]
 	Based on noisetracker_10
 
 soundtracker_26
 	Name: Soundtracker 2.6
 	Author: MnemoTroN
 	Date: 1990-03-11	# month-day correct?
-	Based on soundtracker_25 1000
-	Improves New file format
+	Based on soundtracker_25 1000 [ New file format ]
 

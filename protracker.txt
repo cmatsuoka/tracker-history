@@ -2,8 +2,7 @@ protracker_10b
 	Name: Protracker 1.0b
 	Author: Lars 'ZAP' Hamre
 	Date: 1990-10-01
-	Based on noisetracker_11
-	Improves CIA timing?, Finetune, Glissando
+	Based on noisetracker_11 [ CIA timing?, Finetune, Glissando ]
 
 protracker_10c
 	Name: Protracker 1.0c
@@ -15,9 +14,11 @@ protracker_11a
 	Name: Protracker 1.1a
 	Author: Lars 'ZAP' Hamre
 	Date: 1990-12-27
-	Based on protracker_10c
-	Improves Inv.loop instead of funkrepeat, Vibrato compatible with NT2.0
-	Influenced by noisetracker_20	# Drumpad
+	Based on protracker_10c [
+		Inv.loop instead of funkrepeat,
+		Vibrato compatible with NT2.0
+	]
+	Influenced by noisetracker_20 [ Drumpad ]
 
 protracker_11b
 	Name: Protracker 1.1b
@@ -85,8 +86,7 @@ protracker_23d
 	Name: Protracker 2.3d
 	Author: Detron and Duff
 	Date: 1994
-	Based on protracker_23a
-	Improves AGA fix
+	Based on protracker_23a [ AGA fix ]
 
 protracker_300b
 	Name: Protracker 3.00 Beta
@@ -133,8 +133,7 @@ protracker_359
 	Name: Protracker 3.59
 	Author: R10/Osiris
 	Date: 1996-07-06
-	Based on protracker_353
-	Improves New format
+	Based on protracker_353 [ New file format ]
 
 protracker_361
 	Name: Protracker 3.61
