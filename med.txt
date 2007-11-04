@@ -62,13 +62,13 @@ octamed_100
 	Name: OctaMED 1.00
 	Author: Teijo Kinnunen
 	Date: 1991-04-02
-	Based on med_300
+	Based on med_300 100
 
 med_310
 	Name: MED 3.10
 	Author: Teijo Kinnunen
 	Date: 1991-04-14
-	Based on med_300
+	Based on med_300 1000
 
 med_311
 	Name: MED 3.11
@@ -81,13 +81,13 @@ octamed_200
 	Author: Teijo Kinnunen
 	Date: 1991-08-17
 	Based on octamed_100
-	Based on med_311
+	Based on med_311 100
 
 med_320
 	Name: MED 3.20
 	Author: Teijo Kinnunen
 	Date: 1991-08-25
-	Based on med_311
+	Based on med_311 1000
 
 med_321
 	Name: MED 3.21

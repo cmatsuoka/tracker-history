@@ -9,7 +9,7 @@ noisetracker_11
 	Name: Noisetracker 1.1
 	Author: Mahoney & Kaktus
 	Date: 1990
-	Based on noisetracker_10
+	Based on noisetracker_10 1000
 	Improves Restart byte
 ]
 
@@ -17,7 +17,7 @@ noisetracker_12
 	Name: Noisetracker 1.2
 	Author: Riff Raff of UFO
 	Date: 1990-05
-	Based on noisetracker_11
+	Based on noisetracker_11 1000
 	Improves 128K samples, Scope
 
 noisetracker_13
@@ -31,5 +31,5 @@ noisetracker_20
 	Name: Noisetracker 2.0
 	Author: Mahoney & Kaktus
 	Date: 1990-07-01
-	Based on noisetracker_11
+	Based on noisetracker_11 1000
 	Improves NT file, Drumpad

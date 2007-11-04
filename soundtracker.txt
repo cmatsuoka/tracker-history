@@ -115,6 +115,6 @@ soundtracker_26
 	Name: Soundtracker 2.6
 	Author: MnemoTroN
 	Date: 1990-03-11	# month-day correct?
-	Based on soundtracker_25
+	Based on soundtracker_25 1000
 	Improves New file format
 

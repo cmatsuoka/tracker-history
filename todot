@@ -54,7 +54,7 @@ dodate:
 
 print("digraph tracker {\nratio=auto; page=\"8.25,11.65\";\n");
 print("node [shape=plaintext,fontsize=16];\n");
-print("ranksep=0.3; nodesep=0.3; center=true;\n");
+print("ranksep=0.1; nodesep=0.3; center=true;\n");
 
 # Draw the visible years
 print("{ edge [style=bold];\n");
