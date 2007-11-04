@@ -70,7 +70,7 @@ print("ranksep=0.2; nodesep=0.3; center=true;\n");
 
 # Draw the visible years
 print("{ edge [style=bold];\n");
-print("  node [shape=plaintext,fontsize=24,fontname=\"Times-Bold\"];\n");
+print("  node [shape=plaintext,fontsize=36,fontname=\"Times-Bold\"];\n");
 for ($i=$minyear; $i<=$maxyear; $i++) {
     $d= "${i}0000"; $Date{$d}{$d}=$d; $Name{$d}=$d;
     $Date{$d}{$i}=$i; $Name{$i}=$i;
