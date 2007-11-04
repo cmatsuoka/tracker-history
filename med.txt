@@ -1,0 +1,103 @@
+med_100
+	Name: MED 1.00
+	Author: Teijo Kinnunen
+	Date: 1989-04
+	Influenced by soundtracker_vi
+
+med_111
+	Name: MED 1.11
+	Author: Teijo Kinnunen
+	Date: 1989-07
+	Based on med_100
+
+med_112
+	Name: MED 1.12
+	Author: Teijo Kinnunen
+	Date: 1989-09
+	Based on med_111
+
+med_200
+	Name: MED 2.00
+	Author: Teijo Kinnunen
+	Date: 1990-04-08
+	Based on med_112
+
+med_201
+	Name: MED 2.01
+	Author: Teijo Kinnunen
+	Date: 1990-04-10
+	Based on med_200
+
+med_210
+	Name: MED 2.10
+	Author: Teijo Kinnunen
+	Date: 1990-07-17
+	Based on med_201
+
+med_211
+	Name: MED 2.11
+	Author: Teijo Kinnunen
+	Date: 1990-07-21
+	Based on med_210
+
+med_212
+	Name: MED 2.12
+	Author: Teijo Kinnunen
+	Date: 1990-07-25
+	Based on med_211
+
+med_213
+	Name: MED 2.13
+	Author: Teijo Kinnunen
+	Date: 1990-09-24
+	Based on med_212
+
+med_300
+	Name: MED 3.00
+	Author: Teijo Kinnunen
+	Date: 1991-01-31
+	Based on med_213
+
+octamed_100
+	Name: OctaMED 1.00
+	Author: Teijo Kinnunen
+	Date: 1991-04-02
+	Based on med_300
+
+med_310
+	Name: MED 3.10
+	Author: Teijo Kinnunen
+	Date: 1991-04-14
+	Based on med_300
+
+med_311
+	Name: MED 3.11
+	Author: Teijo Kinnunen
+	Date: 1991-05-07
+	Based on med_310
+
+octamed_200
+	Name: OctaMED 2.00
+	Author: Teijo Kinnunen
+	Date: 1991-08-17
+	Based on octamed_100
+	Based on med_311
+
+med_320
+	Name: MED 3.20
+	Author: Teijo Kinnunen
+	Date: 1991-08-25
+	Based on med_311
+
+med_321
+	Name: MED 3.21
+	Author: Teijo Kinnunen
+	Date: 1992-01-01
+	Based on med_320
+
+octamed_400
+	Name: Octamed Professional V4
+	Author: Teijo Kinnunen
+	Date: 1993
+	Based on octamed_200
+

@@ -1,0 +1,13 @@
+psttracker_111
+	Name: PSTTracker V1.11
+	Author: John 'SHAYERA' Hinge
+	Date: 1992-12
+	Based on protracker_12a
+	Improves Solo, Sampler, No MIDI
+
+hearttracker_233
+	Name: Hearttracker 2.33
+	Author: Crayon for Melon Dezign
+	Date: 1993-12
+	Based on protracker_11b
+
