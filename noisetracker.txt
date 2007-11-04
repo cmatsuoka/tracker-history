@@ -17,13 +17,13 @@ noisetracker_12
 	Name: Noisetracker 1.2
 	Author: Riff Raff of UFO
 	Date: 1990-05
-	Based on noisetracker_11 1000 [ 128K samples, Scope ]
+	Based on noisetracker_11 500 [ 128K samples, Scope ]
 
 noisetracker_13
 	Name: Noisetracker 1.3
 	Author: Riff Raff of UFO
 	Date: 1991-03
-	Based on noisetracker_12
+	Based on noisetracker_12 1000
 
 noisetracker_20
 	Name: Noisetracker 2.0

@@ -1,0 +1,49 @@
+
+c667
+	Name: Composer 667
+	Author: Tomasz Pytel
+	Date: 1991-12			# from Wikipedia on Composer 669
+	Comment: OPL2 tracker
+	
+c669
+	Name: Composer 669
+	Author: Tomasz Pytel
+	Date: 1992-12-04		# file date from 1.3
+	Comment: 8 channel
+	Based on c667 [ PCM samples ]
+
+unis669
+	Name: UNIS669 1.10
+	Author: Jason Nunn
+	Date: 1994-02-16
+	Influenced by c669 [ File format ]
+
+far_08
+	Name: Farandole Composer 0.8b
+	Author: Daniel Potter
+	Date: 1993-06-09		# or 09-06? from update.txt
+	Influenced by c669
+
+far_100
+	Name: Farandole Composer 1.00
+	Author: Daniel Potter
+	Date: 1994-04-13
+	Based on far_08
+
+funk
+	Name: FunkTracker 1.00-1.08
+	Author: Jason Nunn
+	Date: 1995-07			# date of version 1.08
+	Influenced by unis669 1000
+
+funkgold_10
+	Name: FunktrackerGOLD 1.0
+	Author: Jason Nunn
+	Date: 1996-08			# from README.Install
+	Based on funk
+
+funkgold_15
+	Name: FunktrackerGOLD 1.5
+	Author: Jason Nunn
+	Date: 1998-02-13		# date of version 1.5 from INSTALL
+	Based on funkgold_10

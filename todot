@@ -127,7 +127,7 @@ for ($i=0; $i<$linkcnt; $i++) {
     $label = $Implist[$i] ? " label=\"$Implist[$i]\"" : "";
     #if ($Link[$i] eq "succ") { print("[weight=$Weight[$i],style=bold]"); }
     if ($Link[$i] eq "succ") { print("[weight=$Weight[$i]$label]"); }
-    if ($Link[$i] eq "idea") { print("[weight=$Weight[$i],style=dotted$label]"); }
+    if ($Link[$i] eq "idea") { print("[weight=$Weight[$i],fontcolor=green,style=dotted$label]"); }
     print(";\n");
 }
 print("}\n");
