@@ -1,0 +1,18 @@
+# Many gaps in IT history. Jeffrey Lim doesn't like dates in changelogs
+# Also no information on Impulse Tracker 1.x
+
+it2
+	Name: Impulse Tracker 2.x
+	Author: Jeffrey Lim
+	Date: 1997-08		# it.txt: most of the work was completed in
+				# the summer holidays of '96. (in Australia)
+	Comment: NNA, Filter, 64 channel
+	Influenced by st_321 1000 [ Interface ]
+	Influenced by ft_206 500 [ Envelopes, Multisamples ]
+
+it214
+	Name: Impulse Tracker 2.14
+	Author: Jeffrey Lim
+	Date: 1997-12-21	# Date in files
+	Based on it2
+	

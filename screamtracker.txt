@@ -1,0 +1,39 @@
+# From FCINFO17.TXT
+
+st_224
+	Name: Scream Tracker 2.24
+	Author: Sami Tammilehto
+	Date: 1991-02-22
+
+# STMIK isn't a tracker, but it's a link betweek ST2 and ST3
+
+stmik_020
+	Name: ST Music Interface Kit 0.20
+	Author: Sami Tammilehto
+	Date: 1991-08-10
+	Based on st_224 [ STX format ]
+
+stmikfix
+	Name: STMIK Bugfix
+	Author: Sami Tammilehto
+	Date: 1992-07-14
+	Based on stmik_020
+	
+st_301
+	Name: Scream Tracker 3.01 BETA
+	Author: Sami Tammilehto
+	Date: 1994-04-18
+	Based on stmikfix [ S3M format, 16 channels, GUS, Adlib ]
+
+st_320
+	Name: Scream Tracker 3.20
+	Author: Sami Tammilehto
+	Date: 1994-12-06
+	Based on st_301
+
+st_321
+	Name: Scream Tracker 3.21
+	Author: Sami Tammilehto
+	Date: 1994-12-25
+	Based on st_320
+

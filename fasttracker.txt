@@ -1,0 +1,48 @@
+
+ft_101
+	Name: Fast Tracker 1.01
+	Author: Fredrik Huss
+	Date: 1993-01-23		# From the exit message
+	Comment: 8 channels
+
+ft_200
+	Name: Fast Tracker 2.00
+	Author: Fredrik Huss & Magnus Hogdahl
+	Date: 1994-11			# From wikipedia
+	Based on ft_101 [ 32ch, Multisample, Envelopes, GUS, XM format ]
+	Influenced by st_301
+
+# Skip a few releases
+
+ft_204
+	Name: Fast Tracker 2.04
+	Author: Fredrik Huss & Magnus Hogdahl
+	Date: 1995-07-23		# From exit message
+	Based on ft_200
+
+ft_205
+	Name: Fast Tracker 2.05
+	Author: Fredrik Huss & Magnus Hogdahl
+	Date: 1996-02-04		# From exit message
+	Based on ft_204
+
+ft_206
+	Name: Fast Tracker 2.06
+	Author: Fredrik Huss & Magnus Hogdahl
+	Date: 1996-02-17		# From exit message
+	Based on ft_205
+
+# where is 2.07?
+
+ft_208
+	Name: Fast Tracker 2.08
+	Author: Fredrik Huss & Magnus Hogdahl
+	Date: 1997-08-21		# From exit message
+	Based on ft_206
+
+ft_209
+	Name: Fast Tracker 2.09
+	Author: Fredrik Huss & Magnus Hogdahl
+	Date: 1998-02-04		# From exit message
+	Based on ft_208
+
