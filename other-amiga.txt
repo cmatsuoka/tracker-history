@@ -11,3 +11,16 @@ hearttracker_233
 	Date: 1993-12
 	Based on protracker_11b
 
+icetracker_10
+	Name: IceTracker 1.0
+	Author: Icepic
+	Date: 1993
+	Based on soundtracker_26
+	Influenced by startrekker_13	# Drumpad
+
+icetracker_11
+	Name: IceTracker 1.1
+	Author: Icepic
+	Date: 1993-01-10
+	Based on icetracker_10
+
