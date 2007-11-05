@@ -2,7 +2,7 @@ startrekker_10
 	Name: Startrekker 1.0
 	Author: Exolon of Fairlight
 	Date: 1990-07-14
-	Based on noisetracker_20 [ 8 channels, MIDI ]
+	Based on noisetracker_20 [ 8 channels, MIDI, FLTx id ]
 
 startrekker_12
 	Name: Startrekker 1.2
