@@ -56,12 +56,14 @@ protracker_13b
 	Date: 1992-01	# 1992
 	Based on protracker_13a
 
-# Is 2.0a based on 1.1a or 1.1b? The docs say 1.1a, but timing allows 1.1.b
+# Is 2.0a based on 1.1a or 1.1b? The docs say 1.1a, but timing allows 1.1b.
+# And 2.0a sources says it comes from ST 2.5/NT x.x, we'll have to check
+# if ST 2.5 code is actually in PT 2.0a.
 
 protracker_20a
 	Name: Protracker 2.0a
 	Author: Lars 'ZAP' Hamre
-	Date: 1991-02
+	Date: 1991-02-12		# From history in 2.0a sources
 	Based on protracker_11a 2000
 
 protracker_21a
