@@ -64,8 +64,8 @@ dodate:
 
 #print("digraph tracker {\nratio=auto; page=\"8.25,11.65\";\n");
 print("digraph tracker {\nratio=auto;\n");
-print("node [shape=plaintext,fontsize=16];\n");
-print("edge [fontsize=11,fontcolor=blue];\n");
+print("node [shape=plaintext,fontsize=12];\n");
+print("edge [fontsize=9,fontcolor=blue];\n");
 print("ranksep=0.2; nodesep=0.3; center=true;\n");
 
 # Draw the visible years
