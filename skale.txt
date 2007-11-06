@@ -1,0 +1,16 @@
+# Some info from http://en.wikipedia.org/wiki/Skale_Tracker
+
+# Skale Tracker is a tracker software created and coded by baktery with
+# graphics-support from Awesome. It was originally released in early alpha
+# stage as Fast Tracker 3, as the entire environment was designed to be as
+# similar to Fast Tracker 2 as possible, but had to change its name for
+# legal reasons. The design and general Fast Tracker-resemblance stayed
+# the same, though. It is available for both Microsoft Windows and Linux.
+# Skale features ASIO, WAV-renderer, support for SF2 and AKAI-instruments,
+# MIDI I/O, VST instrument support and more.
+
+skale_802
+	Name: Skale Tracker beta 0.802
+	Author: Baktery
+	Date: 2005-08-23		# From Skale.txt
+	Influenced by ft_209 [ Interface ]
