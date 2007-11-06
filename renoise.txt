@@ -1,0 +1,16 @@
+# Some info from http://en.wikipedia.org/wiki/Renoise
+
+# Renoise was originally written from the code of another tracker called
+# NoiseTrekker, made by Juan Antonio Arguelles Rius (Arguru). The then
+# unnamed Renoise project was initiated by Eduard Mueller (Taktik) and
+# Zvonko Tesic (Phazze) during December 2000. By early 2002 stable
+# versions (such as 1.27) were available.
+
+noisetrekker_11
+	Name: NoiseTrekker 1.1
+	Author: Juan Antonio Arguelles Rius
+	Date: 1999-11-17		# from file in noisetrekker11.zip
+	
+
+
+
