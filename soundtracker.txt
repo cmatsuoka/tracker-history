@@ -115,7 +115,7 @@ doc_soundtracker_22
 	Name: D.O.C Soundtracker 2.2
 	Author: Unknown of D.O.C
 	Date: 1988-12		# from SoundTrackerV2.2.doc
-	Based on doc_soundtracker_2
+	Based on doc_soundtracker_2 1000
 
 # based "based on the MasterSoundtracker V1.0 by TIP/PROPHETS and mainly
 # on Soundtracker V2.2 by Unknown/D.O.C"
@@ -143,11 +143,11 @@ soundtracker_23
 	Name: Soundtracker 2.3
 	Author: MnemoTroN
 	Date: 1989-04		# from Soundtracker2.3.doc
-	Based on master_soundtracker_10 100 [
 	Based on doc_soundtracker_22 1000 [
 		31-instrument M.K. file,
 		Modern mouse pointer
 	]
+	Based on master_soundtracker_10 100
 
 # Not much information about this one, I have only the binary
 
