@@ -1,0 +1,66 @@
+Tracker History Graphing
+------------------------
+
+Tracker dependencies are described in the source files named after tracker
+families such as Protracker, Noisetracker or Startrekker. Each tracker is
+a node in the graph, and the edges show the relationship between tracker
+releases.
+
+You can obtain the latest version of the tracker history files at
+http://helllabs.org/tracker-history/. A git repository is also available,
+you can get it with
+
+	git clone http://helllabs.org/git/tracker-history.git
+
+If you add new nodes or fix errors in the existing nodes, please send the
+patches or new files to cmatsuoka@gmail.com.
+
+Source files are converted to Graphviz dotfiles using a modified version of
+Warren Toomey's 'todot' script for the Unix History Graphing Project at
+http://minnie.tuhs.org/Unix_History/. Graphviz is a graph visualization
+software package available at http://www.graphviz.org/.
+
+
+Source file format:
+
+<nickname>:
+	Name: <name and version>
+	Author: <name of author>
+	Date: <YYYY-MM-DD | YYYY-MM | YYYY>
+	Comment: <optional text>
+	Based on <nickname> [ <weight> ] [ <enhancements> ]
+	Influenced by <nickname> [ <weight> ] [ <influences> ]
+
+Please indicate the source of information for the entries, especially
+release dates or influences.
+
+'Based on' indicates that the current release is based on the codebase
+of the listed release. 'Influenced by', on the other hand, implies that
+there is no significant code shared between the two releases (example:
+UNIS669 is influenced by, but not based on, Composer 669). Enhancements
+from the previous release can be listed after the release nickname or
+optional node weight, enclosed in [ ].
+
+'Influenced by' should be used when there is explicit influence mentioned
+in the tracker documentation (or by the tracker author), or when there is
+an obvious influence of a tracker on another (example: MED was influenced
+by Soundtracker VI as mentioned in the docs, or the visible influence of
+Scream Tracker 3 on the design of the Impulse Tracker interface). Influences
+can be listed after the release nickname or optional node weight, enclosed
+in [ ].
+
+Example:
+
+soundtracker_25
+        Name: Soundtracker 2.5
+        Author: MnemoTroN
+        Date: 1989-08-27
+        Based on soundtracker_24 [ New playroutine, Tone portamento, Vibrato ]
+        Based on noisetracker_10
+
+soundtracker_26
+        Name: Soundtracker 2.6
+        Author: MnemoTroN
+        Date: 1990-03-11        # month-day correct?
+        Based on soundtracker_25 1000 [ New file format ]
+
