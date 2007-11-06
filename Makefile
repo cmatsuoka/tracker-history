@@ -5,7 +5,7 @@ AMIGA_TRACKERS	= soundtracker noisetracker startrekker protracker med \
 # these are actually the MS-DOS trackers
 PC_TRACKERS	= fasttracker screamtracker impulsetracker other-pc
 
-WIN_TRACKERS	= buzz
+WIN_TRACKERS	= modplugtracker buzz
 
 
 TODOT		= ./todot

@@ -1,0 +1,20 @@
+# Many gaps to be filled here
+
+mpt_a5
+	Name: Modplug Tracker Alpha 5
+	Author: Olivier Lapicque
+	Date: 1998-01-13		# from the file date
+	Influenced by ft_208
+	Influenced by it_214
+
+mpt_b1
+	Name: Modplug Tracker Beta 1
+	Author: Olivier Lapicque
+	Date: 1998-06-17		# from the file date
+	Based on mpt_a5
+
+mpt_109
+	Name: Modplug Tracker 1.09
+	Author: Olivier Lapicque
+	Date: 2000-01-30		# from the file date
+	Based on mpt_b1			# based on 1.00, but where is it?
