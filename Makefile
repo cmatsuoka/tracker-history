@@ -2,11 +2,16 @@
 AMIGA_TRACKERS	= soundtracker noisetracker startrekker protracker med \
 		  other-amiga
 
+# these are actually the MS-DOS trackers
 PC_TRACKERS	= fasttracker screamtracker impulsetracker other-pc
+
+WIN_TRACKERS	= buzz
+
 
 TODOT		= ./todot
 TRACKERS	= $(addsuffix .txt, $(AMIGA_TRACKERS)) \
-		  $(addsuffix .txt, $(PC_TRACKERS)) 
+		  $(addsuffix .txt, $(PC_TRACKERS)) \
+		  $(addsuffix .txt, $(WIN_TRACKERS)) 
 
 DATE		= `date +%Y%m%d`
 THPKG		= tracker-history

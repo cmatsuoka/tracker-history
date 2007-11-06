@@ -1,0 +1,43 @@
+# From http://wiki.buzzmusic.de/index.php/Buzz_history
+# "Infos for the real freaks..." (!)
+# More info from http://en.wikipedia.org/wiki/Jeskola_Buzz
+
+# [Wikipedia] Jeskola Buzz is a proprietary modular software music studio
+# environment centered around a modular plugin-based machine view and a
+# multiple pattern sequencer tracker (as opposed to a single pattern
+# sequencer tracker). The long term future of the program is uncertain
+# because the original sources have been lost. Nevertheless, it remains
+# interesting historically since many applications have been derived from
+# or inspired by the concepts, interfaces, and formats of Buzz, the "Buzz
+# clones".
+
+# Buzzwiki mentions a beta version in 1997-XX-XX, which strangely becomes
+# before a15.
+
+buzz_a15
+	Name: Buzz alpha15
+	Author: Oskari Tammelin
+	Date: 1998-07-01
+
+# Buzz 1.0 (bug fixed version of a15 written by Hans Andersson, buzz 2
+# worked on)
+
+buzz_10
+	Name: Buzz 1.0
+	Author: Hans Andersson	# wasn't Oskari Tammelin the "sole author"?
+	Date: 1998-10-28
+	Based on buzz_a15
+
+# Last version of Buzz (v1.2 beta) before the hard disk crash of its author
+
+buzz_12
+	Name: Buzz 1.2 beta
+	Author: Oskari Tammelin
+	Date: 2000-10-05
+	Based on buzz_10
+
+# [Wikipedia] The development of the core program, buzz.exe, was halted on
+# October 5, 2000, when the developer lost the source code to the program.
+# Nonetheless, since then many new and unique ideas have evolved using the
+# existing plugin interface.
+

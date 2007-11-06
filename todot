@@ -1,0 +1,157 @@
+#!/usr/bin/perl
+#
+# Original todot from the Unix History Graphing Project by Warren Toomey,
+# http://minnie.tuhs.org/Unix_History/. "Author", "Based on" and "Comments"
+# fields and other modifications by Claudio Matsuoka for the Tracker History
+# Graphing Project, Nov/2007
+
+$default_succweight=200;
+$default_ideaweight=10;
+$minyear=3000;
+$maxyear=0;
+$linkcnt=0;
+
+while (<>) {
+    s/\s*#.*//;
+    if (/^$/) { next; }
+    if (/^(\S+)/) { $node=$1; next; }
+    if (/\tName: (.*)/) { $Name{$node}=$1; next; }
+    if (/\tAuthor: (.*)/) { $Author{$node}=$1; next; }
+    if (/\tComment: (.*)/) { $Comment{$node}=$1; next; }
+
+    if (/\tBased on (\S+)\s+(\d+)/) {
+	$From[$linkcnt]=$1; $To[$linkcnt]=$node; $Link[$linkcnt]="succ";
+	$Weight[$linkcnt]=$2;
+	$Implist[$linkcnt] = parse_list($_);
+	$linkcnt++; next;
+    }
+    if (/\tInfluenced by (\S+)\s+(\d+)/) {
+	$From[$linkcnt]=$1; $To[$linkcnt]=$node; $Link[$linkcnt]="idea";
+	$Weight[$linkcnt]=$2;
+	$Implist[$linkcnt] = parse_list($_);
+	$linkcnt++; next;
+    }
+    if (/\tBased on (\S+)/) {
+	$From[$linkcnt]=$1; $To[$linkcnt]=$node; $Link[$linkcnt]="succ";
+	$Weight[$linkcnt]=$default_succweight;
+	$Implist[$linkcnt] = parse_list($_);
+	$linkcnt++; next;
+    }
+    if (/\tInfluenced by (\S+)/) {
+	$From[$linkcnt]=$1; $To[$linkcnt]=$node; $Link[$linkcnt]="idea";
+	$Weight[$linkcnt]=$default_ideaweight;
+	$Implist[$linkcnt] = parse_list($_);
+	$linkcnt++; next;
+    }
+
+    if (/\tDate:.*(\d\d\d\d)-(\d\d)-(\d\d)/) {
+				# Convert to year-mon-day
+	$yr=$1; $mon=$2; $day=$3; goto dodate;
+    }
+    if (/\tDate:.*(\d\d\d\d)-(\d\d)/) {
+	$yr=$1; $mon=$2; $day="00"; goto dodate;
+    }
+    if (/\tDate:.*(\d\d\d\d)/) {
+	$yr=$1; $mon="00"; $day="00";
+dodate:
+	$d="${yr}${mon}${day}"; $Date{$d}{$node}=$node;
+	$Date{$d}{$d}=$d; $Name{$d}=$d;
+	if ($yr > $maxyear) { $maxyear=$yr; }
+	if ($yr < $minyear) { $minyear=$yr; }
+	next;
+    }
+}
+
+#print("digraph tracker {\nratio=auto; page=\"8.25,11.65\";\n");
+print("digraph tracker {\nratio=auto;\n");
+print("node [shape=plaintext,fontsize=12];\n");
+print("edge [fontsize=9,fontcolor=blue];\n");
+print("ranksep=0.2; nodesep=0.3; center=true;\n");
+
+# Draw the visible years
+print("{ edge [style=bold];\n");
+print("  node [shape=plaintext,fontsize=36,fontname=\"Times-Bold\"];\n");
+for ($i=$minyear; $i<=$maxyear; $i++) {
+    $d= "${i}0000"; $Date{$d}{$d}=$d; $Name{$d}=$d;
+    $Date{$d}{$i}=$i; $Name{$i}=$i;
+    print("  $i ->\n");
+}
+print("  future;\n}\n");
+print("{ rank=max; future }\n");
+
+foreach $i (sort(keys(%Date))) {
+    print("{ rank=same; ");
+    foreach $j (keys(%{ $Date{$i} })) {
+	print("\"$Name{$j}\"");
+	if ($Author{$j}) {
+	    if ($Comment{$j}) {
+                print("[label=\"$Name{$j}\\n$Author{$j}\\n$Comment{$j}\"] ");
+	    } else {
+                print("[label=\"$Name{$j}\\n$Author{$j}\"] ");
+	    }
+        } else {
+            print(";");
+        }
+    }
+    print("}\n");
+}
+
+
+# Do the invisible years
+for ($i=$minyear; $i<=$maxyear; $i++) { 
+    print("{ edge [style=invis];\n");
+    for ($j=0; $j<=12; $j++) {
+      for ($k=0; $k<=31; $k++) {
+	$d= sprintf("%d%02d%02d", $i,$j,$k);
+	if (!defined($Date{$d}{$d})) { next; }
+	print("    $d [style=invis,height=0.1,width=0.1,fontsize=2];\n");
+      }
+    }
+    for ($j=0; $j<=12; $j++) {
+      for ($k=0; $k<=31; $k++) {
+	$d= sprintf("%d%02d%02d", $i,$j,$k);
+	if (!defined($Date{$d}{$d})) { next; }
+	print("    $d ->\n");
+      }
+    }
+    printf("    %d0000;\n}\n",$i+1);
+}
+$j=$maxyear+1; $j .= "0000";
+print("{ $j [style=invis,height=0.1,width=0.1,fontsize=2]; }\n");
+
+for ($i=0; $i<$linkcnt; $i++) {
+    if (!defined($Name{$From[$i]})) {
+	print(STDERR "Warning: node $From[$i] doesn't exist\n"); next;
+    }
+    print("\"$Name{$From[$i]}\" -> \"$Name{$To[$i]}\" ");
+    $label = $Implist[$i] ? " label=\"$Implist[$i]\"" : "";
+    #if ($Link[$i] eq "succ") { print("[weight=$Weight[$i],style=bold]"); }
+    if ($Link[$i] eq "succ") { print("[weight=$Weight[$i]$label]"); }
+    if ($Link[$i] eq "idea") { print("[weight=$Weight[$i],fontcolor=green,style=dotted$label]"); }
+    print(";\n");
+}
+print("}\n");
+
+
+# Parse improvement/influence list
+# Get comma-separated values between [ ], can be multiline
+# not a very pretty code but it works
+
+sub parse_list {
+    my $imp = "";
+
+    if (($k) = /\[([^\]]*)/) {
+	while (1) {
+	    foreach (split(/[\],]+/, $k)) {
+		s/^\s*(.*\S)\s*$/$1/;
+		$imp .= "$_\\l" if $_ =~ /\S/;
+            }
+	    /\]/ && last;
+	    chomp($_=<>); s/\s*#.*//;
+            ($k) = m/([^\]]*)/;
+        }
+    }
+
+    $imp;
+}
+
