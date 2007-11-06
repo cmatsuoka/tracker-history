@@ -15,12 +15,6 @@ soundtracker_18
 	Date: 1988-01-04
 	Based on soundtracker_121
 
-doc_soundtracker_2
-	Name: D.O.C Soundtracker II
-	Author: Unknown of D.O.C
-	Date: 1988-08
-	Based on master_soundtracker_10 [ Pattern break, Pattern jump ]
-
 soundtracker_ii
 	Name: Soundtracker II
 	Author: The Exterminator
@@ -79,19 +73,83 @@ master_soundtracker_30
 	Date: 1988-10
 	Based on master_soundtracker_10
 
+# mentions Soundtracker 1.8 as being "the original"
+# says "based on the MasterSoundTracker V1.0 by TIP/TNM"
+#
+# Modifications by D.O.C:
+#   Improved record function
+#   Extended keymap (Sonix style)
+#   Pattern play function
+#   Delete Song function in the dos menu
+#   Improved ANALYZER
+#   Pattern changing during play
+#   Pattern break command !!!! (geil)
+#   Position jump command !!!! (geiol)
+#   Sample zero function
+#   New playroutine for use in demos/intros/games
+#   Improved graphics (colors,styling,font)
+#   Nice scrolling
+#   Animated mousepointer
+#
+# Instruments
+#   You can use up to fifteen different instruments in one music-piece.
+#   (...) Now you can use samples up to $8000 (=32768) bytes !!!!
+
+doc_soundtracker_2
+	Name: D.O.C Soundtracker 2.0
+	Author: Unknown of D.O.C
+	Date: 1988-08		# from SoundTrackerV2.0.doc
+	Comment: 0 1 2 B C D E F
+	Based on master_soundtracker_10 [
+		Pattern break,
+		Pattern jump,
+		Pattern play button,
+	]
+
+# Modifications by D.O.C:
+#   A sample sort function
+#   Corrected 'DisplayPattern' routine
+#   Corrected preset-editor
+
 doc_soundtracker_22
 	Name: D.O.C Soundtracker 2.2
 	Author: Unknown of D.O.C
-	Date: 1988-12
+	Date: 1988-12		# from SoundTrackerV2.2.doc
 	Based on doc_soundtracker_2
+
+# based "based on the MasterSoundtracker V1.0 by TIP/PROPHETS and mainly
+# on Soundtracker V2.2 by Unknown/D.O.C"
+#
+# Modifications by MnemoTroN:
+#
+#   Scroll-Line removed
+#   Animated Mousepointer removed
+#   Extended DOS-Window
+#   Key-Help-Page
+#   Nice 'Sure?'-Requester
+#   Reinsertion of Length-,Repeat- and RepLen-Gadgets
+#   Lowpass-Filter is switched off
+#   Load Module
+#   Save Sample
+#   Format Disk
+#   Clear Song
+#   and some small details that must not be mentioned here
+#
+# Instruments
+#   You can use up to thirtyone different instruments in one music-piece.
+#   (...) Now you can use samples up to $8000 (=32768) bytes !!!!
 
 soundtracker_23
 	Name: Soundtracker 2.3
 	Author: MnemoTroN
-	Date: 1989-04
-	Based on doc_soundtracker_22 [
-		31-instrument M.K. file, Modern mouse pointer
+	Date: 1989-04		# from Soundtracker2.3.doc
+	Based on master_soundtracker_10 100 [
+	Based on doc_soundtracker_22 1000 [
+		31-instrument M.K. file,
+		Modern mouse pointer
 	]
+
+# Not much information about this one, I have only the binary
 
 soundtracker_24
 	Name: Soundtracker 2.4
@@ -99,10 +157,38 @@ soundtracker_24
 	Date: 1989-07
 	Based on soundtracker_23
 
+# New features:
+# - New edit options:
+#   - Track one half-step up/down
+#   - Track one octave up/down
+#   - One instrument up/down
+#   - Kill instrument
+# - New disk-menu:
+#   - Load Sample (with directory)
+#   - All directories (song/module/sample) can be changed
+# - New playroutine (2 new commands) by MAHONEY & KAKTUS
+#
+# Command:  This number tells Soundtracker what special functions shall be
+# --------  performed while playing the note
+#
+# These functions are as follows:
+#
+# 	0 - Normal play or arpeggio.
+#	1 - Portamento up.
+#	2 - Portamento down.
+#	3 - Tone-portamento
+#	4 - Vibrato
+#	A - Volume slide.
+#	B - Position jump.
+#	C - Set volume.
+#	D - Pattern break.
+#	E - Set filter on/off.
+#	F - Set speed.
+
 soundtracker_25
 	Name: Soundtracker 2.5
 	Author: MnemoTroN
-	Date: 1989-08-27
+	Date: 1989-08-27		# from the doc file
 	Based on soundtracker_24 [ New playroutine, Tone portamento, Vibrato ]
 	Based on noisetracker_10
 
