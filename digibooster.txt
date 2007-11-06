@@ -1,0 +1,11 @@
+
+dbpro_219
+	Name: DigiBooster Pro 2.19
+	Author: Tomasz & Waldemar Piasta
+	Date: 1998-05-10		# From DigiBooster_E.guide
+
+dbpro_221
+	Name: DigiBooster Pro 2.21
+	Author: Tomasz & Waldemar Piasta
+	Date: 1999-05-28		# From the Digibooster binary
+	Based on dbpro_219

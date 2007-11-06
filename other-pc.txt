@@ -47,3 +47,10 @@ funkgold_15
 	Author: Jason Nunn
 	Date: 1998-02-13		# date of version 1.5 from INSTALL
 	Based on funkgold_10
+
+orpheus
+	Name: IMAGO Orpheus 1.0
+	Author: Lutz Roeder
+	Date: 1995			# date is uncertain
+	Influenced by st_301
+	Influenced by ft_200

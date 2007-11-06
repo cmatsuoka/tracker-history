@@ -99,7 +99,7 @@ doc_soundtracker_2
 	Name: D.O.C Soundtracker 2.0
 	Author: Unknown of D.O.C
 	Date: 1988-08		# from SoundTrackerV2.0.doc
-	Comment: 0 1 2 B C D E F
+	Comment: 0, 1, 2, B, C, D, E, F
 	Based on master_soundtracker_10 [
 		Pattern break,
 		Pattern jump,
