@@ -18,19 +18,19 @@ ft_204
 	Name: Fast Tracker 2.04
 	Author: Fredrik Huss & Magnus Hogdahl
 	Date: 1995-07-23		# From exit message
-	Based on ft_200
+	Based on ft_200 1000
 
 ft_205
 	Name: Fast Tracker 2.05
 	Author: Fredrik Huss & Magnus Hogdahl
 	Date: 1996-02-04		# From exit message
-	Based on ft_204
+	Based on ft_204 1000
 
 ft_206
 	Name: Fast Tracker 2.06
 	Author: Fredrik Huss & Magnus Hogdahl
 	Date: 1996-02-17		# From exit message
-	Based on ft_205
+	Based on ft_205 1000
 
 # where is 2.07?
 
@@ -38,11 +38,11 @@ ft_208
 	Name: Fast Tracker 2.08
 	Author: Fredrik Huss & Magnus Hogdahl
 	Date: 1997-08-21		# From exit message
-	Based on ft_206
+	Based on ft_206 1000
 
 ft_209
 	Name: Fast Tracker 2.09
 	Author: Fredrik Huss & Magnus Hogdahl
 	Date: 1998-02-04		# From exit message
-	Based on ft_208
+	Based on ft_208 1000
 

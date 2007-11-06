@@ -1,0 +1,59 @@
+# Info from the Digitrakker 3.2 WHATSNEW.TXT
+
+digitrakker_10
+	Name: Digital Tracker 1.0
+	Author: Prodatron
+	Date: 1994-02-01
+	Comment: 4 channel, unreleased
+
+#the first released version of digitrakker
+
+digitrakker_20
+	Name: Digitrakker 2.0
+	Author: Prodatron
+	Date: 1995-03-02
+	Based on digitrakker_10 [ 32 channels ]
+	Influenced by ft_200
+
+digitrakker_21
+	Name: Digitrakker 2.1
+	Author: Prodatron
+	Date: 1995-03-28
+	Based on digitrakker_20 [ XM export ]
+
+digitrakker_22b
+	Name: Digitrakker 2.2 beta
+	Author: Prodatron
+	Date: 1995-06-03
+	Based on digitrakker_21 [ PTM import ]
+
+digitrakker_23
+	Name: Digitrakker 2.3
+	Author: Prodatron
+	Date: 1995-07-08
+	Based on digitrakker_22b
+	#Influenced by ft_209 [ Instrument system ]
+
+digitrakker_299b
+	Name: Digitrakker 2.99 beta
+	Author: Prodatron
+	Date: 1995-10-22
+	Based on digitrakker_23
+
+digitrakker_30
+	Name: Digitrakker 3.0
+	Author: Prodatron
+	Date: 1996-01-25
+	Based on digitrakker_299b [ Soundblaster support, Save composer name ]
+
+digitrakker_31
+	Name: Digitrakker 3.1
+	Author: Prodatron
+	Date: 1996-03-29
+	Based on digitrakker_30 [ SB16 support, Multi-retrig, Set envelope ]
+
+digitrakker_32
+	Name: Digitrakker 3.2
+	Author: Prodatron
+	Date: 1997-01-07
+	Based on digitrakker_31
