@@ -14,7 +14,9 @@ $linkcnt=0;
 while (<>) {
     s/\s*#.*//;
     if (/^$/) { next; }
-    if (/^(\S+)/) { $node=$1; next; }
+
+    if (/^\.COLOR\s+(\S+)/) { $section_color = $1; next; }
+    if (/^(\S+)/) { $node=$1; $Color{$node}=$section_color; next; }
     if (/\tName: (.*)/) { $Name{$node}=$1; next; }
     if (/\tAuthor: (.*)/) { $Author{$node}=$1; next; }
     if (/\tComment: (.*)/) { $Comment{$node}=$1; next; }
@@ -64,7 +66,8 @@ dodate:
 
 #print("digraph tracker {\nratio=auto; page=\"8.25,11.65\";\n");
 print("digraph tracker {\nratio=auto;\n");
-print("node [shape=plaintext,fontsize=12];\n");
+#print("node [shape=plaintext,fontsize=12];\n");
+print("node [shape=rectangle,fontsize=12];\n");
 print("edge [fontsize=9,fontcolor=blue];\n");
 print("ranksep=0.2; nodesep=0.3; center=true;\n");
 
@@ -84,10 +87,11 @@ foreach $i (sort(keys(%Date))) {
     foreach $j (keys(%{ $Date{$i} })) {
 	print("\"$Name{$j}\"");
 	if ($Author{$j}) {
+	    $c = "style=filled,color=\"#$Color{$j}\",";
 	    if ($Comment{$j}) {
-                print("[label=\"$Name{$j}\\n$Author{$j}\\n$Comment{$j}\"] ");
+                print("[${c}label=\"$Name{$j}\\n$Author{$j}\\n$Comment{$j}\"] ");
 	    } else {
-                print("[label=\"$Name{$j}\\n$Author{$j}\"] ");
+                print("[${c}label=\"$Name{$j}\\n$Author{$j}\"] ");
 	    }
         } else {
             print(";");
