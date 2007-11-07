@@ -11,12 +11,3 @@ funkgold_15
 	Date: 1998-02-13		# date of version 1.5 from INSTALL
 	Based on funkgold_10
 
-
-# TODO: get better information on schism
-
-schism
-	Name: Schism Tracker
-	Author: Storlek and Mrs. Brisby
-	Date: 2003
-	# Based on mpt, add openmpt first
-	Influenced by it_214v5 1000 [ Clone ]
