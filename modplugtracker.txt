@@ -18,3 +18,40 @@ mpt_109
 	Author: Olivier Lapicque
 	Date: 2000-01-30		# from the file date
 	Based on mpt_b1			# based on 1.00, but where is it?
+
+# skip some releases
+
+# from http://sourceforge.net/forum/forum.php?forum_id=355974
+#
+# Posted By: plastik_s
+# Date: 2004-02-28 12:25
+# Summary: Modplug 'Wild' first release
+#
+# Modplug 'Wild' is the experimental branch. We developer new features
+# that are potentially risky. This is the first release: 2.00.0001 
+# In this version you can find ehanced VST support, mix paste, visualization
+# of effects and other goodies from Rewbs. And 255 channel mode, you need
+# a fast machine if you attempt all 255 channels. 
+
+mpt_200
+	Name: Modplug 'Wild' 2.00.0001
+	Author: plastik_s
+	Date: 2004-02-28
+	Based on mpt_109		# FIXME
+
+openmpt_117rc2
+	Name: OpenMPT 1.17RC2
+	Author: plastik_s
+	Date: 2005-08-20		# date of files in package
+	Based on mpt_200
+
+# This one is in sourceforge downloads
+# also in http://modplug.sourceforge.net/builds/
+# OpenMPT dev build v1.17.02.48 (Sun, 27 May 2007 18:02:21 GMT)
+# Released at Sun, 27 May 2007 18:02:21 GMT by rewbs
+
+openmpt_117_02_48
+	Name: OpenMPT 1.17RC2
+	Author: rewbs
+	Date: 2007-05-27		# 
+	Based on openmpt_117rc2
