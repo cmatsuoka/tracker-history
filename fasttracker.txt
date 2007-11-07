@@ -14,11 +14,17 @@ ft_200
 
 # Skip a few releases
 
+ft_203
+	Name: Fast Tracker 2.03
+	Author: Fredrik Huss & Magnus Hogdahl
+	Date: 1994-12-25		# From exit message
+	Based on ft_200 1000
+
 ft_204
 	Name: Fast Tracker 2.04
 	Author: Fredrik Huss & Magnus Hogdahl
 	Date: 1995-07-23		# From exit message
-	Based on ft_200 1000
+	Based on ft_203 1000
 
 ft_205
 	Name: Fast Tracker 2.05
