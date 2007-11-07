@@ -15,10 +15,22 @@ soundtracker_18
 	Date: 1988-01-04
 	Based on soundtracker_121
 
+# "based on the original V1.21 version by Karsten Obarski"
+#
+# Modifications : Modulation.
+# -------------   Enhanced portamento.
+#                 Volume changing during play.
+#                 Volume sliding up/down during play.
+#                 Standard USA keymap.
+#                 Playroutine for use in demos etc.
+#                 Correct (?) spelling. (Karsten, it's spelled "Length" and
+#                                        NOT "Lenght" !!)
+#                                       (PHR....it ain't "Lengh", either !)
+
 soundtracker_ii
 	Name: Soundtracker II
 	Author: The Exterminator
-	Date: 1988-03-01
+	Date: 1988-03-01		# from Quick Clarification
 	Based on soundtracker_121 [
 		Enh portamento, Modulation, Volume, Volume slide
 	]
