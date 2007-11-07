@@ -18,5 +18,5 @@ schism
 	Name: Schism Tracker
 	Author: Storlek and Mrs. Brisby
 	Date: 2003
-	# Based on: mpt, add openmpt first
-	Influenced by: it214v5 1000 [ Clone ]
+	# Based on mpt, add openmpt first
+	Influenced by it_214v5 1000 [ Clone ]

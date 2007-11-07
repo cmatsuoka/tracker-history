@@ -51,7 +51,7 @@ openmpt_117rc2
 # Released at Sun, 27 May 2007 18:02:21 GMT by rewbs
 
 openmpt_117_02_48
-	Name: OpenMPT 1.17RC2
+	Name: OpenMPT 1.17.02.48
 	Author: rewbs
 	Date: 2007-05-27		# 
 	Based on openmpt_117rc2

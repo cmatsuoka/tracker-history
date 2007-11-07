@@ -8,13 +8,14 @@ PC_TRACKERS	= fasttracker screamtracker impulsetracker digitrakker \
 
 WIN_TRACKERS	= modplugtracker renoise skale buzz
 
-LINUX_TRACKERS	= other-linux.txt
+LINUX_TRACKERS	= other-linux
 
 
 TODOT		= ./todot
 TRACKERS	= $(addsuffix .txt, $(AMIGA_TRACKERS)) \
 		  $(addsuffix .txt, $(PC_TRACKERS)) \
-		  $(addsuffix .txt, $(WIN_TRACKERS)) 
+		  $(addsuffix .txt, $(WIN_TRACKERS)) \
+		  $(addsuffix .txt, $(LINUX_TRACKERS)) 
 
 DATE		= `date +%Y%m%d`
 THPKG		= tracker-history
