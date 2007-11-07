@@ -1,0 +1,22 @@
+
+funkgold_10
+	Name: FunktrackerGOLD 1.0
+	Author: Jason Nunn
+	Date: 1996-08			# from README.Install
+	Based on funk
+
+funkgold_15
+	Name: FunktrackerGOLD 1.5
+	Author: Jason Nunn
+	Date: 1998-02-13		# date of version 1.5 from INSTALL
+	Based on funkgold_10
+
+
+# TODO: get better information on schism
+
+schism
+	Name: Schism Tracker
+	Author: Storlek and Mrs. Brisby
+	Date: 2003
+	# Based on: mpt, add openmpt first
+	Influenced by: it214v5 1000 [ Clone ]

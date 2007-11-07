@@ -8,6 +8,8 @@ PC_TRACKERS	= fasttracker screamtracker impulsetracker digitrakker \
 
 WIN_TRACKERS	= modplugtracker renoise skale buzz
 
+LINUX_TRACKERS	= other-linux.txt
+
 
 TODOT		= ./todot
 TRACKERS	= $(addsuffix .txt, $(AMIGA_TRACKERS)) \

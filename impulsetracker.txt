@@ -16,9 +16,19 @@ it_211
 	Date: 1997-01-19	# Date in files
 	Based on it_2 1000
 
-it_214
-	Name: Impulse Tracker 2.14
+# IT 2.14 and 2.15 missing
+
+it_214v3
+	Name: Impulse Tracker 2.14 Patch 3
 	Author: Jeffrey Lim
 	Date: 1997-12-21	# Date in files
 	Based on it_211 1000
+	
+# Wikipedia: The last version, v2.14 Patch #5, was released April 8, 1999.
+
+it_214v5
+	Name: Impulse Tracker 2.14 Patch 5
+	Author: Jeffrey Lim
+	Date: 1999-04-08
+	Based on it_214v3 1000
 	

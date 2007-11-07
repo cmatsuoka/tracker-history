@@ -36,18 +36,6 @@ funk
 	Date: 1995-07			# date of version 1.08
 	Influenced by unis669 1000
 
-funkgold_10
-	Name: FunktrackerGOLD 1.0
-	Author: Jason Nunn
-	Date: 1996-08			# from README.Install
-	Based on funk
-
-funkgold_15
-	Name: FunktrackerGOLD 1.5
-	Author: Jason Nunn
-	Date: 1998-02-13		# date of version 1.5 from INSTALL
-	Based on funkgold_10
-
 orpheus
 	Name: IMAGO Orpheus 1.0
 	Author: Lutz Roeder

@@ -5,7 +5,7 @@ mpt_a5
 	Author: Olivier Lapicque
 	Date: 1998-01-13		# from the file date
 	Influenced by ft_208
-	Influenced by it_214
+	Influenced by it_214v3
 
 mpt_b1
 	Name: Modplug Tracker Beta 1
