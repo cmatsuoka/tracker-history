@@ -1,0 +1,25 @@
+# Releases and dates from MilkyTracker ChangeLog.html
+
+milky_0.90.00
+	Name: MilkyTracker 0.90.00
+	Author: pailes
+	Date: 2005-11-29
+	Influenced by ft_209 [ Interface ]
+
+milky_0.90.30
+	Name: MilkyTracker 0.90.30
+	Author: pailes
+	Date: 2006-02-14
+	Based on milky_0.90.00
+
+milky_0.90.50
+	Name: MilkyTracker 0.90.50
+	Author: pailes
+	Date: 2006-09-26
+	Based on milky_0.90.30 [ Unix port ]
+
+milky_0.90.60
+	Name: MilkyTracker 0.90.60
+	Author: pailes
+	Date: 2007-05-20
+	Based on milky_0.90.50
