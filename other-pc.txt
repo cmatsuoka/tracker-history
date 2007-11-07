@@ -1,3 +1,7 @@
+moded_200
+	Name: Modedit 2.00
+	Author: Norman Lin
+	Date: 1991-11-23		# from file date
 
 c667
 	Name: Composer 667
