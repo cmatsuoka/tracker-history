@@ -25,7 +25,7 @@ it_212
 	Based on it_211 1000
 
 it_213
-	Name: Impulse Tracker 2.12
+	Name: Impulse Tracker 2.13
 	Author: Jeffrey Lim
 	Date: 1997-05-25	# Date in files
 	Based on it_212 1000
