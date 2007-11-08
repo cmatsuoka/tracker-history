@@ -29,4 +29,4 @@ noisetracker_20
 	Name: Noisetracker 2.0
 	Author: Mahoney & Kaktus
 	Date: 1990-07-01
-	Based on noisetracker_11 1000 [ NT file, Drumpad ]
+	Based on noisetracker_11 [ NT file, Drumpad ]
