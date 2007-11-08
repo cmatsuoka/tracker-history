@@ -1,4 +1,4 @@
-# Many gaps in IT history. Jeffrey Lim doesn't like dates in changelogs
+# Jeffrey Lim doesn't like dates in changelogs
 # Also no information on Impulse Tracker 1.x
 
 it_2
@@ -24,6 +24,12 @@ it_212
 	Date: 1997-04-23	# Date in files
 	Based on it_211 1000
 
+it_213
+	Name: Impulse Tracker 2.12
+	Author: Jeffrey Lim
+	Date: 1997-05-25	# Date in files
+	Based on it_212 1000
+
 # IT214 - Version jump to make sure samples don't get screwed up by the
 #         prerelease (IT213) loader. This is the FINAL public release. Apart
 #         from bugfixes/new soundcard drivers, don't expect to see anything in
@@ -36,7 +42,7 @@ it_214
 	Name: Impulse Tracker 2.14
 	Author: Jeffrey Lim
 	Date: 1997-09-02	# Date in files
-	Based on it_212 1000 [ Sample compression ]
+	Based on it_213 1000 [ Sample compression ]
 
 it_214v3
 	Name: Impulse Tracker 2.14 Patch 3
