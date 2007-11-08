@@ -2,7 +2,7 @@ psttracker_111
 	Name: PSTTracker V1.11
 	Author: John 'SHAYERA' Hinge
 	Date: 1992-12
-	Based on protracker_12a [ Solo, Sampler, No MIDI ]
+	Based on protracker_12a 50 [ Solo, Sampler, No MIDI ]
 
 hearttracker_233
 	Name: Hearttracker 2.33
@@ -28,3 +28,17 @@ maxtracker_10a
 	Author: Sylvain 'Zygen' Marchand
 	Date: 1993-10
 	Based on protracker_20a
+
+# From readme:
+# AdeptTracker is far from finished and should not be considered as a final
+# product. The main reason I have decided to release this version is for
+# archiving purposes only. AdeptTracker is as I se it rather unique since it's
+# the only system GUI application that tries to "copy" the ProTracker
+# userinterface (inspired by ProTracker V2.3a).
+
+adepttracker_10
+	Name: AdeptTracker 1.0
+	Author: Svein Engelsgjerd
+	Date: 1997			# Best guess based on copyright
+	Comment: Uses system GUI
+	Influenced by protracker_23a [ Interface layout ]

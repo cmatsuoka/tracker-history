@@ -155,7 +155,7 @@ soundtracker_23
 	Name: Soundtracker 2.3
 	Author: MnemoTroN
 	Date: 1989-04		# from Soundtracker2.3.doc
-	Based on doc_soundtracker_22 1000 [
+	Based on doc_soundtracker_22 2000 [
 		31-instrument M.K. file,
 		Modern mouse pointer
 	]
@@ -167,7 +167,7 @@ soundtracker_24
 	Name: Soundtracker 2.4
 	Author: MnemoTroN
 	Date: 1989-07
-	Based on soundtracker_23
+	Based on soundtracker_23 1000
 
 # New features:
 # - New edit options:
@@ -201,7 +201,9 @@ soundtracker_25
 	Name: Soundtracker 2.5
 	Author: MnemoTroN
 	Date: 1989-08-27		# from the doc file
-	Based on soundtracker_24 [ New playroutine, Tone portamento, Vibrato ]
+	Based on soundtracker_24 1000 [
+		New playroutine, Tone portamento, Vibrato
+	]
 	Based on noisetracker_10
 
 soundtracker_26

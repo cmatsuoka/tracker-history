@@ -30,7 +30,7 @@ protracker_12a
 	Name: Protracker 1.2a
 	Author: Lars 'ZAP' Hamre
 	Date: 1991-07
-	Based on protracker_11b 1000
+	Based on protracker_11b 2000
 
 protracker_13a
 	Name: Protracker 1.3a
@@ -42,7 +42,7 @@ protracker_12e
 	Name: Protracker 1.2e
 	Author: Raul Sobon
 	Date: 1994-01-09
-	Based on protracker_12a
+	Based on protracker_12a 1000
 
 protracker_18
 	Name: Protracker 1.8
@@ -95,53 +95,53 @@ protracker_300b
 	Author: CryptoBurners
 	Date: 1993-01-18
 	Based on protracker_13a
-	Based on protracker_20a
+	Based on protracker_20a 100
 
 protracker_301
 	Name: Protracker 3.01
 	Author: CryptoBurners
 	Date: 1993-01-26
-	Based on protracker_300b
+	Based on protracker_300b 1000
 	Influenced by protracker_21a
 
 protracker_310
 	Name: Protracker 3.10
 	Author: CryptoBurners
 	Date: 1993-07-17
-	Based on protracker_301
+	Based on protracker_301 1000
                                      
 protracker_315
 	Name: Protracker 3.15
 	Author: CryptoBurners
 	Date: 1993-10-15
-	Based on protracker_310
+	Based on protracker_310 1000
 
-# We have many more releases in the 3.30 - 3.63 series, I just samples
+# We have many more releases in the 3.30 - 3.63 series, I just sampled
 # a few of them
 
 protracker_330
 	Name: Protracker 3.30
 	Author: RD10/Osiris
 	Date: 1996-02-21
-	Based on protracker_315
+	Based on protracker_315 1000
 
 protracker_353
 	Name: Protracker 3.53
 	Author: R10/Osiris
 	Date: 1996-05-22
-	Based on protracker_330
+	Based on protracker_330 1000
 
 protracker_359
 	Name: Protracker 3.59
 	Author: R10/Osiris
 	Date: 1996-07-06
-	Based on protracker_353 [ New file format ]
+	Based on protracker_353 1000 [ New file format ]
 
 protracker_361
 	Name: Protracker 3.61
 	Author: RD10/Osiris
 	Date: 1996-08-15
-	Based on protracker_359
+	Based on protracker_359 1000
 	
 # The 4.00b docs mentions 3.63, but no information about author or date
 

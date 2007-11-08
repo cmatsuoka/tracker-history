@@ -8,11 +8,11 @@ startrekker_12
 	Name: Startrekker 1.2
 	Author: Bjorn Wesen
 	Date: 1990-11-19
-	Based on startrekker_10 [ AM/FM synth ]
+	Based on startrekker_10 1000 [ AM/FM synth ]
 
 startrekker_13
 	Name: Startrekker 1.3
 	Author: Bjorn Wesen
 	Date: 1991-03-16
-	Based on startrekker_12 [ Macros ]
+	Based on startrekker_12 1000 [ Macros ]
 
