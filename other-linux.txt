@@ -11,3 +11,45 @@ funkgold_15
 	Date: 1998-02-13		# date of version 1.5 from INSTALL
 	Based on funkgold_10
 
+mk_soundtracker_0.3.2
+	Name: SoundTracker 0.3.2
+	Author: Michael Krause
+	Date: 1999-11-14
+	Influenced by ft_209
+	
+mk_soundtracker_0.5.0
+	Name: SoundTracker 0.5.0
+	Author: Michael Krause
+	Date: 2000-03-13
+	Based on mk_soundtracker_0.3.2
+	
+mk_soundtracker_0.6.0
+	Name: SoundTracker 0.6.0
+	Author: Michael Krause
+	Date: 2000-09-28
+	Based on mk_soundtracker_0.5.0
+
+mk_soundtracker_0.6.4
+	Name: SoundTracker 0.6.4
+	Author: Michael Krause
+	Date: 2001-08-12
+	Based on mk_soundtracker_0.6.0
+
+mk_soundtracker_0.6.6
+	Name: SoundTracker 0.6.5/0.6.6
+	Author: Michael Krause
+	Date: 2002-05-20
+	Based on mk_soundtracker_0.6.4
+
+mk_soundtracker_0.6.7
+	Name: SoundTracker 0.6.7
+	Author: Michael Krause
+	Date: 2004-01-11
+	Based on mk_soundtracker_0.6.6
+
+mk_soundtracker_0.6.8
+	Name: SoundTracker 0.6.8
+	Author: Michael Krause
+	Date: 2006-02-25
+	Based on mk_soundtracker_0.6.7
+
