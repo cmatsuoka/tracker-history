@@ -7,6 +7,7 @@ schism
 	# Based on mpt, add openmpt first
 	Influenced by it_214v5 1000 [ Clone ]
 
+
 # http://www.chibitracker.com/
 # ChibiTracker is a portable IT (Impulse Tracker) clone. It is not a 100%
 # clone though, as it adds more features, such as chorus and reverb, stereo
@@ -21,7 +22,7 @@ chibi
 	Name: ChibiTracker
 	Author: Juan Linietsky
 	Date: 2006-11-24
-	Influenced by it_214v5 500
+	Based on cheese_099
 	
 chibi_10rc1
 	Name: ChibiTracker 1.0rc1

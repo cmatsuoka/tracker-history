@@ -53,3 +53,15 @@ mk_soundtracker_0.6.8
 	Date: 2006-02-25
 	Based on mk_soundtracker_0.6.7
 
+cheese_099
+	Name: CheeseTracker 0.9.9
+	Author: Juan Linietsky
+	Date: 2004-04-23
+	Influenced by it_214v5
+
+cheese_0.9.15.2
+	Name: CheeseTracker 0.9.15.2
+	Author: J. Phelps
+	Date: 2007-08-26
+	Based on cheese_099 1000
+
