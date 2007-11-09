@@ -1,8 +1,0 @@
-# TODO: get better information on schism
-
-schism
-	Name: Schism Tracker
-	Author: Storlek and Mrs. Brisby
-	Date: 2003
-	# Based on mpt, add openmpt first
-	Influenced by it_214v5 1000 [ Clone ]
