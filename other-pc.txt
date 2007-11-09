@@ -52,3 +52,24 @@ orpheus
 	Date: 1995			# date is uncertain
 	Influenced by st_301
 	Influenced by ft_200
+
+# There was LIQ 0.14 as well
+
+liq_050
+	Name: Liquid Tracker 0.50 BETA
+	Author: Nir Oren
+	Date: 1993-11-27		# file date
+
+liq_100
+	Name: Liquid Tracker 1.00
+	Author: Nir Oren
+	Date: 1996-01-14		# file date
+	Based on liq_050
+	Influenced by st_321
+
+liq_150
+	Name: Liquid Tracker 1.50
+	Author: Nir Oren
+	Date: 1997-10-21		# file date
+	Based on liq_100
+
