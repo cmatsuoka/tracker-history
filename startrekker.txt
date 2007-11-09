@@ -16,3 +16,9 @@ startrekker_13
 	Date: 1991-03-16
 	Based on startrekker_12 1000 [ Macros ]
 
+# AudioSculpture Amiga V1.03 911027 by Bjorn 'Exolon' Wesen!
+audiosculpture_10
+	Name: AudioSculpture 1.03
+	Author: Bjorn Wesen
+	Date: 1991-10-27
+	Based on startrekker_13
