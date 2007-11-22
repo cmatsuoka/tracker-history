@@ -118,3 +118,15 @@ octamed_ss_demo
 	Author: Teijo Kinnunen & Ray Burt-Frost
 	Date: 1996-04-20		# date inside ReadMe.txt file
 	Based on octamed_v5
+
+octamed_ss_v1
+	Name: OctaMED SoundStudio V1
+	Author: Teijo Kinnunen & Ray Burt-Frost
+	Date: 1996-08-01		# from ReadMe.guide
+	Based on octamed_ss_demo
+
+octamed_ss_103c
+	Name: OctaMED SS 1.03c Freeware
+	Author: Teijo Kinnunen & Ray Burt-Frost
+	Date: 1997			# from Copyright in Readme.guide
+	Based on octamed_ss_v1
