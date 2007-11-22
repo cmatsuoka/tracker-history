@@ -102,8 +102,19 @@ med_321
 	Based on med_320
 
 octamed_400
-	Name: Octamed Professional V4
+	Name: OctaMED Professional V4
 	Author: Teijo Kinnunen
 	Date: 1993
 	Based on octamed_200
 
+octamed_v5
+	Name: OctaMED Professional V5
+	Author: Teijo Kinnunen
+	Date: 1994
+	Based on octamed_400
+
+octamed_ss_demo
+	Name: OctaMED SoundStudio demo
+	Author: Teijo Kinnunen & Ray Burt-Frost
+	Date: 1996-04-20		# date inside ReadMe.txt file
+	Based on octamed_v5
