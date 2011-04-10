@@ -53,5 +53,23 @@ openmpt_117rc2
 openmpt_117_02_48
 	Name: OpenMPT 1.17.02.48
 	Author: rewbs
-	Date: 2007-05-27		# 
+	Date: 2007-05-27		# Sourceforge
 	Based on openmpt_117rc2 1000
+
+openmpt_117_02_54
+	Name: OpenMPT 1.17.02.54
+	Author: Jojo & re
+	Date: 2009-06-23		# Sourceforge
+	Based on openmpt_117_02_48 1000
+
+openmpt_118_03_00
+	Name: OpenMPT 1.18.03.00
+	Author: Jojo
+	Date: 2010-08-13		# announcement
+	Based on openmpt_117_02_54 1000
+
+openmpt_119_01_00
+	Name: OpenMPT 1.19.01.00
+	Author: Jojo
+	Date: 2011-04-01		# announcement
+	Based on openmpt_118_03_00 1000
