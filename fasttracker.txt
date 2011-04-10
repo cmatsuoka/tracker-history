@@ -10,7 +10,7 @@ ft_200
 	Author: Fredrik Huss & Magnus Hogdahl
 	Date: 1994-11			# From wikipedia
 	Based on ft_101 [ 32ch, Multisample, Envelopes, GUS, XM format ]
-	Influenced by st_301
+	Influenced by st_301 50
 
 # Skip a few releases
 

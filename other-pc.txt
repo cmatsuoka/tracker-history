@@ -50,7 +50,7 @@ orpheus
 	Name: IMAGO Orpheus 1.0
 	Author: Lutz Roeder
 	Date: 1995			# date is uncertain
-	Influenced by st_301
+	Influenced by st_320
 	Influenced by ft_200
 
 # There was LIQ 0.14 as well

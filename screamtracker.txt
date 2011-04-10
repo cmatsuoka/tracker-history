@@ -29,11 +29,11 @@ st_320
 	Name: Scream Tracker 3.20
 	Author: Sami Tammilehto
 	Date: 1994-12-06
-	Based on st_301
+	Based on st_301 10000
 
 st_321
 	Name: Scream Tracker 3.21
 	Author: Sami Tammilehto
 	Date: 1994-12-25
-	Based on st_320
+	Based on st_320 10000
 
