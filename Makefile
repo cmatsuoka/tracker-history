@@ -12,7 +12,7 @@ WIN_TRACKERS	= modplugtracker renoise buzz
 LINUX_TRACKERS	= other-linux
 
 # Portable or not tied to a specific platform
-PORT_TRACKERS	= schism skale milkytracker other-portable
+PORT_TRACKERS	= schism skale milkytracker chibi other-portable
 
 
 TODOT		= ./todot
