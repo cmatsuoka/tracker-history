@@ -13,6 +13,7 @@ chibi
 	Author: Juan Linietsky
 	Date: 2006-11-24
 	Based on cheese_099 10
+	Influenced by it_214v5 5
 	
 chibi_10rc1
 	Name: ChibiTracker 1.0rc1
@@ -31,4 +32,10 @@ chibi_11
 	Author: Juan Linietsky
 	Date: 2007-10-28
 	Based on chibi_10 1000
+
+chibi_12
+	Name: ChibiTracker 1.2
+	Author: Juan Linietsky
+	Date: 2008-03-08
+	Based on chibi_11 1000
 
