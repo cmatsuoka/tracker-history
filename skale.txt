@@ -9,8 +9,21 @@
 # Skale features ASIO, WAV-renderer, support for SF2 and AKAI-instruments,
 # MIDI I/O, VST instrument support and more.
 
-skale_802
+skale_0802
 	Name: Skale Tracker beta 0.802
-	Author: Baktery
+	Author: Ruben Ramos Salvador
 	Date: 2005-08-23		# From Skale.txt
 	Influenced by ft_209 [ Interface ]
+
+skale_081
+	Name: Skale Tracker beta 0.81
+	Author: Ruben Ramos Salvador
+	Date: 2005-12-24
+	Based on skale_0802
+
+skale_090
+	Name: Skale Tracker 0.90
+	Author: Ruben Ramos Salvador
+	Date: 2010-09			# According to web news
+	Based on skale_081
+	Comment: Online Flash-based version
