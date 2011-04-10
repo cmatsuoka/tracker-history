@@ -21,7 +21,7 @@ icetracker_11
 	Name: IceTracker 1.1
 	Author: Icepic
 	Date: 1993-01-10
-	Based on icetracker_10
+	Based on icetracker_10 1000
 
 maxtracker_10a
 	Name: MaxTracker 1.0A

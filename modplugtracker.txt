@@ -11,13 +11,13 @@ mpt_b1
 	Name: Modplug Tracker Beta 1
 	Author: Olivier Lapicque
 	Date: 1998-06-17		# from the file date
-	Based on mpt_a5
+	Based on mpt_a5 1000
 
 mpt_109
 	Name: Modplug Tracker 1.09
 	Author: Olivier Lapicque
 	Date: 2000-01-30		# from the file date
-	Based on mpt_b1			# based on 1.00, but where is it?
+	Based on mpt_b1	1000		# based on 1.00, but where is it?
 
 # skip some releases
 
@@ -37,13 +37,13 @@ mpt_200
 	Name: Modplug 'Wild' 2.00.0001
 	Author: plastik_s
 	Date: 2004-02-28
-	Based on mpt_109		# FIXME
+	Based on mpt_109 1000		# FIXME
 
 openmpt_117rc2
 	Name: OpenMPT 1.17RC2
 	Author: plastik_s
 	Date: 2005-08-20		# date of files in package
-	Based on mpt_200
+	Based on mpt_200 1000
 
 # This one is in sourceforge downloads
 # also in http://modplug.sourceforge.net/builds/
@@ -54,4 +54,4 @@ openmpt_117_02_48
 	Name: OpenMPT 1.17.02.48
 	Author: rewbs
 	Date: 2007-05-27		# 
-	Based on openmpt_117rc2
+	Based on openmpt_117rc2 1000
