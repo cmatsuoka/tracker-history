@@ -1,0 +1,18 @@
+real_100
+	Name: Real Tracker 1.00
+	Author: Arnaud Hasenfratz
+	Date: 1996-03-13		# file date
+	Comment: No edit functions
+	Influenced by ft_200
+
+real_201
+	Name: Real Tracker 2.01
+	Author: Arnaud Hasenfratz
+	Date: 1997-04-06		# from HISTORY.TXT
+	Based on real_100 10000 [ Working editor, full XM support ]
+
+real_223
+	Name: Real Tracker 2.23
+	Author: Arnaud Hasenfratz
+	Date: 1997-10-19
+	Based on real_201 10000

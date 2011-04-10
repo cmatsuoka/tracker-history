@@ -4,7 +4,7 @@ AMIGA_TRACKERS	= soundtracker noisetracker startrekker protracker med \
 
 # These are actually the MS-DOS trackers
 PC_TRACKERS	= fasttracker screamtracker impulsetracker digitrakker \
-		  other-pc
+		  realtracker other-pc
 
 WIN_TRACKERS	= modplugtracker renoise buzz
 
