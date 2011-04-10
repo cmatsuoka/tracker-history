@@ -1,0 +1,53 @@
+schism_0.031a
+	Name: Schism Tracker 0.031a
+	Author: Storlek & Mrs. Brisby
+	Date: 2003-06-16			# From changelog
+	Based on mpt_109 10 [ Player code ]
+	Influenced by it_214v5 10 [ Interface ]
+	Comment: Based on ModPlug
+
+schism_0.04a
+	Name: Schism Tracker 0.04a
+	Author: Storlek & Mrs. Brisby
+	Date: 2004-01-04			# From file date
+	Based on schism_0.031a 1000
+
+schism_0.1a
+	Name: Schism Tracker 0.1a
+	Author: Storlek & Mrs. Brisby
+	Date: 2004-09-05			# From file date
+	Based on schism_0.04a 1000
+
+schism_0.2a
+	Name: Schism Tracker 0.2a
+	Author: Storlek & Mrs. Brisby
+	Date: 2005-05-19			# From file date
+	Based on schism_0.1a 1000
+
+schism_0.5rc1
+	Name: Schism Tracker 0.5rc1
+	Author: Storlek & Mrs. Brisby
+	Date: 2006-12-28			# From file date
+	Based on schism_0.2a 1000
+
+schism_20090621
+	Name: Schism Tracker 20090621
+	Author: Storlek & Mrs. Brisby
+	Date: 2009-06-21
+	Based on schism_0.5rc1 1000
+
+schism_20100101
+	Name: Schism Tracker 20100101
+	Author: Storlek & Mrs. Brisby
+	Date: 2010-01-01
+	Based on schism_20090621 1000
+
+# Skip some releases
+
+schism_20110101
+	Name: Schism Tracker 20110101
+	Author: Storlek & Mrs. Brisby
+	Date: 2011-01-01
+	Based on schism_20100101 1000
+
+
