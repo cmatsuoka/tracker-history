@@ -73,6 +73,12 @@ liq_150
 	Date: 1997-10-21		# file date
 	Based on liq_100
 
+multi_101b
+	Name: Multitracker 1.01β
+	Author: Daniel Goldstein
+	Date: 1993-11-13
+	Comment: 32ch, SB and GUS support
+
 # These are all influenced by Protracker but not noted explicitly to
 # keep the graph clean
 
@@ -80,21 +86,22 @@ pt4gus
 	Name: Protracker 4 GUS
 	Author: Phantom/Epical
 	Date: 1994
-	Protracker clone
+	Comment: Protracker clone
 
 digistudio
 	Name: Digistudio
 	Author: The Space Pigs
 	Date: 1993
-	Protracker clone
+	Comment: Protracker clone
 
 taketracker
 	Name: TakeTracker 0.9e
 	Author: Twaddler & Dr. Zon
 	Date: 1994-04-10
-	Protracker clone
+	Comment: Protracker clone
 
 whacker
 	Name: Whacker Tracker v1.01
 	Author: Hakan Gustavsson & Stein Norheim
 	Date: 1992-04-22
+
