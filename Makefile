@@ -6,13 +6,13 @@ AMIGA_TRACKERS	= soundtracker noisetracker startrekker protracker med \
 PC_TRACKERS	= fasttracker screamtracker impulsetracker digitrakker \
 		  realtracker other-pc
 
-WIN_TRACKERS	= modplugtracker renoise buzz
+WIN_TRACKERS	= modplugtracker buzz other-windows
 
 # Any Unix goes here
 LINUX_TRACKERS	= other-linux
 
 # Portable or not tied to a specific platform
-PORT_TRACKERS	= schism skale milkytracker chibi other-portable
+PORT_TRACKERS	= schism skale milkytracker chibi renoise other-portable
 
 
 TODOT		= ./todot

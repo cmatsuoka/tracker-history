@@ -6,15 +6,44 @@
 # Zvonko Tesic (Phazze) during December 2000. By early 2002 stable
 # versions (such as 1.27) were available.
 
-noisetrekker_11
-	Name: NoiseTrekker 1.1
-	Author: Juan Antonio Arguelles Rius
-	Date: 1999-11-17		# from file in noisetrekker11.zip
-	
-renoise_127
-	Name: Renoise 1.27
+renoise_15
+	Name: Renoise 1.5
 	Author: Eduard Mueller & Zvonko Tesic
-	Date: 2002-01			# "early 2002"
-	Based on noisetrekker_11
+	Date: 2005-03-20		# announcement
+	Based on renoise_127 [ MacOS port ]
 
+renoise_18
+	Name: Renoise 1.8
+	Author: Eduard Mueller & Zvonko Tesic
+	Date: 2007-03-01		# announcement
+	Based on renoise_15
 
+renoise_19
+	Name: Renoise 1.9
+	Author: Eduard Mueller & Zvonko Tesic
+	Date: 2007-11-03		# announcement
+	Based on renoise_18 [ Multicore, Per-sample NNA ]
+
+renoise_191
+	Name: Renoise 1.9.1
+	Author: Eduard Mueller & Zvonko Tesic
+	Date: 2008-02-02		# announcement, Linux port 2008-04-21
+	Based on renoise_19 [ Linux port ]
+
+renoise_20
+	Name: Renoise 2.0
+	Author: Eduard Mueller & Zvonko Tesic
+	Date: 2009-01-15		# announcement
+	Based on renoise_191 [ OSC, Lua ]
+
+renoise_26
+	Name: Renoise 2.6
+	Author: Eduard Mueller & Zvonko Tesic
+	Date: 2010-11-04		# announcement
+	Based on renoise_20 [ OSC, Lua ]
+
+renoise_27
+	Name: Renoise 2.7 beta
+	Author: Eduard Mueller & Zvonko Tesic
+	Date: 2011-03-12		# announncement
+	Based on renoise_26

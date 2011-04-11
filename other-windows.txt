@@ -1,0 +1,10 @@
+noisetrekker_11
+	Name: NoiseTrekker 1.1
+	Author: Juan Antonio Arguelles Rius
+	Date: 1999-11-17		# from file in noisetrekker11.zip
+	
+renoise_127
+	Name: Renoise 1.27
+	Author: Eduard Mueller & Zvonko Tesic
+	Date: 2002-01			# "early 2002"
+	Based on noisetrekker_11
