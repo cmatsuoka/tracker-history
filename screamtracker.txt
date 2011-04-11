@@ -1,9 +1,15 @@
+st_221
+	Name: Scream Tracker 2.21
+	Author: Sami Tammilehto
+	Date: 1990-09-03		# st22.zip RELEASE.DOC
+
 # From FCINFO17.TXT
 
 st_224
 	Name: Scream Tracker 2.24
 	Author: Sami Tammilehto
 	Date: 1991-02-22
+	Based on st_221
 
 # STMIK isn't a tracker, but it's a link betweek ST2 and ST3
 
