@@ -34,7 +34,7 @@ renoise_20
 	Name: Renoise 2.0
 	Author: Eduard Mueller & Zvonko Tesic
 	Date: 2009-01-15		# announcement
-	Based on renoise_191 [ OSC, Lua ]
+	Based on renoise_191
 
 renoise_26
 	Name: Renoise 2.6
