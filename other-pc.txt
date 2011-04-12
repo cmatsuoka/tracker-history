@@ -14,7 +14,7 @@ moded_301
 	Name: Modedit 3.01
 	Author: Norman Lin
 	Date: 1992-11-08		# from file date
-	Based on moded_200 [ Sound Blaster ]
+	Based on moded_200 [ Sound Blaster support ]
 
 c667
 	Name: Composer 667
