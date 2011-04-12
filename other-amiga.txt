@@ -29,6 +29,22 @@ maxtracker_10a
 	Date: 1993-10
 	Based on protracker_20a
 
+# See ftp://www.back2roots.org/pub/back2roots/disks/toga/dms/1993/
+
+quadra_20
+	Name: QuadraComposer 2.0
+	Author: Bosse Lincoln
+	Date: 1993-12			# from Toga
+	Comment: Intuition-based
+
+# http://aminet.net/package/mus/edit/QuadraComp
+
+quadra_21
+	Name: QuadraComposer 2.1
+	Author: Bosse Lincoln
+	Date: 1994-11-15		# from Aminet
+	Based on quadra_20
+
 # From readme:
 # AdeptTracker is far from finished and should not be considered as a final
 # product. The main reason I have decided to release this version is for
