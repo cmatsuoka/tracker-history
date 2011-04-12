@@ -8,3 +8,24 @@ renoise_127
 	Author: Eduard Mueller & Zvonko Tesic
 	Date: 2002-01			# "early 2002"
 	Based on noisetrekker_11
+
+# http://www.softandco.com/a/7501/med-soundstudio.html
+
+medss_15
+	Name: MED SoundStudio 1.5
+	Author: Ray Burt-Frost
+	Date: 2003-05-14		# announcement
+	Based on octamed_ss_103c [ Windows port ]
+
+medss_17
+	Name: MED SoundStudio 1.7
+	Author: Ray Burt-Frost
+	Date: 2007			# best guess
+	Based on medss_15
+
+medss_21
+	Name: MED SoundStudio 2.1
+	Author: Ray Burt-Frost
+	Date: 2010-10-04		# file date
+	Based on medss_17
+
