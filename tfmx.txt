@@ -1,0 +1,10 @@
+tfmx15
+	Name: TFMX 1.5
+	Author: Chris Hülsbeck & Peter Thierolf
+	Date: 1990-01		# pouet.net/prod.php?which=34769
+
+tfmx16
+	Name: TFMX 1.6
+	Author: Chris Hülsbeck & Peter Thierolf
+	Date: 1991-01		# pouet.net/prod.php?which=34770
+	Based on tfmx15

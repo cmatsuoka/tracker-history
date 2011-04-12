@@ -1,6 +1,6 @@
 
 AMIGA_TRACKERS	= soundtracker noisetracker startrekker protracker med \
-		  digibooster other-amiga
+		  digibooster tfmx other-amiga
 
 # These are actually the MS-DOS trackers
 PC_TRACKERS	= fasttracker screamtracker impulsetracker digitrakker \

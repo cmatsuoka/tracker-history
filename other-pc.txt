@@ -115,7 +115,7 @@ taketracker
 	Date: 1994-04-10
 	Comment: Protracker clone
 
-whacker
-	Name: Whacker Tracker v1.01
+whacker101
+	Name: Whacker Tracker 1.01
 	Author: Håkan Gustavsson & Stein Norheim
 	Date: 1992-04-22
