@@ -58,8 +58,8 @@ orpheus
 	Author: Lutz Roeder
 	Date: 1995			# date is uncertain
 	Comment: AWE chorus, reverb
-	Influenced by st_320 [ Interface ]
-	Influenced by ft_200 [ Envelopes, Multisamples ]
+	Influenced by st_321 [ Interface ]
+	Influenced by ft_203 [ Envelopes, Multisamples ]
 
 # There was LIQ 0.14 as well
 

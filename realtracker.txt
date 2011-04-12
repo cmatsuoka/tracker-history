@@ -3,7 +3,7 @@ real_100
 	Author: Arnaud Hasenfratz
 	Date: 1996-03-13		# file date
 	Comment: No edit functions
-	Influenced by ft_200
+	Influenced by ft_206
 
 real_201
 	Name: Real Tracker 2.01
