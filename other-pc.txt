@@ -94,6 +94,24 @@ poly203
 	Comment: unreleased
 	Influenced by st_321 [ Interface, Features ]
 
+ult_10
+	Name: Ultra Tracker 1.0
+	Author: Marc André Schallehn
+	Date: 1993-06-06
+	Comment: GUS-only
+
+ult_15
+	Name: Ultra Tracker 1.5
+	Author: Marc André Schallehn
+	Date: 1993-12-29
+	Based on ult_10
+
+ult_16
+	Name: Ultra Tracker 1.6
+	Author: Marc André Schallehn
+	Date: 1994-06-21
+	Based on ult_15
+
 # These are all influenced by Protracker but not noted explicitly to
 # keep the graph clean
 
