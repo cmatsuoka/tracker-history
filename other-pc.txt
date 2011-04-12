@@ -117,5 +117,5 @@ taketracker
 
 whacker
 	Name: Whacker Tracker v1.01
-	Author: Hakan Gustavsson & Stein Norheim
+	Author: Håkan Gustavsson & Stein Norheim
 	Date: 1992-04-22
