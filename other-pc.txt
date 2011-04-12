@@ -59,7 +59,7 @@ orpheus
 	Date: 1995			# date is uncertain
 	Comment: AWE chorus, reverb
 	Influenced by st_320 [ Interface ]
-	Influenced by ft_200 [ Envelope, Multisample ]
+	Influenced by ft_200 [ Envelopes, Multisamples ]
 
 # There was LIQ 0.14 as well
 
