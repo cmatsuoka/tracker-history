@@ -57,8 +57,9 @@ orpheus
 	Name: IMAGO Orpheus 1.0
 	Author: Lutz Roeder
 	Date: 1995			# date is uncertain
-	Influenced by st_320
-	Influenced by ft_200
+	Comment: AWE chorus, reverb
+	Influenced by st_320 [ Interface ]
+	Influenced by ft_200 [ Features ]
 
 # There was LIQ 0.14 as well
 
@@ -85,6 +86,13 @@ multi_101b
 	Author: Daniel Goldstein
 	Date: 1993-11-13
 	Comment: 32ch, SB and GUS support
+ 
+poly203
+	Name: Poly Tracker 2.03
+	Author: Lone Ranger
+	Date: 1995-09-12		# guess from format description date
+	Comment: unreleased
+	Influenced by st_321 [ Interface, Features ]
 
 # These are all influenced by Protracker but not noted explicitly to
 # keep the graph clean
@@ -111,4 +119,3 @@ whacker
 	Name: Whacker Tracker v1.01
 	Author: Hakan Gustavsson & Stein Norheim
 	Date: 1992-04-22
-
