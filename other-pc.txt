@@ -2,12 +2,19 @@ moded_100
 	Name: Modedit 1.00
 	Author: Norman Lin
 	Date: 1991-07-06		# from file date
+	Comment: PC Speaker
 
 moded_200
 	Name: Modedit 2.00
 	Author: Norman Lin
 	Date: 1991-11-23		# from file date
 	Based on moded_100
+
+moded_301
+	Name: Modedit 3.01
+	Author: Norman Lin
+	Date: 1992-11-08		# from file date
+	Based on moded_200 [ Sound Blaster ]
 
 c667
 	Name: Composer 667
