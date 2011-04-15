@@ -1,0 +1,27 @@
+# see http://membres.multimania.fr/fonzo/hotp3.html
+shining
+	Name: 8-voices tracker
+	Author: Shining
+	Date: 1989
+	Comment: First 8-channel tracker
+
+okt_11
+	Name: Oktalyzer 1.1
+	Author: Armin Sander
+	#Date: 1989			# from Jérôme Legrux's Tracking History
+	Date: 1989-06
+	Comment: 8-channel tracker
+	Influenced by shining [ (?) ]
+
+okt_153
+	Name: Oktalyzer 1.53
+	Author: Armin Sander
+	Date: 1992			# guess
+	Based on okt_11
+	Comment: (uncertain date)
+
+okt_157
+	Name: Oktalyzer 1.57
+	Author: Armin Sander
+	Date: 1993-08-01		# from UpDate1.53-1.57
+	Based on okt_153
