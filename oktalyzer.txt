@@ -9,7 +9,7 @@ okt_11
 	Name: Oktalyzer 1.1
 	Author: Armin Sander
 	#Date: 1989			# from Jérôme Legrux's Tracking History
-	Date: 1989-06
+	Date: 1989-07
 	Comment: 8-channel tracker
 	Influenced by shining [ (?) ]
 
