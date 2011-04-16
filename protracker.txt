@@ -127,7 +127,7 @@ protracker_330
 
 protracker_353
 	Name: Protracker 3.53
-	Author: R10/Osiris
+	Author: RD10/Osiris
 	Date: 1996-05-22
 	Based on protracker_330 1000
 
@@ -140,7 +140,7 @@ protracker_359
 protracker_361
 	Name: Protracker 3.61
 	Author: RD10/Osiris
-	Date: 1996-08-15
+	Date: 1996-08-15		# 22.08.1996 in program
 	Based on protracker_359 1000
 	
 # The 4.00b docs mentions 3.63, but no information about author or date
@@ -151,3 +151,16 @@ protracker_400b
 	Date: 1997-02-17
 	Based on protracker_361		# 363 actually
 
+# Jan Poruba's patched versions
+
+protracker_362_fix1
+	Name: Protracker 3.62 fix 1
+	Author: Jan Poruba
+	Date: 1998-09-06
+	Based on protracker_361 [ XPK fix ]
+
+protracker_362_fix2
+	Name: Protracker 3.62 fix 2
+	Author: Jan Poruba
+	Date: 2000-02-12
+	Based on protracker_362_fix1 [ Y2K fix, IFFMOD change ]
