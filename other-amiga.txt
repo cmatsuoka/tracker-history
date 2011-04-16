@@ -3,6 +3,7 @@ soundfx_13
 	Author: Christian Haller & Christian A. Weber
 	Date: 1988-08			# aprox. from file date
 	Comment: 15 instruments
+	#Influenced by soundtracker_121 [ Pitchbend effect ]
 
 psttracker_111
 	Name: PSTTracker V1.11

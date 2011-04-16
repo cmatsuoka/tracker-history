@@ -32,7 +32,7 @@ soundtracker_ii
 	Author: The Exterminator
 	Date: 1988-03-01		# from Quick Clarification
 	Based on soundtracker_121 [
-		Enh portamento, Modulation, Volume, Volume slide
+		Enh portamento, Modulation, Volume, Volume slide, USA keymap
 	]
 
 soundtracker_iii
@@ -202,7 +202,8 @@ soundtracker_25
 	Author: MnemoTroN
 	Date: 1989-08-27		# from the doc file
 	Based on soundtracker_24 1000 [
-		New playroutine, Tone portamento, Vibrato
+		New playroutine, Tone portamento, Vibrato,
+		Repeat offset in words
 	]
 	Based on noisetracker_10
 
