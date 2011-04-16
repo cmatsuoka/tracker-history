@@ -5,6 +5,11 @@ soundfx_13
 	Comment: 15 instruments
 	#Influenced by soundtracker_121 [ Pitchbend effect ]
 
+chiptracker_10
+	Name: ChipTracker 1.0
+	Author: Kris of Anarchy
+	Date: 1991-02-23
+
 psttracker_111
 	Name: PSTTracker V1.11
 	Author: John 'SHAYERA' Hinge
