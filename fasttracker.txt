@@ -30,7 +30,7 @@ ft_205
 	Name: Fast Tracker 2.05
 	Author: Fredrik Huss & Magnus Hogdahl
 	Date: 1996-02-04		# From exit message
-	Based on ft_204 1000
+	Based on ft_204 1000 [ DPMI support, new SB mixing ]
 
 ft_206
 	Name: Fast Tracker 2.06
@@ -44,11 +44,21 @@ ft_208
 	Name: Fast Tracker 2.08
 	Author: Fredrik Huss & Magnus Hogdahl
 	Date: 1997-08-21		# From exit message
-	Based on ft_206 1000
+	Based on ft_206 1000 [ SB16 32bit mixer, SB16 MIDI ]
+
+# http://www.soundtrackers.de/trackers_without_frames.html notes:
+#
+# - this version has been brought to the public by Andreas Viklund and has
+#   not been officially released by StarBreeze
+# - IMPORTANT FOR GUS & GUS PnP users: DO NOT DOWNLOAD THIS RELEASE - IT
+#   DOESN'T WORK WITH GUS!
+# - internal revision history tells about AMD Interwave (GUS PnP) support,
+#   in fact the whole GUS handler doesn't work properly, it totally fucks
+#   up GUS memory
 
 ft_209
 	Name: Fast Tracker 2.09
-	Author: Fredrik Huss & Magnus Hogdahl
+	Author: Andreas Viklund
 	Date: 1998-02-04		# From exit message
-	Based on ft_208 1000
-
+	Comment: Broken GUS support
+	Based on ft_208 1000 [ bugfixes ]
