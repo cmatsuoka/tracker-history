@@ -215,18 +215,18 @@ soundtracker_26
 
 
 # Marco Nelissen's versions
-#
-#soundtrackerpro_i
-#	Name: Soundtracker Pro I
-#	Author: Marco Nelissen
-#	Date: 1988-01-20		# file date
-#	Comment: A.k.a Yet Another Soundtracker
-#	Based on soundtracker_121
-#
-#soundtrackerpro_ii_24
-#	Name: Soundtracker Pro II 2.4
-#	Author: Marco Nelissen
-#	Date: 1996-07-17		# file date
-#	Based on soundtrackerpro_i 10 [
-#		New file format, 127 samples, new effects
-#	]
+
+soundtrackerpro_i
+	Name: Soundtracker Pro I
+	Author: Marco Nelissen
+	Date: 1988-01-20		# file date
+	Comment: A.k.a Yet Another Soundtracker
+	Based on soundtracker_121 10
+
+soundtrackerpro_ii_24
+	Name: Soundtracker Pro II 2.4
+	Author: Marco Nelissen
+	Date: 1996-07-17		# file date
+	Based on soundtrackerpro_i 10 [
+		New file format, 127 samples, new effects
+	]
