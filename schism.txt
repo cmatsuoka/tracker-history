@@ -2,7 +2,7 @@ schism_0.031a
 	Name: Schism Tracker 0.031a
 	Author: Storlek & Mrs. Brisby
 	Date: 2003-06-16			# From changelog
-	Based on mpt_109 10 [ Player code ]
+	Based on mpt_116 10 [ Player code ]
 	Influenced by it_214v5 10 [ Interface ]
 	Comment: Based on ModPlug
 

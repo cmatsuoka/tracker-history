@@ -19,6 +19,14 @@ mpt_109
 	Date: 2000-01-30		# from the file date
 	Based on mpt_b1	1000		# based on 1.00, but where is it?
 
+mpt_116
+	Name: Modplug Tracker 1.16.0185
+	Author: Olivier Lapicque
+	Date: 2001-11-21		# from About info
+	Based on mpt_109 1000 [
+		ASIO support, DSP updates, XM stereo samples
+	]
+
 # skip some releases
 
 # from http://sourceforge.net/forum/forum.php?forum_id=355974
@@ -37,7 +45,7 @@ mpt_200
 	Name: Modplug 'Wild' 2.00.0001
 	Author: plastik_s
 	Date: 2004-02-28
-	Based on mpt_109 1000		# FIXME
+	Based on mpt_116 1000
 
 openmpt_117rc2
 	Name: OpenMPT 1.17RC2
