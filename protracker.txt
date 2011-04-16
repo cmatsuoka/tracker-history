@@ -88,7 +88,7 @@ protracker_23d
 	Name: Protracker 2.3d
 	Author: Detron and Duff
 	Date: 1994
-	Based on protracker_23a [ AGA fix ]
+	Based on protracker_23a 1000 [ AGA fix ]
 
 protracker_300b
 	Name: Protracker 3.00 Beta
