@@ -23,7 +23,7 @@ TRACKERS	= def-amiga.txt  $(addsuffix .txt, $(AMIGA_TRACKERS)) \
 		  def-port.txt   $(addsuffix .txt, $(PORT_TRACKERS)) 
 
 DATE		= `date +%Y%m%d`
-THPKG		= tracker-history
+THPKG		= tracker-history.tar.gz
 THDIR		= tracker-history-$(DATE)
 
 
