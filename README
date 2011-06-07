@@ -20,6 +20,8 @@ Warren Toomey's 'todot' script for the Unix History Graphing Project at
 http://minnie.tuhs.org/Unix_History/. Graphviz is a graph visualization
 software package available at http://www.graphviz.org/.
 
+Source files and resulting dotfiles are released to the public domain.
+
 
 Source file format:
 
