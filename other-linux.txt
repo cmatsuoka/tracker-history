@@ -62,6 +62,17 @@ cheese_099
 cheese_0.9.15.2
 	Name: CheeseTracker 0.9.15.2
 	Author: J. Phelps
-	Date: 2007-08-26
+	Date: 2007-08-26		# sourceforge
 	Based on cheese_099 1000
 
+cheese_0.9.15.3
+	Name: CheeseTracker 0.9.15.3
+	Author: J. Phelps
+	Date: 2007-12-31		# sourceforge
+	Based on cheese_0.9.15.2 1000
+
+cheese_0.9.15.4
+	Name: CheeseTracker 0.9.15.4
+	Author: J. Phelps
+	Date: 2008-02-17		# sourceforge
+	Based on cheese_0.9.15.3 1000
