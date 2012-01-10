@@ -30,20 +30,60 @@ renoise_191
 	Date: 2008-02-02		# announcement, Linux port 2008-04-21
 	Based on renoise_19 [ Linux port ]
 
-renoise_20
-	Name: Renoise 2.0
+renoise_200
+	Name: Renoise 2.0.0
 	Author: Eduard Mueller & Zvonko Tesic
 	Date: 2009-01-15		# announcement
 	Based on renoise_191
 
-renoise_26
-	Name: Renoise 2.6
+renoise_210
+	Name: Renoise 2.1.0
 	Author: Eduard Mueller & Zvonko Tesic
-	Date: 2010-11-04		# announcement
-	Based on renoise_20 [ OSC, Lua ]
+	Date: 2009-05-26		# changelog
+	Based on renoise_200
 
-renoise_27
-	Name: Renoise 2.7 beta
+# No renoise 2.2/2.3/2.4 according to changelog
+
+renoise_250
+	Name: Renoise 2.5.0
 	Author: Eduard Mueller & Zvonko Tesic
-	Date: 2011-03-12		# announncement
-	Based on renoise_26
+	Date: 2010-03-05		# changelog
+	Based on renoise_210
+
+renoise_251
+	Name: Renoise 2.5.1
+	Author: Eduard Mueller & Zvonko Tesic
+	Date: 2010-04-01		# changelog
+	Based on renoise_250 [ Maintenance update for Windows 7 ]
+
+renoise_260
+	Name: Renoise 2.6.0
+	Author: Eduard Mueller & Zvonko Tesic
+	Comment: Renoise Geek Edition
+	Date: 2010-11-05		# changelog
+	Based on renoise_251 [ OSC, Lua ]
+
+renoise_261
+	Name: Renoise 2.6.1
+	Author: Eduard Mueller & Zvonko Tesic
+	Date: 2010-12-18		# changelog
+	Based on renoise_260 [ Maintenance update ]
+
+renoise_270
+	Name: Renoise 2.7.0
+	Author: Eduard Mueller & Zvonko Tesic
+	Comment: Back to Beat
+	Date: 2011-03-12		# changelog
+	Based on renoise_261
+
+renoise_271
+	Name: Renoise 2.7.1
+	Author: Eduard Mueller & Zvonko Tesic
+	Date: 2011-05-27		# changelog
+	Based on renoise_270 [ Small maintenance update ]
+
+renoise_272
+	Name: Renoise 2.7.2
+	Author: Eduard Mueller & Zvonko Tesic
+	Date: 2011-07-01		# changelog
+	Based on renoise_271 [ Maintenance update for OSX Lion ]
