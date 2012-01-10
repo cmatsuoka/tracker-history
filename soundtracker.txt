@@ -10,6 +10,15 @@ soundtracker_121
 	Date: 1987-12
 	Based on soundtracker_10
 
+# [WW] Ultimate Soundtracker 1.8
+# * Binary contains "version 1.8 (pal )... release 04/1988." (Which also
+#   scrolls across the screen.)
+# * CIA/BPM Speed adjust appears. (The Ultimate Soundtracker .mod/song format
+#   has always had a byte for this and different song do have different values
+#   so I assume Karsten must have set it by hand or added it in one of the
+#   non-released versions. For example "Telephone.mod" has a BPM of 112.
+#   Other Trackers chose to remove or ignore it until its reintroduced.).
+
 soundtracker_18
 	Name: The Ultimate Soundtracker 1.8
 	Author: Karsten Obarski
@@ -67,11 +76,19 @@ soundtracker_iii
 	Date: 1988-04
 	Based on tjc_soundtracker_ii
 
+# [WW] DOC intro 3 scroller claims release date: 29.03.88
+# DOC Soundtracker 3 claims it's based on "Jungle Commands Soundtracker 2".
+
 doc_soundtracker_iii
 	Name: DOC Soundtracker III
 	Author: Unknown of D.O.C
 	Date: 1988-03-29
 	Based on tjc_soundtracker_ii
+
+# [WW] DOC intro 4 scroller claims release date: 12.04.1988
+# DOC Soundtracker 4 is not based on the "Soundtracker 3 by Il Scuro".
+# DOC Soundtracker 4 claims it's based is based on "Jungle Commands
+# Soundtracker 2".
 
 doc_soundtracker_iv
 	Name: DOC Soundtracker IV
@@ -86,6 +103,12 @@ afl_soundtracker_iv
 	Date: 1988-04-07
 	Based on soundtracker_iii
 
+# [WW] DOC intro 6 scroller claims there is no DOC Soundtracker 5 (They
+# skipped the number because when they released V3 some else [does not say
+# who] released a Soundtracker 3 too, # this also happened for version 4,
+# so they jumped the gun to avoid a name # collision on version 6).
+# DOC Soundtracker 6 claims it's based on "Jungle Commands Soundtracker 2".
+
 doc_soundtracker_vi
 	Name: DOC Soundtracker VI
 	Author: Unknown of D.O.C
@@ -93,7 +116,6 @@ doc_soundtracker_vi
 	Based on tjc_soundtracker_ii
 	Based on doc_soundtracker_iv
 
-	
 doc_soundtracker_ix
 	Name: DOC Soundtracker IX
 	Author: Unknown of D.O.C
