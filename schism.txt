@@ -50,4 +50,9 @@ schism_20110101
 	Date: 2011-01-01
 	Based on schism_20100101 1000
 
+schism_20120105
+	Name: Schism Tracker 20120101
+	Author: Storlek & Mrs. Brisby
+	Date: 2012-01-05
+	Based on schism_20110101 1000
 
