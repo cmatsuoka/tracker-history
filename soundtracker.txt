@@ -2,6 +2,7 @@ soundtracker_10
 	Name: The Ultimate Soundtracker
 	Author: Karsten Obarski
 	Date: 1987-08-01
+	Comment: Commands:\n	1 - Arpeggio\n	2 - Portamento Up/Down
 
 soundtracker_121
 	Name: The Ultimate Soundtracker 1.21
@@ -12,8 +13,18 @@ soundtracker_121
 soundtracker_18
 	Name: The Ultimate Soundtracker 1.8
 	Author: Karsten Obarski
-	Date: 1988-01-04
-	Based on soundtracker_121
+	Date: 1988-04	# Binary contains release date of month and year.
+	Based on soundtracker_121	[
+		CIA/BPM speed adjustment added to gui
+	]
+
+soundtracker_20
+	Name: The Ultimate Soundtracker 2.0
+	Author: Karsten Obarski
+	Date: 1988-10
+	Based on soundtracker_18	[
+		Save as Module added
+	]
 
 # "based on the original V1.21 version by Karsten Obarski"
 #
@@ -27,25 +38,47 @@ soundtracker_18
 #                                        NOT "Lenght" !!)
 #                                       (PHR....it ain't "Lengh", either !)
 
-soundtracker_ii
-	Name: Soundtracker II
-	Author: The Exterminator
+tjc_soundtracker_ii
+	Name: TJC Soundtracker II
+	Author: The Exterminator of The Jungle Command
 	Date: 1988-03-01		# from Quick Clarification
 	Based on soundtracker_121 [
-		Enh portamento, Modulation, Volume, Volume slide, USA keymap
+		0 - Normal play or arpeggio,
+		1 - Portamento up,
+		2 - Portamento down,
+		3 - Modulate volume of next higher voice. (possibly with arpeggio),
+		4 - Modulate period of next higher voice,
+		5 - Modulate period + volume of next higher voice,
+		6 - Modulate volume of next higher voice and portamento up,
+		7 - Modulate period of next higher voice and portamento up,
+		8 - Modulate period + volume of next higher voice + portamento up,
+		9 - Modulate volume of next higher voice and portamento down,
+		A - Modulate period of next higher voice and portamento down,
+		B - Modulate period + vol of next higher voice + portamento down,
+		C - Set volume,
+		D - Slide volume,
+		E - Set auto-slide,
+		, USA keymap
 	]
 
 soundtracker_iii
 	Name: Soundtracker III
 	Author: Il Scuro
 	Date: 1988-04
-	Based on soundtracker_ii
+	Based on tjc_soundtracker_ii
 
-soundtracker_iv
-	Name: Soundtracker IV
+doc_soundtracker_iii
+	Name: DOC Soundtracker III
+	Author: Unknown of D.O.C
+	Date: 1988-03-29
+	Based on tjc_soundtracker_ii
+
+doc_soundtracker_iv
+	Name: DOC Soundtracker IV
 	Author: Unknown of D.O.C
 	Date: 1988-04-09
-	Based on soundtracker_iii [ Set speed ]
+	Based on tjc_soundtracker_ii [ Set speed ]
+	Based on doc_soundtracker_iii
 
 afl_soundtracker_iv
 	Name: AFL Soundtracker IV
@@ -53,31 +86,35 @@ afl_soundtracker_iv
 	Date: 1988-04-07
 	Based on soundtracker_iii
 
-soundtracker_v
-	Name: Soundtracker V
-	Author: Unknown of D.O.C
-	Date: 1988-04-10	# 09
-	Based on soundtracker_iv
-
-soundtracker_vi
-	Name: Soundtracker VI
+doc_soundtracker_vi
+	Name: DOC Soundtracker VI
 	Author: Unknown of D.O.C
 	Date: 1988-04-20
-	Based on soundtracker_v
+	Based on tjc_soundtracker_ii
+	Based on doc_soundtracker_iv
 
-soundtracker_ix
-	Name: Soundtracker IX
+	
+doc_soundtracker_ix
+	Name: DOC Soundtracker IX
 	Author: Unknown of D.O.C
 	Date: 1988-07-20
 	Comment: 0, 1, 2, C, E, F
-	Based on soundtracker_vi
+	Based on soundtracker_18	[
+		0 - Normal play or arpeggio,
+		1 - Portamento up,
+		2 - Portamento down,
+		C - Set volume,
+		E - Set filter on/off,
+		F - Set speed,
+		Save as Module added
+	]
 
 master_soundtracker_10
 	Name: Master Soundtracker 1.0
 	Author: TIP of TNM
 	Date: 1988-07-30	# 1998-07
 	Comment: 0, 1, 2, C, E, F
-	Based on soundtracker_ix [ Filter, 32KB samples ]
+	Based on doc_soundtracker_ix [ Filter, 32KB samples ]
 
 master_soundtracker_30
 	Name: Master Soundtracker 3.0

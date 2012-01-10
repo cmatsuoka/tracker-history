@@ -5,7 +5,7 @@ med_100
 	Author: Teijo Kinnunen
 	Date: 1989-04
 	Comment: 'looks very pitiful'
-	Influenced by soundtracker_vi
+	Influenced by doc_soundtracker_vi
 
 med_111
 	Name: MED 1.11
