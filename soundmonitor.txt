@@ -1,0 +1,45 @@
+# http://www.c64-wiki.de/index.php/Soundmonitor
+# http://utenti.multimania.it/ice00/HVMEC/CONTROL/Tracker/Soundmonitor/1.0/
+
+soundmonitor_10
+	Name: Soundmonitor V1.0
+	Author: Chris Hülsbeck
+	Comment: a.k.a. Music Master
+	Date: 1986-10		# http://noname.c64.org/csdb/release/?id=59929
+
+# http://utenti.multimania.it/ice00/HVMEC/CONTROL/Tracker/Soundmonitor/1.1/
+
+soundmonitor_11
+	Name: Soundmonitor V1.1
+	Author: The Leader/Computer Cracking Team
+	Date: 1986-12-28	# http://noname.c64.org/csdb/release/?id=10198
+	Based on soundmonitor_10
+
+# http://utenti.multimania.it/ice00/HVMEC/CONTROL/Tracker/Soundmonitor/1.3/
+
+musicmaster_13
+	Name: Music Master V1.3
+	Author: The Syndicate
+	Date: 1987
+	Based on soundmonitor_11
+
+rockmonitor_2
+	Name: Rockmonitor II
+	Author: Marco Swagerman & Oscar Giesen
+	Date: 1987-00-01		# date undefined
+	Based on soundmonitor_10 [ Digital channel ]
+
+# http://noname.c64.org/csdb/release/?id=17476
+# http://utenti.multimania.it/ice00/HVMEC/CONTROL/Tracker/Digitronix/V1/index.html
+#
+# http://www.pouet.net/topic.php?which=1035&page=1
+# "in my c64 days I did a program called Digitronix which was basicly a
+# Rockmonitor (1 digichannel) clone but by using 4bit samples instead of
+# eight and 'mixing' them on the NMI you had 2 channels of samples and 3
+# channels of SID."
+
+digitronix
+	Name: Digitronix
+	Author: RAB/The Lightning Duo
+	Date: 1987-00-02		# date undefined
+	Based on rockmonitor_2 [ 2 sample channels ]

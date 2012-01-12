@@ -3,6 +3,7 @@ soundtracker_10
 	Author: Karsten Obarski
 	Date: 1987-08-01
 	Comment: Commands:\n	1 - Arpeggio\n	2 - Portamento Up/Down
+	Influenced by soundmonitor_10
 
 soundtracker_121
 	Name: The Ultimate Soundtracker 1.21
