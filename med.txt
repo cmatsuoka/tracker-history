@@ -1,11 +1,14 @@
 # Most information from the History file from MED 3.21
 
+# Teijo Kinnunen states:
+# "The history of MED began, when I got DOC SoundTracker VI in 1989."
+
 med_100
 	Name: MED 1.00
 	Author: Teijo Kinnunen
 	Date: 1989-04
 	Comment: 'looks very pitiful'
-	Influenced by doc_soundtracker_vi
+	Influenced by doc_soundtracker_iv
 
 med_111
 	Name: MED 1.11
