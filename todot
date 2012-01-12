@@ -46,16 +46,14 @@ while (<>) {
 	$linkcnt++; next;
     }
 
-    if (/\tDate:.*(\d\d\d\d)-(\d\d)-(\d\d)/) {
-				# Convert to year-mon-day
-	$yr=$1; $mon=$2; $day=$3; goto dodate;
-    }
-    if (/\tDate:.*(\d\d\d\d)-(\d\d)/) {
-	$yr=$1; $mon=$2; $day="00"; goto dodate;
-    }
-    if (/\tDate:.*(\d\d\d\d)/) {
+    if (/\tDate:\s*(\d\d\d\d)/) {
 	$yr=$1; $mon="00"; $day="00";
-dodate:
+        if (/\tDate:\s*\d\d\d\d-(\d\d)/) {
+	    $mon=$1;
+        }
+        if (/\tDate:\s*\d\d\d\d-\d\d-(\d\d)/) {
+            $day=$1;
+        }
 	$d="${yr}${mon}${day}"; $Date{$d}{$node}=$node;
 	$Date{$d}{$d}=$d; $Name{$d}=$d;
 	if ($yr > $maxyear) { $maxyear=$yr; }
