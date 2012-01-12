@@ -33,7 +33,8 @@ soundtracker_20
 	Name: The Ultimate Soundtracker 2.0
 	Author: Karsten Obarski
 	Date: 1988-10
-	Based on soundtracker_18	[
+	Based on soundtracker_18
+	Influenced by master_soundtracker_10 [
 		Save as Module added
 	]
 
