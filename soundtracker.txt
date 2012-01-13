@@ -167,7 +167,7 @@ master_soundtracker_30
 	Date: 1988-10
 	Based on master_soundtracker_10
 
-# mentions Soundtracker 1.8 as being "the original"
+# [WW] mentions Soundtracker 1.8 as being "the original"
 # says "based on the MasterSoundTracker V1.0 by TIP/TNM"
 #
 # Modifications by D.O.C:
@@ -195,8 +195,8 @@ doc_soundtracker_2
 	Date: 1988-08		# from SoundTrackerV2.0.doc
 	Comment: 0, 1, 2, B, C, D, E, F
 	Based on master_soundtracker_10 [
-		Pattern break,
-		Pattern jump,
+		B - Pattern break,
+		D - Pattern jump,
 		Pattern play button,
 	]
 
