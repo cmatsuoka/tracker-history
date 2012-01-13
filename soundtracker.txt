@@ -195,8 +195,8 @@ doc_soundtracker_2
 	Date: 1988-08		# from SoundTrackerV2.0.doc
 	Comment: 0, 1, 2, B, C, D, E, F
 	Based on master_soundtracker_10 [
-		B - Pattern break,
-		D - Pattern jump,
+		B - Pattern jump,
+		D - Pattern break,
 		Pattern play button,
 	]
 
