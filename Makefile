@@ -14,16 +14,12 @@ LINUX_TRACKERS	= other-linux
 # Portable or not tied to a specific platform
 PORT_TRACKERS	= schism skale milkytracker chibi renoise other-portable
 
-# Early C64 SID
-C64_TRACKERS	= soundmonitor
-
 TODOT		= ./todot
 TRACKERS	= def-amiga.txt  $(addsuffix .txt, $(AMIGA_TRACKERS)) \
 		  def-pc.txt     $(addsuffix .txt, $(PC_TRACKERS)) \
 		  def-win.txt    $(addsuffix .txt, $(WIN_TRACKERS)) \
 		  def-linux.txt  $(addsuffix .txt, $(LINUX_TRACKERS)) \
 		  def-port.txt   $(addsuffix .txt, $(PORT_TRACKERS)) \
-		  def-c64.txt    $(addsuffix .txt, $(C64_TRACKERS))
 
 DATE		= `date +%Y%m%d`
 THPKG		= tracker-history.tar.gz
