@@ -78,7 +78,7 @@ soundtracker_iii
 	Author: Il Scuro
 	Date: 1988-03-13		# From Soundtracker_v3.doc
 	Based on tjc_soundtracker_ii [
-		F - Set tempo
+		F - Set speed
 	]
 
 # [WW] DOC intro 3 scroller claims release date: 29.03.88
@@ -102,7 +102,7 @@ doc_soundtracker_iv
 	Date: 1988-04-09
 	# Based on tjc_soundtracker_ii [ Set speed ]
 	Based on doc_soundtracker_iii 1000
-	Influenced by soundtracker_iii [ Set speed ]
+	Influenced by soundtracker_iii [ F - Set speed ]
 
 # Does AFL Soundtracker IV have an equalizer? If yes, it's probably based on
 # DOC Soundtracker 3, otherwise from Il Scuro's
@@ -112,7 +112,7 @@ afl_soundtracker_iv
 	Author: Alpha Flight
 	Date: 1988-04-07		# From Soundtracker_v4.doc
 	Based on doc_soundtracker_iii
-	Influenced by soundtracker_iii [ Set speed ]
+	Influenced by soundtracker_iii [ F - Set speed ]
 
 # [WW] DOC intro 6 scroller claims there is no DOC Soundtracker 5 (They
 # skipped the number because when they released V3 some else [does not say
@@ -133,12 +133,15 @@ doc_soundtracker_vi
 	# Based on tjc_soundtracker_ii
 	Based on doc_soundtracker_iv
 
+# [CM] If DOC makes IX based on Obarski's 1.8, it is reasonable to expect
+# a rebase for some DOC VI changes such as modern effects 0-2,C-F
+
 doc_soundtracker_ix
 	Name: DOC Soundtracker IX
 	Author: Unknown of D.O.C
 	Date: 1988-07-20
 	Comment: 0, 1, 2, C, E, F
-	Based on soundtracker_18	[
+	Based on soundtracker_18 1000 [
 		0 - Normal play or arpeggio,
 		1 - Portamento up,
 		2 - Portamento down,
@@ -146,6 +149,9 @@ doc_soundtracker_ix
 		E - Set filter on/off,
 		F - Set speed,
 		Save as Module added
+	]
+	Influenced by doc_soundtracker_vi [
+		Effects 0 1 2 C E F
 	]
 
 master_soundtracker_10
