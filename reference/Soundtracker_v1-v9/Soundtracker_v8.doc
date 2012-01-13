@@ -1,0 +1,299 @@
+c[32m[0 p[0x[80u[0y[25t   *************************************************************************
+   *                                                                       *
+   *             Deutsche Dokumentation des Soundtrackers V1.3             *  *
+   *                              Februar '88                              *
+   *                                                                       *
+   *************************************************************************
+
+    The source of the player to Soundtracker 8 is in the directory: ST8
+    So to load this into SEKA type:-
+	SEKA> ri [return]
+	FILENAME> ST8/PLAY8  (Note from the RASTA CATCHA!)
+
+
+                 Kapitel  (0)  Einleitung
+                          (1)  Starten des Soundtrackers
+                          (2)  Beschreibung des Soundtracker-Editors
+                          (3)  Belegung der Sondertasten
+                          (4)  Bedeutung der Cursorfarben
+
+                 Anhang    A.  Tips zum Selbersamplen
+                           B.  Einbau der Replay-Routine
+                           C.  Aufbau eines Songs
+
+   *************************************************************************
+
+ (0). Einleitung.
+ ----------------
+
+   Zu einer Zeit, wo auf dem AMIGA noch keiner daran gedacht hat, dass man
+   anstatt eines speicherfressenden Musik-Sample auch eine programmierte
+   minutenlange Musik, mit der gleichen Qualietaet und weniger Speicherbedarf,
+   in Spiele inplementieren koennte, habe ich mich daran gemacht eine
+   Musikabspielroutine in Assembler zu realisieren.
+   Allerdings musste ich anfangs noch alle Notenwerte umstaendlich in
+   meinem Quellcode definieren. Das war der Anlass fuer mich ein passendes
+   Editorprogramm um diese Routine herumzubauen. 
+   Das was Sie nun hier haben, ist das Ergebnis meiner Pionierarbeit.
+   Sicherlich sind manche anderen Musikprogramme in einigen Dingen
+   besser als dieses Tool. Mit dem SOUNDTRACKER ist man aber in der lage
+   dem AMIGA einen Sound entlocken, der seinesgleichen erst suchen muss.
+   Hauptsaechlich ist dieses Programm fuer alle gedacht, die mit Assembler
+   nicht auf Kriegsfuss stehen, und etwas Gefuehl im Umgang mit Musik haben.
+   Der SOUNDTRACKER soll Programmierern die Moeglichkeit geben, ihre eigene
+   Musik mit dem beiliegenden SEKA-Sourcecode der Replay-Routine in ihre
+   Programme fest einzubauen. Zum Beispiel als Titel oder Hiscore-Musik.
+   Unter Umstaenden werden endlich auch andere Computer-Musiker wach.
+   Es ist endlich an der Zeit den Standart fuer Musik auf dem AMIGA stark
+   anzuheben, so das er angemessen fuer diese Maschine wird.
+   Das gleiche sollte uebrigens auch fuer die Spiele gelten. Der Amiga
+   ist nun einmal fuer Spiele wie geschaffen und man sollte den Unterschied
+   zu anderen Computern schon sehen und hoehren koennen.
+
+
+
+ (1). Starten des Soundtrackers.
+ -------------------------------
+
+   Gebootet wird natuerlich die Hauptdiskette, und diese
+   sollte nicht schreibgeschuetzt sein. (lieber mit Copien arbeiten)
+   Der SOUNDTRACKER ist unter jeder Konfiguration lauffaehig.
+   Ganz egal ob sie einen echten AMIGA besitzen, oder sich mit einem
+   500er oder 2000er angefreundet haben. Probleme mit den verschiedenen
+   Systemen sind nicht bekannt, jedoch waehre ein zweites Laufwerk
+   sehr von Vorteil.
+   Wenn einmal Stoergeraeusche beim abspielen eines Songs auftreten sollten,
+   liegt das an einer Speichererweiterung. Fastmemory ist, wie der Name
+   schon sagt, schneller als Chipmemory. Die Replay-Routine laeuft im
+   FastMem schneller und die DMA-Kanaele koennen sich bei der Verwendung
+   von sehr schnellen Rambausteinen unter umstaenden verschlucken.
+   Das beeintraechtigt den Programmablauf aber nicht.
+   Programmierer sollten die relativ kurze Routine bei Verwendung in
+   eigenen Programmen zusammem mit den Samples im ChipMem installieren.
+
+ 
+ (2). Beschreibung.
+ ------------------
+ 
+ POSITION     Ein Song ist unterteilt in verschiedene Stophen. Darum
+ PATTERN      gibt es beim Soundtracker die sogenannten Patterns.
+ LENGHT       Man kann bis zu 64 verschiedene Patterns frei auf die
+              128 moeglichen Positionen verteilen.
+              Jedes PATTERN setzt sich aus 64 16tel Schritten zusammen
+              und kann beliebig oft im gesamten Song gespielt werden.
+              Das hat den entscheidenen Vorteil, das man schon
+              aus wenigen verschiedenen PATTERNs ein ganzes Lied
+              zusammensetzen kann, wobei LENGHT die POSITION angibt wo
+              das Lied 'geloopt' wird, also wieder von vorne anfaengt.
+ 
+ PRESET       Hier kann man sich aus einer mitgelieferten Bibliothek die
+ USE PRESET   Einstellungswerte fuer den gewuenschten PresetSample in den
+              momentan angewaehlten SOUND copieren. Mit der Maus werden
+              einfach die Plus oder Minussymbole angeklickt um ein
+              PRESET auszuwaehlen. Beachten sie bitte welcher von den
+              15 Sounds pro Song gerade angewaehlt ist.
+              Danach einfach USE PRESET anklicken und mit 'U' auf der
+              Tastatur bestaetigen. (nicht vergessen zu laden)
+ 
+ SOUND        15 freie SOUND-Plaetze hat man in einem Song fuer Samples.
+ VOLUME       Wobei man den jeweils angewaehlte Sound im Direktmodus
+              monophon auf der Tastatur spielen kann. Die abzuspielende
+              Laenge eines Sounds ist gleichzeitig auch die Ladelaenge.
+              Mit VOLUME kann man die benutzten Sounds in der Lautstaerke
+              aufeinander abstimmen, um ein ausgelichenes und
+              professionelles Klangbild zu erhalten.
+
+ (PLST.ED)    'OneShotSamples' nennt man Sounds, die pro Anschlag nur
+              einmal ueber die angegebene Bytelaenge abgetastet werden.
+              Das ist immer der Fall, wenn die Wiederhollaenge (REPLEN)
+              auf zwei, und der Wiederholstart (REP) auf null gesetzt ist.
+              'RepeadHiSamples' sind geloopte Sounds, die solange laufen
+              bis ein anderer Sound angeschlagen wird, oder man STOP
+              anklickt. Wobei REPEAT die Anzahl von Bytes angibt, die
+              zum wirklichen Startpunkt dazuaddiert werden, um den Start
+              des Wiederholteils im Sample zu erhalten.
+              REPLEN gibt in diesem Falle an, Wieviel Bytes von diesem
+              berechneten Punkt aus vom Sample abzutasten sind.
+ 
+ SONGNAME     Zum aendern des Namen einfach das Feld anklicken.
+              Der Songname und die Namen der 15 Sounds
+              werden in jedem Song mit abgespeichert.
+              Die Ausgabe des PRESET-Namen und des SOUND-Namen
+              erfolgt im gleichen Bildschirmbereich. Je nachdem,
+              ob man zuletzt PRESET oder SOUND durchgewaehlt hat.
+              Will man eigene Samples benutzen, muessen sich diese auf
+              der Datendiskette, oder jeder anderen Diskette mit dem
+              Namen 'ST-01' bis 'ST-99' befinden. Ausserdem muss dann
+              die Presetliste (PLST) mit dem PLST-ED aktualisiert werden.
+ 
+ PATTERN      Das aktuelle Pattern aendert man durch Anklicken des
+ PLAY         unteren Bereichs auf dem Bildschirm. Dann gibt man
+ STOP         eine Zahl zwischen 0 und 63 ein, und das neue Pattern
+              wird aufgebaut. Klickt man nun PATTERN an, wird das
+              im unteren Teil sichtbare Pattern abgespielt.
+              Durch Anklicken von PLAY wird der gesammte Song gespielt,
+              wobei die Position im Song durch POSITION und PATTERN 
+              staendig angezeigt wird. Ausserdem wird der Song an der
+              Stelle gestartet, die im Moment POSITION anzeigt.
+              Mit STOP wird der Song oder das Pattern gestoppt,
+              und alle Tonkanaele angehalten.
+ 
+ LOAD SONG    Alle drei Funktionen haben die gleiche Eigenart wie
+ SAVE SONG    auch USE PRESET, naemlich das man sie mit dem Anfangs-
+ LOAD SAMPLE  buchstaben bestaetigen muss um Fehler zu vermeiden.
+              Mit LOAD SONG wird der Hauptspeicher geloescht und
+              der mit SONGNAME definierte Song von der Hauptdiskette
+              aus der Directory 'songs' geladen. Danach werden die
+              einzelnen Samples fuer diesen Song von der Datendiskette
+              geladen. Bei SAVE SONG werden alle Patterns, angefangen
+              bei Pattern #0, bis zur hoechsten benutzten Patternnummer
+              auf der Hauptdiskette abgelegt. Also die Patterns
+              moeglichst mit aufsteigender Nummer benutzen.
+              Mit LOAD SAMPLE wird nur ein Sample von der Datendiskette
+              geladen. Und zwar derjenige, der im moment bei SOUND
+              angezeigt wird. Egal ob die Einstellungen von Hand,
+              oder mit USE PRESET gemacht wurden.
+ 
+ EDIT         Mit Anwahl des EDIT-feldes gelangt man in den Edit-Mode.
+              Mit den Cursortasten kann man sich nun beliebig im
+              Pattern bewegen. Die jeweils linke Haelfte der vier Spuren
+              ist fuer die Noten reserviert, wobei die Aufloesung des
+              Patterns aus 16tel Noten besteht. Drueckt man nun eine
+              Taste, so wird der momentan aktuelle SOUND angeschlagen
+              und der der Taste zugeordnete Notenwert in die Spur
+              eingetragen. Das koennte etwa so aussehen:
+
+                    C-4 1000   xxx xxxx   xxx xxxx   xxx  xxxx
+                     |  ||||
+              notenwert |||parameter1
+                        ||parameter2
+                        |effektnummer
+                        soundnummer
+
+              Die eine Eins stellt die Soundnummer fuer diesen Ton dar.
+              Die drei weiteren Stellen sind fuer Effekte reserviert.
+              Mit der 'DEL'-Taste koennen gesetzte Noten wieder
+              geloescht werden, aber nur wenn man sich in einer Notenreihe
+              befindet. Lesen Sie bitte auch den Teil (3) ueber die
+              Belegung der Sondertasten hierzu.
+              Fuer das Appregiato gibt man an jedem 16tel, wo es
+              gespielt werden soll, eine eins in der zweiten Stelle
+              der Steuerungsreihe an. Will man z.B. einen Akkord mit
+              den Noten C-2, F-2 und A-2 simulieren, dann sieht das 
+              so aus:  C-2 3159
+                       --- 0159
+                       --- 0159
+                       --- 0159
+                       --- 0000
+              Es wird also der Sound #3 mit der Note C-2 angeschlagen,
+              dann wird immer wieder die Tonhoehe gewaechselt
+              zwischen C-2 plus 5 Halbtoene, C-2 plus 9 Halbtoene und
+              dem Originalton C-2, bis der Sample ausgeklungen ist.
+
+
+ 
+ (3). Belegung der Sondertasten.
+ -------------------------------
+
+ F1           Schaltet die Oktavenaufteilung um auf 1&2. Das bedeutet
+              auf der unteren Tastenreihe liegt Oktave #1 und auf
+              der oberen Tastenreihe liegt Oktave #2.
+
+ F2           Schaltet die Oktavenaufteilung um auf 2&3. Das Bedeutet
+              auf der unteren Tastenreihe liegt Oktave #2 und auf
+              der oberen Tastenreihe liegt Oktave #3.
+ 
+ F3           Wenn der Cursor ueber einer Notenreihe auf dem Pattern steht,
+              wird mit SHIFT/F3 diese Spur geloescht.
+  
+ F4           Wenn der Cursor ueber einer Notenreihe auf dem Pattern steht,
+              wird mit SHIFT/F4 diese Spur in den Buffer copiert.
+ 
+ F5           Wenn der Cursor ueber einer Notenreihe auf dem Pattern steht,
+              wird mir SHIFT/F5 der Buffer in diese Spur copiert.
+ 
+ F6           Positionieren des Cursors am 16tel #0 in dem momentan
+              angezeigten Pattern.
+ 
+ F7           Positionieren des Cursors am 16tel #16 in dem momentan
+              angezeigten Pattern.
+
+ F8           Positionieren des Cursors am 16tel #32 in dem momentan
+              angezeigten Pattern.
+
+ F9           Positionieren des Cursors am 16tel #48 in dem momentan
+              angezeigten Pattern.
+
+ F10          Positionieren des Cursors am 16tel #63 in dem momentan
+              angezeigten Pattern.
+
+
+ (4). Bedeutung der Cursorfarben.
+ --------------------------------
+
+   Weiss:       Ist Standart.
+   Purpur:      Editor wartet auf Tasteneigabe.
+   Blau:        Sie befinden sich im EDIT-Modus.
+   Gelb:        Pattern oder Song wird gerade gespielt.
+   Gruen:       Ladetaetigkeit.
+   Rot:         Abbruch Tastatureingabe oder eine Datei nicht gefunden.
+
+
+ Anhang A.  Tips zum Selbersamplen.
+ ----------------------------------
+
+   Samples fuer den Soundtracker sollten 9900 Bytes nicht ueberschreiten.
+   Beim Samplen von Musikinstrumenten (z.B.Synthesizern) sampled man
+   ein 'F' in der gewuenschten Oktave mit einer Samplerate von 11200.
+   Dadurch sind die Samples immer richtig gestimmt und haben noch eine
+   gute Qualietaet bei gleichzeitig bester Ausnutzung der Oktave.
+   Beim Spielen wird ein Sample fuer jeden Ton mit einer anderen Periode
+   (Geschwindigkeit) abgetastet. Darum wird ein 'F' gesampled, um den
+   Sample innerhalb einer Oktave verschieben zu koennen, ohne das sich
+   der Sample stark anders anhoert. Die besten Erfolge hatte ich beim
+   Samplen mit einem FutureSound-Digitizer.
+   Der fertige Sample wird dann als sogenannter Dump abgespeichert.
+   Zum Nacharbeiten eignet sich fast jede Software.
+   Allerdings setzen DSound und Futuresound noch sechs Bytes fuer
+   interne Zwecke vor dem Dump. Darum ist es am besten wenn man den
+   Sample mit der 68000er-, PerfectSound- oder Audiomaster-Software
+   nachbearbeitet, um unnoetige Bytes zu entfernen oder einen guten
+   Looppunkt zu finden.
+
+
+ Anhang B.  Einbau der Replay-Routine.
+ -------------------------------------
+
+   Das Aufrufen der Replay-Routine funktioniert wie folgt:
+   1. REPLAY_START aufrufen des Songs (der Song wird geloopt)
+   4. REPLAY_STOP  abschalten des Songs
+
+   Die Samples muessen in den 'Blocks' "snd1" bis "snd2"
+   bereitgestellt werden. Das Lied muss in dem 'Block' "muzakdata"
+   abgelegt werden.
+   Wenn Sie in ihren Sourcecode nicht 'blocken' wollen, gibt es noch eine
+   weitere Moeglichkeit. Laden Sie den Song an eine allocatete Adresse und
+   aendern  die 'lea.l muzakdata,irgendwas' in 'move.l muzakdata,...'.
+   Uebergeben Sie den Zeiger auf Ihren allocateten Speicherbereich an
+   muzakdata. Dann laden Sie die einzelnen Samples, indem Sie die benuzten
+   Samplenamen aus dem Header des geladenen Songs holen, und schreiben die
+   Startaddressen jedes Sample in die Tabelle 'Sounds' im Quellcode.
+
+
+ Anhang C.  Aufbau der eines Songs.
+ ----------------------------------
+   000    20 Bytes      Name des Songs
+   020    22 Bytes      Name vom Sample #1
+   042     1 Wort       Bytelaenge des Samples/2
+   044     1 Wort       Volume
+   046     1 Wort       Repeat additive
+   048     1 Wort       Repeat Laenge
+    .
+    .  14 * 30 Bytes fuer die 14 weiteren Sounds
+    .
+   470     1 Byte       Anzahl der Patterns fuer diesen Song
+   471     1 Byte       Frei
+   472   128 Bytes      Pattern Positionen
+   600  1024 Bytes      Pro Pattern
+
+			  ESC for Menu Page[2D[j[0 p[8m

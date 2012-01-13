@@ -1,0 +1,316 @@
+c[32m[0 p[0x[80u[0y[25tSoundTracker VI - A Quick Clarification.
+----------------------------------------
+
+Update       : 20-April-1988.
+
+Copyrights   : Doctor Mabuse Orgasm Crackings.
+
+Coding       : Unknown.
+
+-----------------------------------------------------
+
+INSTRUCTIONS : The JUNGLE COMMAND / Modified by D.O.C (+ corrected)
+Version II : (look upper line) / exterminator
+
+-----------------------------------------------------
+
+EQUALIZER by (look at coding) of D.O.C
+SPEED-CONTROL build in by (look upper line)
+
+-----------------------------------------------------
+
+Modifications : Modulation.
+-------------   Enhanced portamento.
+                Volume changing during play.
+                Volume sliding up/down during play.
+                Standard USA keymap.
+                Playroutine for use in demos etc.
+                Correct (?) spelling. (Karsten, it's spelled "Length" and
+                NOT "Lenght" !!)
+                (PHR....it ain't "Lengh", either !)
+                D.O.C says : Laengs
+                D.O.C also says : Min guellepump is in mors.
+
+Modifications by D.O.C :
+------------------------
+                FEATURES :
+
+              -  SPEED CHANGING during play !
+              -  EQUALIZER !
+              -  NEW playroutine !
+              -  NEW Mouse pointer
+              -  NEW 3D cursor
+              -  VOICE-CONTROL!  (press 1-4 on the right numeral pad)
+              -  THAT'S ALL!     (press nothing)
+
+
+ The source of the player to Soundtracker 6 is in the directory: ST6
+ So to load this into SEKA type:-
+	SEKA> ri [return]
+	FILENAME> ST6/PLAY6  (Note from the RASTA CATCHA!)
+
+
+Patterns.
+---------
+
+Any piece of music written with SoundTracker VI is build up from patterns.
+SoundTracker holds a table with information about the sequence in which
+these parts must be played. With 'Position' you determine your position
+in the table. With 'Pattern' you define what pattern to play at that
+position. 'Length' defines the total size of the table.
+
+
+The Keys.
+---------
+
+The original (V1.21) version of the SoundTracker had a German keymap.
+Version VI supports a standard USA keymap (oder auch nicht) and 32th line of pattern.
+               F9  - Set cursor to 48th line of pattern.
+               F10 - Set cursor to last line of pattern.
+               DEL - Delete note under cursor.
+       shift + F3  - Cut selected voice of actual pattern.
+       shift + F4  - Copy selected voice of actual pattern into copy-puffer.
+       shift + F5  - Copy copy-puffer to selected voice of actual pattern.
+
+      
+Instruments.
+------------
+
+You can use up to fifteen different instruments in one music-piece.
+Before you can use a sample as an instrument, some values must be defined.
+You can do this by either using a preset, or by setting these values your-
+self.
+
+Length : This is simply the length of the used sample in bytes.
+
+Volume : This is the default volume of that instrument.
+
+Replen : When replen is set to 2, each instrument will be played once.
+    When replen is set to any other value, the instrument will be
+    repeated until an other note is played.
+
+Repeat : SoundTracker can also be programmed to repeat just a part of a
+    sample constantly. This is usefull when playing waveforms. Whenever
+    Repeat is set to a non-zero value, SoundTracker will just play a
+    part of that particular sample. In this case Repeat defines the
+    offset and Replen the length of the part that must be repeated. 
+
+Notes.
+------
+  
+               C#1   3 C 2 3
+               /    /  |  \|
+              /    /   |   Arpeggio, portamento, volume and speed info.
+             /    /  Command
+            /   Inst#
+         Note to
+         be played.
+
+
+
+Note    : This is simply the note that must be played by that particular
+----      instrument.
+
+Inst#   : This is the number of the instrument that must be used to play
+-----     the note. When the instrument number is zero, the last selected
+     instrument will be used.
+
+Command : This number tells SoundTracker what special functions must be
+-------   preformed while playing the note.
+
+These functions are as follows :
+
+     0 - Normal play or arpeggio.
+     1 - Portamento up.
+     2 - Portamento down.
+     3 - Modulate volume of next higher voice. (possibly with arpeggio)
+     4 - Modulate period of next higher voice.          ''
+     5 - Modulate period + volume of next higher voice.  ''
+     6 - Modulate volume of next higher voice and portamento up.   
+     7 - Modulate period of next higher voice and portamento up
+     8 - Modulate period + volume of next higher voice + portamento up.
+     9 - Modulate volume of next higher voice and portamento down.
+     A - Modulate period of next higher voice and portamento down.
+     B - Modulate period + vol of next higher voice + portamento down.
+     C - Set volume.
+     D - Slide volume.
+     E - Set auto-slide.
+     F - Set speed !
+
+Info    : This byte contains the additional information for the commands.
+----     
+
+
+Modulation : One voice can be programmed to modulate another. This means that
+----------   either the volume, period or volume AND period are no longer
+             static values that are set before starting to play a note, but
+             that these are subject to change during play. It can be seen
+             that this provides a way to program viberato and tremolo
+             effects.
+
+             When a voice is programmed to modulate, it always modulates the
+             next voice. So voice1 modulates voice2, voice2 modulates voice3
+             and so on. When a voice is told to modulate another, that voice
+             is made silent. When voice4 is told to modulate, it is only made
+             silent, because there are no 'higher' voices than voice4.
+             How does this modulation work ? Well, say you programmed voice1
+             to modulate only the volume of voice2. The volume of voice2 is
+             no longer defined by the volume of that instrument. Instead, the
+             words in the sample of voice1 define the volume for voice2.
+             So if the sample of voice1 looked like this :
+             $0030,$0032,$0034 etc., the volume of voice2 would become $30,
+             then $32 and so on. This is used to introduce a viberato to
+             voice2. The period of voice1 defines the speed of this viberato
+             effect. 
+             When voice1 was programmed to modulate the period of voice2, the
+             words in the sample of voice1 would define the period of voice2.
+             When a voice is programmed to modulate the volume AND the period
+             of the next voice, the first word in the sample defines the
+             volume, the second the period, the third the volume again and so
+             on.
+
+Arpeggio : Arpeggio is used for simulating accords. It does this by
+--------   rapidly changing the notes while playing an instrument.
+           Arpeggios are selected whenever the info byte has a non-zero
+           value and no other commands are selected.
+           When arpeggios are used, SoundTracker looks five times during
+           the play of one note, at the information contained in the info
+           byte. Each nibble (4 bits) in this byte defines
+           how many notes SoundTracker must add to the the note currently
+           playing. In each of the five passes SoundTracker does the
+           following with the information contained in the info byte :
+       
+           1 - Add the first nibble to the current note.
+
+           2 - Add the second nibble to the current note.
+
+           3 - Play the current note.
+
+           4 - Add the first nibble to the current note.
+
+           5 - Add the second nibble to the current note.
+
+ 
+Portamento : Portamento is used for 'sliding' of the instrument.
+----------   If portamento is in use, the information contained in
+             the info byte will be added to (or subtracted from) the period
+             of the note playing in each of the five passes.
+
+   Example : D#2 3208
+             --- 0208
+             --- 0208
+             --- 0210
+             etc.
+
+   
+Volume : One of the enhancements that the V6.0 version provides is the
+------   ability to change the volume at any time during play.
+         When command 12 ($C) is selected, the volume is set to the value
+         contained in the info byte. The volume will remain at this level
+         until a next SAMPLE is played. At this time, the volume is
+         reset to the default volume level of that sample.
+
+Example: C#1 1C22 - Set volume to $22 and use instrument # 1 to
+                    play the C#1 note.
+         D-2 0000 - Use instrument # 1 to play the D-2 note.
+                    (Volume level remains at $22)
+         B-1 1000 - Use instrument # 1 to play the B-1 note and
+                    set volume to default value for that
+                    instrument.
+
+         It is also possible to "slide" the volume up or down while playing.
+         In this case the first nibble of the info byte defines the amount
+         at which the volume must be incremented, and the second nibble
+         the amount at which it must be decremented.
+
+Example: D#3 2D20 - Slide volume up, amount = 2
+         --- 0D20
+         --- 0D20
+         etc.
+
+         C#3 4D03 - Slide volume down, amount = 3
+         --- 0D03
+         --- 0D03    
+         etc.
+
+         This is all very well until you try to slide the volume and use
+         portamento or arpeggio at the same time. For this reason,
+         SoundTracker VI provides an auto-slide mode. You set the
+         auto-slide mode with command # 14 ($E). Set the amount at which
+         the volume must be slided up or down as normal. Now play your
+         arpeggio or portamento and the volume will be slided as well.
+         You return from auto-slide mode whenever an info byte with a zero
+         value is encountered.     
+
+Example: E-2 CE02 - Set auto slide, amount = 2
+         --- 0203 - Portamento AND volume slide down.
+         D-2 3203 - Volume to default level of instrument #3,
+                    portamento and volume slide down.
+         --- 0203
+         G-1 1000 - Return from auto-slide. Play note G-1 with
+         etc.       instrument # 1.
+
+
+Speed:   This function allows changing the speed during play.
+------   You can only enter a speed between 01 and 0F.
+         Setting the info byte to zero doesn't effect anything.
+         The normal speed is 6.
+
+Example: D-2 4F05 - Set speed to 5
+         --- 0000
+         E-1 0F00 - Nothing happens to speed.
+         --- 0FC3 - Set speed to 3
+         G-2 2F06 - Set normal speed
+
+         If you load another song it will be played with the actual speed.
+         All songs on these disk are re-written to their normal speeds.
+         (by D.O.C)
+
+The Playroutine.
+----------------
+
+The playroutine on the SoundTracker disk is for using your music in demos,
+intros, games etc. It was written using the Seka-assembler and the source
+of the routine can directly be incorporated in your demo/intro source.
+When you are finished writing your music using SoundTracker, save it to
+disk. Write down which instruments you've used and write down there length.
+Now enter the Seka-assembler and load the playroutine-source. At the end
+of the routine, (next to the 'mt_muzakdata' label) is an empty block.
+Enter the size of the song data. After that you've to enter all sizes of
+the instruments you've used (at mt_snd1, mt_snd2...).
+Assemble. Now load the saved song and the samples to their blocks.
+At the start of your program, call the 'mt_init' routine, and to play the
+music, call the routine 'mt_music' once every vertical blanking interrupt.
+   
+The 'Speed' label at the start of the routine, defines the pace at which the
+notes succeed each-other. ($1f4 is the default value used in SoundTracker.)
+Please note that, the higher the number, the slower the playroutine becomes.
+Also, the slower it becomes, the longer it takes to complete a pass through
+the routine. Some samples cannot handle high speeds, so you will have to try
+this out.  
+
+As has been told before, the source-file of the routine can
+directly be incorporated in your demo/intro-source. To minimize the
+possibility of a 'Double Symbol' error, all labels used in the routine start
+with 'mt_'. So, when writing your program, do not use any labels that start
+with 'mt_'.
+
+Please note that the VI version of SoundTracker is not completely downwards
+compatible with version V1.21. Any old V1.0 song that uses no portamento or
+arpeggio can be used with VI without any problems. If arpeggio is used,
+simply remove the 1 that selects the arpeggios in V1.21.
+(Example : C#2 2184) If the old V1.21 song uses portamento, you will have to
+rewrite this a little until it sounds the same as before. 
+The songs supplied on this disk are re-written for VI.
+
+--------------------------------------------------------------------------
+
+If you think the SoundTracker VI is useful and DOC is great, then write to:
+
+   D.O.C (Don't write this line.)
+   PLK 089114 C
+   2300 KIEL 1
+   WEST-GERMANY
+
+
+			press ESC for Main Menu[2D[j[0 p[8m

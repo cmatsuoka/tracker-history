@@ -1,0 +1,192 @@
+c[32m[0 p[0x[80u[0y[25t
+
+SoundTracker V1.0 - A Quick Clarification.
+------------------------------------------
+
+Copyrights                    : Karstem Obarski
+
+English Instructions for v1.0 : Rasta Catcha
+
+Patterns.
+---------
+
+Any piece of music written with SoundTracker V2.0 is build up from patterns.
+SoundTracker holds a table with information about the sequence in which
+these parts must be played. With 'Position' you determine your position
+in the table. With 'Pattern' you define what pattern to play at that
+position. 'Length' defines the total size of the table.
+
+
+The Keys.
+---------
+The keys on your Amiga have been grouped to represent the layout of a
+two-octave piano-keyboard. You can "shift" the keyboard one octave up or
+down with the aid of the F1 and F2 keys, thus incrementing the range of
+the keyboard to three octaves.
+
+While editing: Cursor-keys move cursor.
+-------------- F6  - Set cursor to first line of pattern.
+	       F7  - Set cursor to 16th line of pattern.
+	       F8  - Set cursor to 32th line of pattern.
+	       F9  - Set cursor to 48th line of pattern.
+	       F10 - Set cursor to last line of pattern.
+	       DEL - Delete note under cursor.
+	       
+		
+Instruments.
+------------
+
+You can use up to fifteen different instruments in one music-piece.
+Before you can use a sample as an instrument, some values must be defined.
+You can do this by either using a preset, or by setting these values your-
+self.
+
+Length : This is simply the length of the used sample in bytes.
+
+Volume : This is the default volume of that instrument.
+
+Replen : When replen is set to 2, each instrument will be played once.
+	 When replen is set to any other value, the instrument will be
+	 repeated until an other note is played.
+
+Repeat : SoundTracker can also be programmed to repeat just a part of a
+	 sample constantly. This is usefull when playing waveforms. Whenever
+	 Repeat is set to a non-zero value, SoundTracker will just play a
+	 part of that particular sample. In this case Repeat defines the
+	 offset and Replen the length of the part that must be repeated. 
+
+Notes.
+------
+  
+              C # 1  3 C 2 3
+               /    /  |  \|
+              /    /   |   Arpeggio, portamento and volume info.
+             /    /  Command
+            /   Inst#
+         Note to
+         be played.
+
+
+
+Note    : This is simply the note that must be played by that particular
+----      instrument.
+
+Inst#   : This is the number of the instrument that must be used to play
+-----     the note. When the instrument number is zero, the last selected
+	  instrument will be used.
+
+Command : This number tells SoundTracker what special functions must be
+-------   preformed while playing the note.
+	  These functions are as follows :
+
+	  0 - Normal play or arpeggio.
+	  1 - Portamento up.
+	  2 - Portamento down.
+	  3 - Modulate volume of next higher voice. (possibly with arpeggio)
+	  4 - Modulate period of next higher voice. 	      ''
+	  5 - Modulate period + volume of next higher voice.  ''
+	  6 - Modulate volume of next higher voice and portamento up.	
+	  7 - Modulate period of next higher voice and portamento up
+	  8 - Modulate period + volume of next higher voice + portamento up.
+	  9 - Modulate volume of next higher voice and portamento down.
+	  A - Modulate period of next higher voice and portamento down.
+	  B - Modulate period + vol of next higher voice + portamento down.
+
+Info    : This byte contains the additional information for the commands.
+----	  
+
+
+Modulation : One voice can be programmed to modulate another. This means that
+----------   either the volume, period or volume AND period are no longer
+	     static values that are set before starting to play a note, but
+	     that these are subject to change during play. It can be seen
+	     that this provides a way to program viberato and tremolo
+	     effects.
+	     When a voice is programmed to modulate, it always modulates the
+	     next voice. So voice1 modulates voice2, voice2 modulates voice3
+	     and so on. When a voice is told to modulate another, that voice
+	     is made silent. When voice4 is told to modulate, it is only made
+	     silent, because there are no 'higher' voices than voice4.
+	     How does this modulation work ? Well, say you programmed voice1
+	     to modulate only the volume of voice2. The volume of voice2 is
+	     no longer defined by the volume of that instrument. Instead, the
+	     words in the sample of voice1 define the volume for voice2.
+	     So if the sample of voice1 looked like this :
+	     $0030,$0032,$0034 etc., the volume of voice2 would become $30,
+	     then $32 and so on. This is used to introduce a viberato to
+	     voice2. The period of voice1 defines the speed of this viberato
+	     effect. 
+	     When voice1 was programmed to modulate the period of voice2, the
+	     words in the sample of voice1 would define the period of voice2.
+	     When a voice is programmed to modulate the volume AND the period
+	     of the next voice, the first word in the sample defines the
+	     volume, the second the period, the third the volume again and so
+	     on.
+
+Arpeggio : Arpeggio is used for simulating accords. It does this by
+--------   rapidly changing the notes while playing an instrument.
+	   Arpeggios are selected whenever the info byte has a non-zero
+	   value and no other commands are selected.
+	   When arpeggios are used, SoundTracker looks five times during
+	   the play of one note, at the information contained in the info
+	   byte. Each nibble (4 bits) in this byte defines
+	   how many notes SoundTracker must add to the the note currently
+	   playing. In each of the five passes SoundTracker does the
+	   following with the information contained in the info byte :
+	 	
+	   1 - Add the first nibble to the current note.
+
+	   2 - Add the second nibble to the current note.
+
+	   3 - Play the current note.
+
+	   4 - Add the first nibble to the current note.
+
+	   5 - Add the second nibble to the current note.
+
+ 
+Portamento : Portamento is used for 'sliding' of the instrument.
+----------   If portamento is in use, the information contained in
+	     the info byte will be added to (or subtracted from) the period
+	     of the note playing in each of the five passes.
+	     Example : D#2 3208
+		       --- 0208
+		       --- 0208
+		       --- 0210
+			 etc.
+	
+
+The Playroutine.
+----------------
+
+The playroutine on the SoundTracker disk is for using your music in demos,
+intros, games etc. It was written using the Seka-assembler and the source
+of the routine can directly be incorporated in your demo/intro source.
+When you are finished writing your music using SoundTracker, save it to
+disk. Write down which instruments you have used. Now enter the
+Seka-assembler and load the playroutine-source. At the end of the routine,
+(below the 'mt_sampleinfo' label) create an empty block (with the blk
+command) of suitable size to hold the song data. Now determine where you
+want the samples of the instruments to appear in memory. (or create an extra
+block to hold the sample data.) Put these addresses behind the 'move.l'
+instruction in lines 35-49.
+Assemble. Now load the saved song in the created block and the samples to
+their correct addresses.
+At the start of your program, call the 'mt_init' routine, and to play the
+music, call the routine 'mt_music' once every vertical blanking interrupt.
+	
+The 'Speed' label at the start of the routine, defines the pace at which the
+notes succeed each-other. ($1f4 is the default value used in SoundTracker.)
+Please note that, the higher the number, the slower the playroutine becomes.
+Also, the slower it becomes, the longer it takes to complete a pass through
+the routine. Some samples cannot handle high speeds, so you will have to try
+this out.  
+
+As has been told before, the source-file of the routine can
+directly be incorporated in your demo/intro-source. To minimize the
+possibility of a 'Double Symbol' error, all labels used in the routine start
+with 'mt_'. So, when writing your program, do not use any labels that start
+with 'mt_'.
+
+
+		press ESC for Main Menu[2D[j[0 p[8m
