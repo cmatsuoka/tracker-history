@@ -88,7 +88,7 @@ doc_soundtracker_iii
 	Name: DOC Soundtracker III
 	Author: Unknown of D.O.C
 	Date: 1988-03-29
-	Based on tjc_soundtracker_ii 500 [ Equalizer? ]
+	Based on tjc_soundtracker_ii 500 [ Equalizer ]
 
 # [WW] DOC intro 4 scroller claims release date: 12.04.1988
 # DOC Soundtracker 4 is not based on the "Soundtracker 3 by Il Scuro".
@@ -104,15 +104,20 @@ doc_soundtracker_iv
 	Based on doc_soundtracker_iii 1000
 	Influenced by soundtracker_iii [ F - Set speed ]
 
-# Does AFL Soundtracker IV have an equalizer? If yes, it's probably based on
-# DOC Soundtracker 3, otherwise from Il Scuro's
+# [CM] Does AFL Soundtracker IV have an equalizer? If yes, it's probably
+# based on DOC Soundtracker 3, otherwise from Il Scuro's
+# [WW] Yes, DOC 3 has the equalizers and AFL 4 has them too.
+# 
+# AFL 4 on-screen text:
+# "Soundtracker IV by Alpha Flight based on Soundtracker II+III by
+# Jungle Command, DOC and Il Scuro"
 
 afl_soundtracker_iv
 	Name: AFL Soundtracker IV
 	Author: Alpha Flight
 	Date: 1988-04-07		# From Soundtracker_v4.doc
 	Based on doc_soundtracker_iii
-	Influenced by soundtracker_iii [ F - Set speed ]
+	Based on soundtracker_iii
 
 # [WW] DOC intro 6 scroller claims there is no DOC Soundtracker 5 (They
 # skipped the number because when they released V3 some else [does not say
