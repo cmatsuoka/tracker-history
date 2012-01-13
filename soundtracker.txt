@@ -138,6 +138,14 @@ doc_soundtracker_vi
 	# Based on tjc_soundtracker_ii
 	Based on doc_soundtracker_iv
 
+# [WW] DOC Soundtracker 9 claims:
+# * Based on Ultimate Soundtracker 1.8 by Karsten Obarski.
+# * If true release must be after Ultimate Soundtracker 1.8.
+# Has:
+# * CIA/BPM Speed back in it.
+# * Save Module (is this the first time a MODULE actually appears?!? haven't
+#   found a "save mod" in a tracker predating this.)
+#
 # [CM] If DOC makes IX based on Obarski's 1.8, it is reasonable to expect
 # a rebase for some DOC VI changes such as modern effects 0-2,C-F
 
