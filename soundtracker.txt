@@ -52,7 +52,7 @@ soundtracker_20
 
 tjc_soundtracker_ii
 	Name: TJC Soundtracker II
-	Author: The Exterminator of The Jungle Command
+	Author: The Exterminator of The Jungle Command\n(Mark Langerak)
 	Date: 1988-03-01		# from Quick Clarification
 	Based on soundtracker_121 [
 		0 - Normal play or arpeggio,
@@ -75,7 +75,7 @@ tjc_soundtracker_ii
 
 soundtracker_iii
 	Name: Soundtracker III
-	Author: Il Scuro
+	Author: Il Scuro (Ron Birk)
 	Date: 1988-03-13		# From Soundtracker_v3.doc
 	Based on tjc_soundtracker_ii [
 		F - Set speed
@@ -86,7 +86,7 @@ soundtracker_iii
 
 doc_soundtracker_iii
 	Name: DOC Soundtracker III
-	Author: Unknown of D.O.C
+	Author: Unknown of D.O.C\n(Michael Kleps)
 	Date: 1988-03-29
 	Based on tjc_soundtracker_ii 500 [ Equalizer ]
 
@@ -114,7 +114,7 @@ doc_soundtracker_iv
 
 afl_soundtracker_iv
 	Name: AFL Soundtracker IV
-	Author: Alpha Flight
+	Author: Alpha Flight\n(maybe Armin Sander)
 	Date: 1988-04-07		# From Soundtracker_v4.doc
 	Based on doc_soundtracker_iii
 	Based on soundtracker_iii
@@ -169,14 +169,14 @@ doc_soundtracker_ix
 
 master_soundtracker_10
 	Name: Master Soundtracker 1.0
-	Author: TIP of TNM
+	Author: TIP of TNM (Armin Sander)
 	Date: 1988-07-30	# 1998-07
 	Comment: 0, 1, 2, C, E, F
 	Based on doc_soundtracker_ix [ Filter, 32KB samples ]
 
 master_soundtracker_30
 	Name: Master Soundtracker 3.0
-	Author: TIP of Prophets AG
+	Author: TIP of Prophets AG (Armin Sander)
 	Date: 1988-10
 	Based on master_soundtracker_10
 

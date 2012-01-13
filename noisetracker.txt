@@ -1,6 +1,6 @@
 noisetracker_10
 	Name: Noisetracker 1.0
-	Author: Mahoney & Kaktus
+	Author: Mahoney & Kaktus\n(Pex Tufvesson & Anders Berkeman)
 	Date: 1989-08
 	Based on soundtracker_23 [
 		New playroutine, Tone portamento, Vibrato,
