@@ -1,0 +1,285 @@
+This file contains the history of MED/OctaMED:
+-------------------------------------------------------------------------
+
+The history of MED began, when I got DOC SoundTracker VI in 1989.
+I found that it was really easy to compose with it, but the program
+itself was terrible: No multitasking, no Kickstart 1.3, no way to
+exit (or was there??? there was no instructions), no keyboard
+equivalents...
+
+Today Protracker 1.1b is giving good competition, but it still can't
+multitask, and it doesn't work under Kickstart 2.0 (V37.175).
+
+== Version 1.00 - 1.11 (spring - summer 1989) ===========================
+Not released... V1.0 looks quite pitiful :-)
+
+== Version 1.12 (autumn 1989) ===========================================
+This is the first released version (on Fish #255). It contained some
+mysterious bugs that crashed the machine sometimes... I never found them,
+but they are gone now (maybe they were compiler bugs).
+
+== Version 2.00 (8 Apr 1990) ============================================
+The version V2.00 was the second released version. When I started to
+program it, I thought it'll be V1.20. But finally the list of improvements
+grew so large that I decided it must be V2.00!! And here's the the list of
+the new features/fixes:
+   - Nearly completely rewritten code
+   - New player routine made in assembler
+   - Fast screen rendering routines also made in assembler
+   - New user interface with file requester
+   - MIDI support and up to 16 tracks
+   - Extended keyboard, lots of new keyboard equivalents
+   - Two equalizers (yes, imitating SoundTracker...)
+   - Insert/delete to playing sequence list
+   - Insert/delete blocks
+   - Cut/Copy/Paste rectangular regions
+   - Transposing and expanding/shrinking blocks
+   - SoundTracker module load support
+   - SoundTracker song saving
+   - Can write icon with song
+   - "MOD" save (song + samples)
+   - Writes object files for your own programs
+   - Song packing (not a real packer, but maybe "optimizing save routine")
+   - More octaves (5)
+   - Supports IFF 3- and 5-octave instruments
+   - New commands (filter on/off, note off, stop playing, repeat note)
+   - Repeat with beginning offset 0 works
+   - "Quick note" feature
+   - Insert effects when entering notes with Left or Right Alt
+   - An option to turn off automatic advancing to next line
+   - And maybe something else I've forgotten to put here...
+
+== Version 2.01 (10 Apr 1990) ===========================================
+Not a long time from previous release!!! I found few bugs:
+In Finnish version, version 2.00 didn't save the song to correct directory.
+In both versions, the icon did not go to correct directory.
+These are now fixed. What a pity I sent Fred Fish V2.00 (yes, the letter
+was posted today...my luck!!).
+
+== Version 2.10 (17 Jul 1990) ===========================================
+Again lots of new features...
+   - max. 63 samples
+   - block length is modifiable (1 - 256 lines)
+   - relative volumes for each channel and master volume
+   - samplelist
+   - new commands (3, 4, B, FFA, FFB, FFD)
+   - new MIDI commands (modulation wheel, pan, hold pedal)
+   - saves now Sound/NoiseTracker modules (ST-song save removed)
+   - programmable keys (Shift 0 - 9) can be edited/saved
+   - real-time sample display (updated every frame), looks nice
+   - new file format: module (MMD0)
+   - intelligent sample loader, minimizes disk swapping, doesn't
+     reload samples which are already in memory
+   - automatic slide making (+ volume fade)
+   - track numbers always displayed, can be scrolled one track at a
+     time
+   - free memory can be displayed
+   - screen outlook a bit better (more space for sample name),
+     many panels enhanced
+   - an option to read volumes when entering notes with MIDI
+   - each sample can be independently transposed (like play-transpose)
+   - it's possible to highlight lines (reversed colors) for easier
+     positioning of notes
+   - the player tries to flush "serial.device" if allocation failed
+   - delete option in file requester
+   - volumes (command C) can be hex or decimal
+   - blocks can be splitted or joined (thanks to modifiable size)
+   - filename paths can be added/removed when loading samples
+   - better compatibility mode for ST/NT
+   - detaches from CLI (uses cback.o)
+   - a bug in MIDI preset changing fixed
+   - small enhancements everywhere
+
+Also there's a new version of MEDPlayer, better instructions (I hope)
+ better playroutine, "medplayer.library", module loader.......
+
+== Version 2.11 (21 Jul 1990) ===========================================
+This version contains two small fixes to the previous version:
+   - MED now doesn't insert entered MIDI notes with volume 0
+     (because it means "note off")
+   - a very, very small bug fixed (when loading MMD0-module, instrument
+     names were not always deleted)
+
+== Version 2.12 (25 Jul 1990) ===========================================
+   - MED had a bug which affected command FFF with MIDI. It's now fixed.
+     The "modplayer.a" was correct, however. (strange...)
+   - There should be no files missing from the source archive any more
+     (due to a bug in Lharc or me).
+
+== Version 2.13 (24 Sep 1990) ===========================================
+   - MED loads now all 8 colors...
+   - Block display correctly cleared after "Clr song only".
+
+== Version 3.00 (31 Jan 1991) ===========================================
+New major version featuring:
+   - built-in sample editor with sample handling/sampling abilities
+   - simple (C64-style) synthsounds, built-in editor
+   - "hybrid"-instruments (sample with synthsound "programming language")
+   - MED now uses CIAB timers instead of CIAA. This means that MED is now
+     compatible with Kickstart 2.0.
+   - better sample list
+   - an alternative note-display method (more graphical) REMOVED IN V3.10!!
+   - play-length timer
+   - enhanced file-requester (no need to wait until all names loaded,
+     can list devices/assigns)
+   - better control over playing speed (now TWO tempo-selection gadgets,
+     (leading to minor compatibility problems with previous versions))
+   - option to start playing when a key has been hit (for real-time rec)
+   - real-time recording works a bit better
+   - "jump-to-last-used-sample-slot"-gadget
+   - Hold/Decay implemented, allows accurate control over note
+     duration (+ automatic decay after note end). THANKS TO ZAP FOR THE IDEA!
+   - Insert Line/Delete Line -gadgets
+   - an option to use space bar as an empty note (DEL)
+   - 2×-option removed. Now there's "Spc" (space can be modified)
+   - keypad working changed (can be used as track on/off switch or
+     selecting instrument)
+   - now a range of notes (instead of just a single note) can be assigned
+     to Shift 0-9
+   - many other options are now also saved when saving keys (screen
+     colors etc.), they're loaded as defaults during start-up
+   - an option to use note B instead of H (in some countries (like Finland)
+     it's H, in others (like USA) it's B)
+   - Workbench screen can be opened/closed from MED
+   - MED can be synced externally (through MIDI), or MED can send MIDI-
+     sync pulses
+   - active sensing msgs can be switched off
+   - gadgets to reset pitchbenders/modulation/presets, send MIDI-reset,
+     and turn local control on/off
+   - MIDI-input channel can be specified (or data can be received from
+     all channels)
+   - MIDI key-up can be received (especially for long notes...)
+   - range for all editing operations can be selected with mouse
+     (dragging using right button) and is displayed
+   - it's possible to select individually tracks used in editing ops
+   - affection of editing ops can be selected:
+       song/block/selected tracks/current track/range, current instr/all
+   - it's possible to change/exchange notes individually e.g. F-2 => E-3
+   - instrument numbers can be changed or notes with a specified instr
+     number can be deleted
+   - it's possible to type a short "anno" text, that contains e.g. song
+     name, composer, ©... It's displayed when file is loaded (in MED and
+     MEDPlayer)
+   - option to automatically advance to many directions (up, down,
+     next track, prev. track, next num, prev. num)
+   - notes in one track can be "spread" to many tracks, similar to
+     "polyphonize" in NoiseTracker...
+   - chord-entering mode (the tracks that are used in chord can be
+     selected)
+   - tracks can be turned on/off by clicking the track on the note
+     display
+   - gadgets to turn on/off all tracks, and select all tracks
+   - player recognizes new commands:
+     8 = set hold/decay for note
+     9 = change secondary tempo
+   - samples can be saved in IFF-format (optional)
+   - outlook is now a bit better (gadgets are bigger etc...)
+
+== Version 3.10 (14 Apr 1991) / OctaMED Version 1.00 (02 Apr 1991) ======
+New features in OctaMED:
+   - 8 channel playing with Amiga audio (like Oktalyzer etc...)
+   - 8 tracks can be displayed at a time
+New features in both OctaMED and MED:
+   - new look (in MED-res 640 x 200/256), looks more professional
+   - volumes in Instr-panel are displayed in both hex and decimal
+   - expand and shrink space can be controlled
+   - option to use 4-color screen (8 colors are quite slow on std Amiga
+     especially in 8-channel mode)
+   - option to load 8-channel samples in fast memory (mostly for listening
+     only, as they can't be played from keyboard)
+   - changing play rate and pitch in sample editor is easier
+   - sample editor contains a delta-filter that can reduce noise
+   - changing play rate and stretching in synth-editor now do some
+     anti-aliasing
+   - status line contains a button (CHRD) to activate/deactivate chord mode
+   - backspace key can be used to delete/insert editing of notes
+   - horizontal note display of MED 3.00 was removed
+   - many MED 3.00 bugs (hopefully) fixed including:
+     * Ext Sync (caused an instant travel to India)
+     * Synth editor range dragging (trashed the screen in some instances)
+     * MODULE SAVING (MED 3.00 didn't always align the fields, causing
+       terrible results (Guru 00000003) with programs using modplayer.a)
+     * Hybrid sound saving in object files
+     * More reliable old ST-song loader. Doesn't necessarily crash when
+       loading e.g. text files (but don't count on this!!).
+
+== Version 3.11 (07 May 1991) ===========================================
+Minor perfections and bug fixes:
+   - timer reset gadget area fixed (yes, you can reset the timer by clicking
+     on it!!)
+   - new Boost-option in the sample editor (the opposite of the Filter)
+   - only Left-Alt+Cursor up/down now moves you to the 1st/last block (to
+     avoid accidental jump when using Alt+Cursor left/right)
+   - no more "Loading synthetic sound..." messages during module/sng+samples
+     load
+   - a bug in the player routine command 3 (slide) fixed (in certain
+     conditions the period got down to $ffff....)
+*** Release 3.11b (09 May 1991) / OctaMED Version 1.01 (20 May 1991)
+   Some more fixes (these bugs were totally harmless, but I'm a perfectionist)
+   - in addition: keyboard shortcuts of Cut/Copy/Paste range now work.
+     They are Ctrl-X (Cut), Ctrl-C (Copy) and Ctrl-V (Paste).
+
+== OctaMED Version 2.00 (17 Aug 1991) / MED Version 3.20 (25 Aug 1991) ==
+New features in OctaMED:
+   - Notation editor/printer.
+   - 5 - 7 channel modes. These allow you to use high quality, non-CPU-
+     stressing audio and splitted channels at the same time.
+   - 16 track display (for MIDI use).
+New features in both OctaMED and MED:
+   - numerous bugs fixed!! (including some nasty ones).
+   - MED_paths can be now loaded.
+   - insertion/deletion of tracks is possible.
+   - DEF gadgets for New block and New here create 64-line 4/8 track blocks
+   - MIDI note-off messages can be suppressed for a particular instrument
+   - there can be multiple songs in memory at once, sharing instruments,
+     can be saved as a multi-module.
+   - new synthsound commands: envelope, set vibrato waveform.
+   - proper loop markers in the sample editor.
+   - no more "Sample too short" messages in the sample editor: the display
+     is no longer limited to minimum of 624 bytes (the minimum is now 1 byte).
+   - the sample editor can generate noise (e.g. for wind/sea effects).
+   - a range in sample editor can be transferred to the synthsound editor.
+   - the "red line" in the sample editor.
+   - sample list displays the total number of samples in dir/memory.
+   - the MIDI works now better: commands are handled BEFORE sending out
+     notes, notes with volume 0 are not sent out, some new commands:
+	channel/polyphonic aftertouch, pitchbender setting, controller
+	change
+   - most of the graphics data is now loaded into fast ram, giving more
+     chip ram for samples (in addition, the S2FST switch was removed).
+   - the range is now visible also on 2 bitplane-screen.
+   - direct object saving removed - removing this seldom used feature
+     made the program a couple of Kbytes shorter. There's now another
+     method for incorporating modules into programs (requires a bit more
+     work, though).
+   - Topi, the jumping pointer, is now hidden if Jump setting is turned off.
+     You can also save this (click Save prefs). Perhaps I'll "kill" Topi
+     completely in the future (frees a couple of Kbytes)...
+   - when you real-time enter with SPC on, the notes will be now quantized
+     correctly.
+   - an option to use the most common Protracker keyboard functions.
+
+== OctaMED V2.00 release B (21 Aug 1991) ================================
+   - a slight bug in the player routine audio channel freeing code fixed
+     (didn't mark the channels as freed, could cause a crash in certain
+      cases).
+   - some slight cleanup in OctaMEDPlayer.
+
+== Small bug fixes (16 Oct 1991) ========================================
+   - "medplayer.library" now clears the _modnum during GetPlayer().
+   - A minor bug in modplayer.a signal freeing code fixed.
+
+== MED Version 3.21 (01 Jan 1992, Happy New Year :-) ====================
+A bug fix release of MED V3.2. Many bugs fixed, including:
+   - if SPC was set to 0, a Guru appeared.
+   - Range All + Show Range trashed the screen.
+   - volume arrow gadgets had incorrect widths in their Gadget structs.
+   - problems with saving extension struct in multi-modules...hopefully
+     cured.
+   - a minor bug found in synth editor JVS renumbering code.
+
+WARNING: A deadly bug found in MED 3.20 player stuff
+         (MEDPlayer/modplayer.a/medplayer.library). The bug can cause
+         problems when playing multi-modules or old (pre-3.00) modules.
+         Be sure to use the new versions from now on!
+         (Also, some minor bugs have been exterminated.)
