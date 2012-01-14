@@ -30,7 +30,8 @@ all: trackers.svg trackers.ps
 
 trackers.svg: trackers.dot
 	dot -Tsvg -o$@ trackers.dot
-	
+	perl -pi -e 's|(^<svg).*|$$1|;s|.*?(xmlns.*)|$$1\n<script xlink:href="SVGPan.js"/>|' $@
+
 trackers.ps: trackers.dot
 	dot -Tps -o$@ trackers.dot
 	
@@ -40,7 +41,7 @@ trackers.dot: $(TRACKERS) $(TODOT) Makefile
 dist:
 	rm -Rf $(THDIR)
 	mkdir $(THDIR)
-	cp Makefile README $(TODOT) $(TRACKERS) $(THDIR)/
+	cp Makefile README SVGPan.js$(TODOT) $(TRACKERS) $(THDIR)/
 	tar cf - $(THDIR) | gzip -c > $(THPKG)
 	rm -Rf $(THDIR)
 	ls -l $(THPKG)

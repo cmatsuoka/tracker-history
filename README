@@ -25,7 +25,7 @@ may be freely reproduced, distributed, transmitted, used or modified by
 anyone for any purpose, commercial or non-commercial. The todot script is
 Copyrighted by Warren Toomey and modified by Claudio Matsuoka, and subject
 to license restrictions from the original Unix History Graphing Project
-todot script.
+todot script. The SVGPan library is licensed under the BSD license.
 
 
 Source file format:
