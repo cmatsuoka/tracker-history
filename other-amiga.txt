@@ -23,6 +23,13 @@ chiptracker_10
 	Author: Kris of Anarchy
 	Date: 1991-02-23
 
+#             PSTTracker V1.11   Nov/Dec 92'
+#             ------------------------------
+#                 (C)1992 PARASITE (tm)
+# This program is Public Domain, This code is based on ProTracker 1.2
+# Originally by Lars "ZAP" Hamre
+# PARASITE Version By: John "SHAYERA" Hinge in 92
+
 psttracker_111
 	Name: PSTTracker V1.11
 	Author: John 'SHAYERA' Hinge
