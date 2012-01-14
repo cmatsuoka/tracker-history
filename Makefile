@@ -41,7 +41,7 @@ trackers.dot: $(TRACKERS) $(TODOT) Makefile
 dist:
 	rm -Rf $(THDIR)
 	mkdir $(THDIR)
-	cp Makefile README SVGPan.js$(TODOT) $(TRACKERS) $(THDIR)/
+	cp Makefile README SVGPan.js $(TODOT) $(TRACKERS) $(THDIR)/
 	tar cf - $(THDIR) | gzip -c > $(THPKG)
 	rm -Rf $(THDIR)
 	ls -l $(THPKG)
