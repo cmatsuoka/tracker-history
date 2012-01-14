@@ -177,9 +177,9 @@ function handleMouseWheel(evt) {
 	var delta;
 
 	if(evt.wheelDelta)
-		delta = evt.wheelDelta / 3600; // Chrome/Safari
+		delta = evt.wheelDelta / 1500; // Chrome/Safari
 	else
-		delta = evt.detail / -90; // Mozilla
+		delta = evt.detail / -25; // Mozilla
 
 	var z = 1 + delta; // Zoom factor: 0.9/1.1
 
