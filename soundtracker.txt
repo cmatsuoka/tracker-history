@@ -35,7 +35,7 @@ soundtracker_20
 	Date: 1988-10
 	Based on soundtracker_18
 	Influenced by master_soundtracker_10 [
-		Save as Module added
+		Save as module
 	]
 
 # "based on the original V1.21 version by Karsten Obarski"
@@ -167,12 +167,65 @@ doc_soundtracker_ix
 		Effects 0 1 2 C E F
 	]
 
+# VOOOLLLUUUMMMEEE, POOOWWWEEERRR
+# ===============================
+# PREPARE FOR THE MASTER SOUNDTRACKER V1.0 !!!!!
+# ==============================================
+# SPECIAL GREETINGS AND THANKS FOR THE IDEAS TO:
+# MR MAGIC, UNKNOWN AND TIMETRAVELLER
+#
+# From the replay code:
+# ******************************************
+# * Master Soundtracker V1.0 replayroutine *
+# * based on V9.0 of DOC *******************
+# ******************************************
+# * Improved by TIP of The New Masters in JULY 1988 *
+#
+# From documentation:
+# Modifications by TNM !!:
+# ------------------------
+#        BackSpace-Repeat
+#        Filter control during play! (some A500+A2000)
+#        4 Channel Equalizer with on/off Function
+#        Faster printroutine
+#        Faster Scrolling with ALT or SHIFT + Cursor Keys
+#        Copy function for patterns with ALT + F3-F5
+#        All Cuts are going to the Copy-Buffer
+#        Record-Instruction
+#        Better KeyHandler (No auto-repeat while gurksing with disk)
+#        Better colors, better styling and better charset
+#        Directory routine with recognizing same disks
+#        23 Channel spectrum analyzer
+#        Save+Load packed songs (I'll include it after typing the text)
+#        Max Instrument length 32K !!
+# And last but not least:
+#        Full integrated Digital-Sampler with Cut Functions
+#        And a possibility to save digi-samples
+# P.S.:  There is a possibility to Quit the ST (If you are good,you'll find it)
+
 master_soundtracker_10
 	Name: Master Soundtracker 1.0
-	Author: TIP of TNM (Armin Sander)
+	Author: TIP of The New Masters (Armin Sander)
 	Date: 1988-07-30	# 1998-07
-	Comment: 0, 1, 2, C, E, F
-	Based on doc_soundtracker_ix [ Filter, 32KB samples ]
+	Comment: Has effects 0, 1, 2, C, E, F\n32KB samples
+	Based on doc_soundtracker_ix [ 
+		BackSpace-Repeat
+		Filter control during play
+		4-ch eq with on/off function
+		Faster printroutine
+		Faster Scrolling
+		Copy function for patterns
+		All cuts going to Copy-Buffer
+		Record-Instruction
+		Better KeyHandler
+		Better colors styling and charset
+		Directory routine recognizing disks
+		23-channel spectrum analyzer
+		Save+Load packed songs
+		Max instrument length 32K
+		Integrated sampler
+		Save samples
+	]
 
 master_soundtracker_30
 	Name: Master Soundtracker 3.0
@@ -206,11 +259,21 @@ doc_soundtracker_2
 	Name: D.O.C Soundtracker 2.0
 	Author: Unknown of D.O.C
 	Date: 1988-08		# from SoundTrackerV2.0.doc
-	Comment: 0, 1, 2, B, C, D, E, F
+	Comment: Has effects 0, 1, 2, B, C, D, E, F
 	Based on master_soundtracker_10 [
-		B - Pattern jump,
-		D - Pattern break,
-		Pattern play button,
+               Improved record function
+               Extended keymap (Sonix style)
+               Pattern play function
+               Delete Song in dos menu
+               Improved ANALYZER
+               Pattern change during play
+               Pattern break command
+               Position jump command
+               Sample zero function
+               New playroutine
+               Improved graphics
+               Nice scrolling
+               Animated mousepointer
 	]
 
 # Modifications by D.O.C:
@@ -222,9 +285,15 @@ doc_soundtracker_22
 	Name: D.O.C Soundtracker 2.2
 	Author: Unknown of D.O.C
 	Date: 1988-12		# from SoundTrackerV2.2.doc
-	Based on doc_soundtracker_2 1000
+	Based on doc_soundtracker_2 1000 [
+               Sample sort function
+               Fix 'DisplayPattern' routine
+               Fix preset-editor
+               Directory Sort function?
+               New Colors for Analyser?
+	]
 
-# based "based on the MasterSoundtracker V1.0 by TIP/PROPHETS and mainly
+# "based on the MasterSoundtracker V1.0 by TIP/PROPHETS and mainly
 # on Soundtracker V2.2 by Unknown/D.O.C"
 #
 # Modifications by MnemoTroN:
@@ -245,16 +314,29 @@ doc_soundtracker_22
 # Instruments
 #   You can use up to thirtyone different instruments in one music-piece.
 #   (...) Now you can use samples up to $8000 (=32768) bytes !!!!
+#
+# [CM] Like in TJC II, will assume that MST 1.0 refers to lineage and code
+# comes through DOC 2.2
 
 soundtracker_23
 	Name: Soundtracker 2.3
 	Author: MnemoTroN
 	Date: 1989-04		# from Soundtracker2.3.doc
+	Comment: 31-instrument M.K. file\nModern mouse pointer
 	Based on doc_soundtracker_22 2000 [
-		31-instrument M.K. file,
-		Modern mouse pointer
+		Scroll-Line removed
+		Animated Mousepointer removed
+		Extended DOS-Window
+		Key-Help-Page
+		Nice 'Sure?'-Requester
+		Reinsertion of Length- Repeat- and RepLen-Gadgets
+		Lowpass-Filter is switched off
+		Load Module
+		Save Sample
+		Format Disk
+		Clear Song
 	]
-	Based on master_soundtracker_10 100
+	# Based on master_soundtracker_10 100
 
 # Not much information about this one, I have only the binary
 
@@ -296,9 +378,13 @@ soundtracker_25
 	Name: Soundtracker 2.5
 	Author: MnemoTroN
 	Date: 1989-08-27		# from the doc file
+	Comment: Has effects 0 1 2 3 4 A B C D E F\nRepeat offset in words
 	Based on soundtracker_24 1000 [
-		New playroutine, Tone portamento, Vibrato,
-		Repeat offset in words
+		New edit options
+		New disk menu
+		New playroutine
+		Tone portamento
+		Vibrato
 	]
 	Based on noisetracker_10
 
