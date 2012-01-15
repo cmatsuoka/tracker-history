@@ -5,10 +5,27 @@ soundfx_13
 	Comment: 15 instruments
 	#Influenced by soundtracker_121 [ Pitchbend effect ]
 
+# http://eab.abime.net/showthread.php?t=18589
+# Mentions SoundFX v1.7 and v1.945
+
 # From http://aminet.net/package/mus/play/EP_SoundFX
 # "This player uses the replay routine ripped from the SoundFX 1.8 editor
 #  and perhaps plays all SoundFX (15 samples) songs correctly. SoundFX 1.8
 #  has one extra command that the SoundFX 1.3 editor did not have.
+
+soundfx_18
+	Name: SoundFX 1.8
+	Author: Christian Haller & Christian A. Weber
+	Date: 1990 	# just a guess
+	Based on soundfx_13 [ One extra command ]
+
+# From http://kingromans.blogspot.com/2005/10/ever-heard-of-linels-soundfx.html
+
+soundfx_1994
+	Name: SoundFX 1.994
+	Author: Christian Haller, Christian A. Weber\n& René Straub
+	Date: 1991	# from screenshot
+	Based on soundfx_18
 
 # From http://www.exotica.org.uk/forum/viewtopic.php?f=5&t=122
 # "SFX1.3 has SONG as header (15 Samples) 
@@ -17,6 +34,7 @@ soundfx_13
 # "Here´s a Text from the Deli Guys: 
 #  SoundFX1.3	 "SONG" at $3c 
 #  SoundFX2.0	 "SO31" at 124"
+
 
 chiptracker_10
 	Name: ChipTracker 1.0
