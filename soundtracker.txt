@@ -1,3 +1,12 @@
+# Description of effects is wrong in the Quick Clarification file:
+#   0 - Normal play or arpeggio.
+#   1 - Portamento up.
+#   2 - Portamento down.
+# Effect 0 is modern arpeggio (introduced in ?)
+# That should be:
+#   1 - Arpeggio
+#   2 - Portamento up/down
+
 soundtracker_10
 	Name: The Ultimate Soundtracker
 	Author: Karsten Obarski
@@ -20,6 +29,9 @@ soundtracker_121
 #   so I assume Karsten must have set it by hand or added it in one of the
 #   non-released versions. For example "Telephone.mod" has a BPM of 112.
 #   Other Trackers chose to remove or ignore it until its reintroduced.).
+#
+# [CM] DOC 9 (based on 1.8) claims:
+# * New playroutine from Obarski
 
 soundtracker_18
 	Name: The Ultimate Soundtracker 1.8
@@ -27,6 +39,7 @@ soundtracker_18
 	Date: 1988-04	# Binary contains release date of month and year.
 	Based on soundtracker_121	[
 		CIA/BPM speed adjustment added to gui
+		New playroutine?
 	]
 
 soundtracker_20
@@ -49,36 +62,65 @@ soundtracker_20
 #                 Correct (?) spelling. (Karsten, it's spelled "Length" and
 #                                        NOT "Lenght" !!)
 #                                       (PHR....it ain't "Lengh", either !)
+#
+# [CM] It's not clear what exactly was changed in modulation and portamento
+#
+# List of effects:
+#          0 - Normal play or arpeggio.
+#          1 - Portamento up.
+#          2 - Portamento down.
+#          3 - Modulate volume of next higher voice. (possibly with arpeggio)
+#          4 - Modulate period of next higher voice.           ''
+#          5 - Modulate period + volume of next higher voice.  ''
+#          6 - Modulate volume of next higher voice and portamento up.
+#          7 - Modulate period of next higher voice and portamento up
+#          8 - Modulate period + volume of next higher voice + portamento up.
+#          9 - Modulate volume of next higher voice and portamento down.
+#          A - Modulate period of next higher voice and portamento down.
+#          B - Modulate period + vol of next higher voice + portamento down.
+#          C - Set volume.
+#          D - Slide volume.
+#          E - Set auto-slide.
 
 tjc_soundtracker_ii
 	Name: TJC Soundtracker II
 	Author: The Exterminator of The Jungle Command\n(Mark Langerak)
 	Date: 1988-03-01		# from Quick Clarification
+	Comment: Has USA keymap\nEffects 3 to B are modulation\nIntroduced modern effect C\nEffects D and E are volume slide
 	Based on soundtracker_121 [
-		0 - Normal play or arpeggio,
-		1 - Portamento up,
-		2 - Portamento down,
-		3 - Modulate volume of next higher voice. (possibly with arpeggio),
-		4 - Modulate period of next higher voice,
-		5 - Modulate period + volume of next higher voice,
-		6 - Modulate volume of next higher voice and portamento up,
-		7 - Modulate period of next higher voice and portamento up,
-		8 - Modulate period + volume of next higher voice + portamento up,
-		9 - Modulate volume of next higher voice and portamento down,
-		A - Modulate period of next higher voice and portamento down,
-		B - Modulate period + vol of next higher voice + portamento down,
-		C - Set volume,
-		D - Slide volume,
-		E - Set auto-slide,
-		USA keymap
+		# Modulation
+		# Enhanced portamento
+		Volume changing during play
+		Volume sliding up/down during play
+		Standard USA keymap
+		Playroutine for use in demos etc
+		Correct (?) spelling
 	]
+
+# History      : SoundTracker V3.0 is based on the original V1.21
+#                version by Karsten Obarski. Later edited by the
+#                Exterminator, and at last completed by IL SCURO.
+#
+#
+# Modifications : TEMPO setting during play!
+# -------------   Modulation.
+#                 Enhanced portamento.
+#                 Volume changing during play.
+#                 Volume sliding up/down during play.
+#                 Standard USA keymap.
+#                 Playroutine for use in demos etc.
+#                 Correct (?) spelling. (Karsten, it's spelled "Length" and
+#                                        NOT "Lenght" !!)
+#
+# [CM] Changelog is cumulative with TJC II
 
 soundtracker_iii
 	Name: Soundtracker III
 	Author: Il Scuro (Ron Birk)
 	Date: 1988-03-13		# From Soundtracker_v3.doc
+	Comment: Introduced effect F
 	Based on tjc_soundtracker_ii [
-		F - Set speed
+		Set speed
 	]
 
 # [WW] DOC intro 3 scroller claims release date: 29.03.88
@@ -95,14 +137,37 @@ doc_soundtracker_iii
 # DOC Soundtracker 4 claims it's based is based on "Jungle Commands
 # Soundtracker 2".
 # [CM] but by lineage and not direct descent?
+#
+# Note: "Soundtracker 5" clarification in Soundtracker_v1-v9 seems to refer
+# to DOC 4:
+#
+# EQUALIZER by (look at coding) of D.O.C
+# SPEED-CONTROL build in by (look upper line)
+#
+# -----------------------------------------------------
+#
+# Modifications by D.O.C :
+# ------------------------
+#                 FEATURES :
+#
+#               -  SPEED CHANGING during play !
+#               -  EQUALIZER !
+#               -  NEW playroutine !
+#
+# Equalizer was added in DOC 3, it is not clear if the new playroutine was
+# introduced in DOC 3 or DOC 4. Also wording suggests that effect F was
+# reimplemented instead of rebased from Il Scuro's 3.
 
 doc_soundtracker_iv
 	Name: DOC Soundtracker IV
 	Author: Unknown of D.O.C
 	Date: 1988-04-09
 	# Based on tjc_soundtracker_ii [ Set speed ]
-	Based on doc_soundtracker_iii 1000
-	Influenced by soundtracker_iii [ F - Set speed ]
+	Based on doc_soundtracker_iii 1000 [
+		Set speed
+		NEW playroutine?
+	]
+	Influenced by soundtracker_iii [ Set speed ]
 
 # [CM] Does AFL Soundtracker IV have an equalizer? If yes, it's probably
 # based on DOC Soundtracker 3, otherwise from Il Scuro's
@@ -111,11 +176,31 @@ doc_soundtracker_iv
 # AFL 4 on-screen text:
 # "Soundtracker IV by Alpha Flight based on Soundtracker II+III by
 # Jungle Command, DOC and Il Scuro"
+#
+# Quick clarification for AFL 4:
+#
+# History      : SoundTracker V4.0 is based on the original V1.21
+#                version by Karsten Obarski. Later edited by the
+#                Exterminator, then completed by IL SCURO and last by DOC
+#                with their Equalizer, but without TEMPO setting!!!
+# 
+# 
+# Modifications : TEMPO setting during play!
+# -------------   Modulation.
+#                 Enhanced portamento.
+#                 Volume changing during play.
+#                 Volume sliding up/down during play.
+#                 Standard USA keymap.
+#                 Playroutine for use in demos etc.
+#                 Correct (?) spelling. (Karsten, it's spelled "Length" and
+#                                        NOT "Lenght" !!)
+# 
 
 afl_soundtracker_iv
 	Name: AFL Soundtracker IV
 	Author: Alpha Flight\n(maybe Armin Sander)
 	Date: 1988-04-07		# From Soundtracker_v4.doc
+	Comment: Merge set speed + equalizer
 	Based on doc_soundtracker_iii
 	Based on soundtracker_iii
 
@@ -127,16 +212,31 @@ afl_soundtracker_iv
 # DOC Soundtracker 6 claims it's based on "Jungle Commands Soundtracker 2".
 # [CM] but by lineage and not direct descent?
 #
-# [CM] Soundtracker docs from "Soundtracker_v1-v9" not totally reliable
-# since it has doc & binary for a DOC Soundtracker 5 which shouldn't exist.
-# What does the binary say?
+# Quick clarification text:
+#
+# Modifications by D.O.C :
+# ------------------------
+#                 FEATURES :
+# 
+#               -  SPEED CHANGING during play !
+#               -  EQUALIZER !
+#               -  NEW playroutine !
+#               -  NEW Mouse pointer
+#               -  NEW 3D cursor
+#               -  VOICE-CONTROL!  (press 1-4 on the right numeral pad)
+#               -  THAT'S ALL!     (press nothing)
 
 doc_soundtracker_vi
 	Name: DOC Soundtracker VI
 	Author: Unknown of D.O.C
 	Date: 1988-04-20		# From Soundtracker_v6.doc
+	Comment: Has old effects 3-B and D-E
 	# Based on tjc_soundtracker_ii
-	Based on doc_soundtracker_iv
+	Based on doc_soundtracker_iv [
+		New mouse pointer
+		New 3D cursor
+		Voice control
+	]
 
 # [WW] DOC Soundtracker 9 claims:
 # * Based on Ultimate Soundtracker 1.8 by Karsten Obarski.
@@ -147,24 +247,43 @@ doc_soundtracker_vi
 #   found a "save mod" in a tracker predating this.)
 #
 # [CM] If DOC makes IX based on Obarski's 1.8, it is reasonable to expect
-# a rebase for some DOC VI changes such as modern effects 0-2,C-F
+# a rebase for some DOC VI changes such as effects
+#
+# Quick clarification text:
+#
+# Modifications by D.O.C !!:
+# --------------------------
+# 
+#                 Enhanced portamento.
+#                 Volume changing during play.
+#                 Filter control during play! (some A500+A2000)
+#                 Speed control during play.
+#                 New voice control.
+#                 Improved DIR function.
+#                 Standart USA keymap.
+#                 New playroutine from Obarski (Improved by Unknown of D.O.C)
+#                 Plastic cursor (hehe)
+#                 New scrolltexts (hoehoe)
+#                 Better colors (thanx to J.C.)
 
 doc_soundtracker_ix
 	Name: DOC Soundtracker IX
 	Author: Unknown of D.O.C
-	Date: 1988-07-20
-	Comment: 0, 1, 2, C, E, F
+	Date: 1988-07-19		# from documentation
+	Comment: \"Module\" term appears\nDrops modulation effects 3-B\nDrops volume slide effects D-E\nHas effects 0, 1, 2, C, E, F
 	Based on soundtracker_18 1000 [
-		0 - Normal play or arpeggio,
-		1 - Portamento up,
-		2 - Portamento down,
-		C - Set volume,
-		E - Set filter on/off,
-		F - Set speed,
+		Filter control during play
+		Improved DIR function
+		Standard USA keymap
+		Improved playroutine
+		Plastic cursor
+		New scrolltexts
+		Better colors
 		Save as Module added
+		No modulation effects
 	]
-	Influenced by doc_soundtracker_vi [
-		Effects 0 1 2 C E F
+	Based on doc_soundtracker_vi [
+		Rebase changes
 	]
 
 # VOOOLLLUUUMMMEEE, POOOWWWEEERRR
