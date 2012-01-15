@@ -1,17 +1,79 @@
+# ----------------------------------------------------------------------------
+# - NoiseTracker V1.0 - An improved version of MnemoTroN's Soundtracker V2.3 -
+# -   Made by Mahoney & Kaktus - Northstar & Silents in July - August 1989   -
+# ----------------------------------------------------------------------------
+# 
+#                       - This tracker is non-polluting -
+# 
+# Text by Mahoney ...
+# 
+# Since I'm so tired of the old ST-instructions, I'll just short take my part
+# of the improvements here. If you're not into how to use the Soundtracker, read
+# the old V2.3 instructions, or call your nearest friend. (that's what friends
+# are for!) This tracker was made to fit our purposes, if you don't like it,
+# that's not our problem.
+# 
+# Here's a short list of what I've done ...
+# 
+# * Removed the Format Disk-option (It wasn't reliable)
+# * Inserted Load Sample-function (good if haven't done a PLST!)
+# * Corrected the replayroutine (now works with all instruments)
+# * An IFF-handler routine (should take damaged IFFs, too)
+# * Improved inputhandler.
+# * Reinserted song-pack on/off (I used it in the Sounds of Gnome)
+# * Possibility to change the Module-directory.
+# * Change instrument with the numeric-pad.
+# * Play/Patt/Stop/Edit/Rec from the keyboard.
+# * Simple transpose-function.
+# * Two new song-commands (tone-portamento & vibrato)
+# * Great PLST-screen with simple searchroutine.
+# * Now you can change PLST in the tracker.
+# * Change Pattern & Position from the keyboard.
+# * Sounds looped just like in Audiomaster & Sound FX.
+# * Modulelength & free chipmem displayed.
+# * All known bugs corrected.
+
 noisetracker_10
 	Name: Noisetracker 1.0
 	Author: Mahoney & Kaktus\n(Pex Tufvesson & Anders Berkeman)
 	Date: 1989-08
+	Comment: \"An improved version of\nMnemoTroN's Soundtracker V2.3\"\nIntroduces vibrato and tone portamento\nChanges loop values
 	Based on soundtracker_23 [
-		New playroutine, Tone portamento, Vibrato,
-		Fix loop start, Speed up to 0x1F
+		Removed Format Disk-option
+		Inserted Load Sample-function
+		Corrected replayroutine
+		IFF-handler routine
+		Reinserted song-pack on/off
+		Possibility to change Module-directory
+		Change instrument with numeric-pad
+		Play/Patt/Stop/Edit/Rec from keyboard
+		Simple transpose-function
+		New commands tone-portamento & vibrato
+		Now can change PLST in tracker
+		Sounds looped just like in Audiomaster & Sound FX
+		Speed up to 0x1F
 	]
+
+# NoiseTrackerV1.1 improvements:
+# 
+# * Safer loadingroutines.
+# * Restart pointer for your song.
+# * Removed Use Pset. (use the PLST-screen instead)
+# * Debugged IFF-handler.
+# * Safer memoryhandler.
 
 noisetracker_11
 	Name: Noisetracker 1.1
 	Author: Mahoney & Kaktus
 	Date: 1990
-	Based on noisetracker_10 1000 [ Restart byte ]
+	Comment: Introduces restart byte
+	Based on noisetracker_10 1000 [
+		Safer loadingroutines
+		Restart pointer for your song.
+		Removed Use Pset
+		Debugged IFF-handler
+		Safer memoryhandler
+	]
 
 noisetracker_12
 	Name: Noisetracker 1.2
