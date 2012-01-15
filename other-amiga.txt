@@ -17,6 +17,7 @@ soundfx_18
 	Name: SoundFX 1.8
 	Author: Christian Haller & Christian A. Weber
 	Date: 1990 	# just a guess
+	Comment: (uncertain date)
 	Based on soundfx_13 [ One extra command ]
 
 # From http://kingromans.blogspot.com/2005/10/ever-heard-of-linels-soundfx.html
