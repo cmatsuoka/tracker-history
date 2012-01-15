@@ -232,7 +232,7 @@ doc_soundtracker_vi
 	Date: 1988-04-20		# From Soundtracker_v6.doc
 	Comment: Has old effects 3-B and D-E
 	# Based on tjc_soundtracker_ii
-	Based on doc_soundtracker_iv [
+	Based on doc_soundtracker_iv 1000 [
 		New mouse pointer
 		New 3D cursor
 		Voice control
