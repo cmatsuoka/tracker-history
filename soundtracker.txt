@@ -356,25 +356,27 @@ master_soundtracker_30
 # says "based on the MasterSoundTracker V1.0 by TIP/TNM"
 #
 # Modifications by D.O.C:
-#   Improved record function
-#   Extended keymap (Sonix style)
-#   Pattern play function
-#   Delete Song function in the dos menu
-#   Improved ANALYZER
-#   Pattern changing during play
-#   Pattern break command !!!! (geil)
-#   Position jump command !!!! (geiol)
-#   Sample zero function
-#   New playroutine for use in demos/intros/games
-#   Improved graphics (colors,styling,font)
-#   Nice scrolling
-#   Animated mousepointer
+# -----------------------
+# 
+#                Improved record function
+#                Extended keymap (Sonix style)
+#                Pattern play function
+#                Delete Song function in the dos menu
+#                Improved ANALYZER
+#                Pattern changing during play
+#                Pattern break command !!!! (geil)
+#                Position jump command !!!! (geiol)
+#                Sample zero function
+#                New playroutine for use in demos/intros/games
+#                Improved graphics (colors,styling,font)
+#                Nice scrolling
+#                Animated mousepointer
 #
 # Instruments
 #   You can use up to fifteen different instruments in one music-piece.
 #   (...) Now you can use samples up to $8000 (=32768) bytes !!!!
 
-doc_soundtracker_2
+doc_soundtracker_20
 	Name: D.O.C Soundtracker 2.0
 	Author: Unknown of D.O.C
 	Date: 1988-08		# from SoundTrackerV2.0.doc
@@ -396,46 +398,64 @@ doc_soundtracker_2
 	]
 
 # Modifications by D.O.C:
-#   A sample sort function
-#   Corrected 'DisplayPattern' routine
-#   Corrected preset-editor
+# -----------------------
+# 
+#                A sample sort function
+#                Corrected 'DisplayPattern' routine
+#                Corrected preset-editor
+#                (... list from V2.0 ...)
+#                Directory Sort function
+#                New Colors for the Analyser
+#
+# From tracker text:
+#   "this time we bring you soundtracker 2.2  this version has the
+#    following new features : directory sort, new equalizer colors and
+#    a new d.o.c address (...) now the d.o.c news !  1. the next
+#    soundtracker is finished ( 31 instruments ) , but only for internal use
 
 doc_soundtracker_22
 	Name: D.O.C Soundtracker 2.2
 	Author: Unknown of D.O.C
 	Date: 1988-12		# from SoundTrackerV2.2.doc
-	Based on doc_soundtracker_2 1000 [
+	Based on doc_soundtracker_20 1000 [
                Sample sort function
                Fix 'DisplayPattern' routine
                Fix preset-editor
-               Directory Sort function?
-               New Colors for Analyser?
+               Directory Sort function
+               New Colors for the Analyser
 	]
 
 # "based on the MasterSoundtracker V1.0 by TIP/PROPHETS and mainly
 # on Soundtracker V2.2 by Unknown/D.O.C"
 #
-# Modifications by MnemoTroN:
+# [CM] Like in TJC II, will assume that MST 1.0 refers to lineage and code
+# comes through DOC 2.2
 #
-#   Scroll-Line removed
-#   Animated Mousepointer removed
-#   Extended DOS-Window
-#   Key-Help-Page
-#   Nice 'Sure?'-Requester
-#   Reinsertion of Length-,Repeat- and RepLen-Gadgets
-#   Lowpass-Filter is switched off
-#   Load Module
-#   Save Sample
-#   Format Disk
-#   Clear Song
-#   and some small details that must not be mentioned here
+# Modifications by D.O.C:
+# -----------------------
+# 
+#                 (... list from V2.2 ...)
+#                 Extension to 31 Instruments
+# 
+# Modifications by MnemoTroN:
+# ---------------------------
+# 
+#                 Scroll-Line removed
+#                 Animated Mousepointer removed
+#                 Extended DOS-Window
+#                 Key-Help-Page
+#                 Nice 'Sure?'-Requester
+#                 Reinsertion of Length-,Repeat- and RepLen-Gadgets
+#                 Lowpass-Filter is switched off
+#                 Load Module
+#                 Save Sample
+#                 Format Disk
+#                 Clear Song
+#                 and some small details that must not be mentioned here
 #
 # Instruments
 #   You can use up to thirtyone different instruments in one music-piece.
 #   (...) Now you can use samples up to $8000 (=32768) bytes !!!!
-#
-# [CM] Like in TJC II, will assume that MST 1.0 refers to lineage and code
-# comes through DOC 2.2
 
 soundtracker_23
 	Name: Soundtracker 2.3
@@ -443,6 +463,7 @@ soundtracker_23
 	Date: 1989-04		# from Soundtracker2.3.doc
 	Comment: 31-instrument M.K. file\nModern mouse pointer
 	Based on doc_soundtracker_22 2000 [
+		Extension to 31 Instruments (by Unknown of D.O.C)
 		Scroll-Line removed
 		Animated Mousepointer removed
 		Extended DOS-Window
