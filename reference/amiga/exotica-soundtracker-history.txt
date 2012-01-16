@@ -1,0 +1,236 @@
+   Link: copyright
+   Log in / create account
+   ExoticA
+   ExoticA Wiki
+
+                              Soundtracker History
+
+  From ExoticA
+
+   Jump to: navigation, search
+
+             Timeline of the development of SoundTracker and clones
+      Date           Name                          Details                    
+                                 programmed by Karsten Obarski. Supported 4   
+   xx.08.1987 Soundtracker v1.x  channels and 15 instruments along with 5     
+                                 effects: Portamento Up/Down, Set Volume, Set 
+                                 Secondary Tempo and Arpeggio.                
+
+                                 Karsten Obarski (It was in december of 1987. 
+   xx.12.1987 Soundtracker v1.21 the first SoundTracker was completely        
+                                 finished. The copyright was sold to the EAS  
+                                 company.)                                    
+
+   04.01.1988 Soundtracker v1.8  Karsten Obarski EAS                          
+
+                                 The Exterminator/The Jungle Command [Mark    
+   01.03.1988 Soundtracker V2.0  Langerak] (Zierikzee/netherland)             
+                                 SoundTracker V2.0 is based on the original   
+                                 V1.21 version by Karsten Obarski             
+
+   xx.xx.1988 DOC Soundtracker 2 Unknown/DOC                                  
+
+   xx.xx.1988 DFJ Soundtracker 3 Il Scuro/Defjam [Ron Birk]                   
+
+   12.03.1988 AFL Soundtracker 4  ??/Alpha Flight                             
+
+   09.04.1988 DOC Soundtracker 4 Unknown/DOC                                  
+
+   xx.04.1988 DOC Soundtracker 6 Unknown/DOC                                  
+
+   xx.xx.1988 DOC Soundtracker 9 Unknown/DOC                                  
+
+   xx.xx.1988 Soundtracker        ??                                          
+              Professional       
+
+   xx.07.1988 Master             Update by TIP/The New Masters [Armin Sander] 
+              Soundtracker V1.0  Based on DOC soundtracker 9.                 
+
+   xx.xx.1988 Master             Tip/Prophets AG [Armin Sander]               
+              Soundtracker 3     
+
+   21.10.1988 The Ultimate       Karsten Obarski / EAS. (NTSC/PAL, Module     
+              Soundtracker V2.0  save possible.)                              
+
+                                 Unknown/D.O.C. [Michael Kleps] now with 31   
+   xx.12.1988 Soundtracker v2.2  imstruments (from now we could find M.K.     
+                                 inside)                                      
+
+   xx.06.1989 Soundtracker v2.3  Mnemotron/Spreadpoint                        
+
+                                 MnemoTroN/Spreadpoint (at                    
+                                 Powerslaves-VisionFactory-AlphaFlight Party  
+   29.07.1989 Soundtracker v2.4  29.07/89) (This Soundtracker is based on the 
+                                 MasterSoundtracker V1.0 by TIP/Prophets and  
+                                 mainly on Soundtracker V2.2 by               
+                                 Unknown/D.O.C)                               
+
+                                 Mahoney [Per Tuffvesson] & Kaktus [Anders    
+   xx.08.1989 NoiseTracker v1.0  Berkeman]/Northstar & The Silents. An        
+                                 improved version of MnemoTroN's Soundtracker 
+                                 V2.3                                         
+
+   xx.xx.xxxx Noisetracker v1.1  Mahoney [Per Tuffvesson] & Kaktus [Anders    
+                                 Berkeman]                                    
+
+   01.06.1990 NoiseTracker v1.2C Mahoney [Per Tuffvesson] & Kaktus [Anders    
+                                 Berkeman]                                    
+
+   03.07.1990 UFO Noisetracker   RiffRaff & Antichrist/United Forces          
+              v1.2D              
+
+   xx.xx.xxxx Soundtracker v2.5  MnemoTroN/Spreadpoint                        
+
+   01.07.1990 NoiseTracker v2.0  Mahoney [Per Tuffvesson] & Kaktus [Anders    
+                                 Berkeman] at the Amiga Conference 1990.      
+
+                                 Exolon/Fairlight Based on Noisetracker V2.0  
+                                 "MIDI: Perhaps the greatest improvement in   
+   14.07.1990 StarTrekker 1.0    the soundtracker history! Made by Exolon for 
+                                 the NoiseTracker 2.0 but Mahoney stole my    
+                                 routines some days before.                   
+
+   xx.xx.1990 StaticTracker 2.0  Static, Conan & Newton/Rebels, based on      
+                                 Noisetracker 2.0.                            
+
+                                 Coded by ZAP [Lars Hamre]/Amiga Freelancers. 
+                                 Offered more effects and advanced editing    
+                                 functions like split keyboards it also       
+                                 featured a sample editor. Possibly the most  
+   xx.10.1990 ProTracker v1.00   important feature ProTracker added was a     
+                                 play routine that was not raster dependant.  
+                                 This meant that people with NTSC systems     
+                                 (non Europeans) could listen to the music    
+                                 the way it was meant to sound.               
+
+   03.11.1990 Soundtracker v2.6  Mnemotron/Spreadpoint                        
+
+   xx.xx.1990 NoiseTracker v1.1  Mahoney [Per Tuffvesson] & Kaktus [Anders    
+                                 Berkeman]                                    
+
+   23.10.1990 StarTrekker v1.1   Exolon/Fairlight [Bjorn Wesen]               
+
+   18.11.1990 Startrekker v1.2   Exolon/Fairlight [Bjorn Wesen]               
+
+   xx.11.1990 UFO NoiseTracker   RiffRaff & Antichrist/United Forces          
+              v1.3a              
+
+                                 ZAP [Lars Hamre]/Amiga Freelancers (spread   
+   27.12.1990 Protracker V1.1a   at the Theatre-Network party and the Dexion  
+                                 X-mas Party)                                 
+
+   16.03.1991 Startrekker v1.3   Exolon/Fairlight [Bjorn Wesen]               
+
+   xx.03.1991 UFO NoiseTracker   RiffRaff & Antichrist/United Forces          
+              v1.3D              
+
+   xx.04.1991 Protracker v1.1b   ZAP [Lars Hamre]/Amiga Freelancers           
+
+   xx.xx.1991 Protracker v1.2a   ZAP [Lars Hamre]/Amiga Freelancers           
+
+   20.02.1992 Protracker 1.2c     ??                                          
+
+   xx.xx.1991 Protracker v1.3a   ZAP [Lars Hamre]/Amiga Freelancers           
+
+   16.04.1992 Protracker v2.1A   Crayon [Peter Hanning]/Mushroom              
+                                 Studios-Noxious (at the Gatherning 92)       
+
+   xx.xx.1992 Trashtracker v2.1  (Noisetracker 2.0) (Crionics &               
+                                 Static/Rebels)                               
+
+   23.05.1992 Shadestracker v1.9 Shades                                       
+
+   20.06.1992 Protracker v2.2a   Crayon/Noxious [Peter Hanning]               
+
+   20.09.1992 ShadesTracker v2.0  ??/Shades                                   
+
+   06.10.1992 Protracker v2.2b   Crayon/Noxious [Peter Hanning]               
+
+   28.12.1992 ParasiteTracker    Shayery/Parasite [John Hinge] (at the party  
+              v1.11              2 12/92)                                     
+
+                                 Crayon/Noxious [Peter Hanning] (at the party 
+                                 12/92). You can now have modules with 100    
+   01.01.1993 Protracker v2.3a   patterns. If you save a module with more     
+                                 than 64 patterns then M.K. in the            
+                                 moduleheader will be changed to M!K!         
+
+   10.01.1993 IceTracker v1.1    Icepic, Australia                            
+
+   xx.01.1993 Protracker v2.59   Apogee Technologies, USA (based on           
+                                 Protracker 1.1b)                             
+
+   17.01.1993 Protracker v3.00b  Krest Olorin Outland/Cryptoburners (Ivar     
+                                 Just Olsen Tom Bech and Bjarte Andreassen)   
+
+   26.01.1993 Protracker v3.1    Krest Olorin Outland/Cryptoburners           
+
+   24.02.1993 Parasite Tracker    ??                                          
+              v1.5               
+
+   04.03.1993 Hearttracker V2.33 (Protracker v2.3A for Melon Dezign)          
+                                 Crayon/Noxious [Peter Hanning]               
+
+   21.04.1993 Shadestracker v3.0  ??                                          
+
+   07.05.1993 IceTracker v1.2     ??                                          
+              final              
+
+   30.05.1993 Protracker v3.10b  Krest Olorin Outland/Cryptoburners           
+
+   10.07.1993 Protracker v3.11   Krest Olorin Outland/Cryptoburners           
+
+   30.08.1993 Shadestracker v3.1  ??                                          
+              final              
+
+   20.11.1993 Protracker v3.15   Krest Olorin Outland/Cryptoburners           
+
+   15.02.1994 MaxTracker v1.0    Sylvain Marchand                             
+
+   Retrieved from
+   `http://www.exotica.org.uk/mediawiki/index.php?title=Soundtracker_History&oldid=79970'
+   Share/Save/Bookmark
+
+      Views
+
+     * Page
+     * Discussion
+     * View source
+     * History
+     * Navigation
+          * Main Page
+          * Recent changes
+          * Latest News
+          * Forum
+          * Random page
+          * Help
+     * Toolbox
+          * What links here
+          * Related changes
+          * Special pages
+          * Printable version
+          * Permanent link
+     * Personal tools
+          * Log in / create account
+     * Search
+          * _____________________ [ Search ] [ Go to ]
+
+            Press search to match the entered keywords or use Go to to jump
+            directly to a matching page name
+
+   Footer
+   Powered by MediaWiki
+   Attribution-ShareAlike 3.0 Unported
+     * This page was last modified on 1 June 2009, at 14:16.
+     * This page has been accessed 3,090 times.
+     * Unless otherwise specified above, text is available under
+       Attribution-ShareAlike 3.0 Unported.
+       Images and files may contain a separate licence, so please check
+       before using.
+       See Copyrights for more information.
+
+       Hosting provided by Mythic-Beasts. See the Hosting Information page
+       for more details.
+
+     * About ExoticA
+     * Disclaimers

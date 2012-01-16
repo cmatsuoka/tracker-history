@@ -48,6 +48,7 @@ soundtracker_20
 	Date: 1988-10
 	Based on soundtracker_18
 	Influenced by master_soundtracker_10 [
+		NTSC/PAL
 		Save as module
 	]
 
@@ -114,9 +115,9 @@ tjc_soundtracker_ii
 #
 # [CM] Changelog is cumulative with TJC II
 
-soundtracker_iii
+dfj_soundtracker_iii
 	Name: Soundtracker III
-	Author: Il Scuro (Ron Birk)
+	Author: Il Scuro of Defjam\n(Ron Birk)
 	Date: 1988-03-13		# From Soundtracker_v3.doc
 	Comment: Introduced effect F
 	Based on tjc_soundtracker_ii [
@@ -167,7 +168,7 @@ doc_soundtracker_iv
 		Set speed
 		NEW playroutine?
 	]
-	Influenced by soundtracker_iii [ Set speed ]
+	Influenced by dfj_soundtracker_iii [ Set speed ]
 
 # [CM] Does AFL Soundtracker IV have an equalizer? If yes, it's probably
 # based on DOC Soundtracker 3, otherwise from Il Scuro's
@@ -202,7 +203,7 @@ afl_soundtracker_iv
 	Date: 1988-04-07		# From Soundtracker_v4.doc
 	Comment: Merge set speed + equalizer
 	Based on doc_soundtracker_iii
-	Based on soundtracker_iii
+	Based on dfj_soundtracker_iii
 
 # [WW] DOC intro 6 scroller claims there is no DOC Soundtracker 5 (They
 # skipped the number because when they released V3 some else [does not say

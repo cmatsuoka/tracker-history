@@ -1,9 +1,45 @@
+# Dates from PT sources:
+#
+# *  First Update   1.0 : 04/05-1990 First version         *
+# * Middle Update   1.0 : 13/08-1990 -                     *
+# *   Last Update   1.0 : 25/08-1990 -                     *
+# * Final Version   1.0 : 26/08-1990 Released to Crusaders *
+# * Rev. B Update 1 1.0B: 29/08-1990 -                     *
+# * Rev. B Update 2 1.0B: 06/09-1990 Released to Crusaders *
+# * Rev. C Update 1 1.0C: 16/10-1990 -                     *
+# * Rev. C Update 2 1.0C: 18/10-1990 -                     *
+# * Start V1.1A     1.1A: 23/10-1990 Second version        *
+# * Rev. C Update 3 1.0C: 06/11-1990 Released to Crusaders *
+# * Rev. A Update 1 1.1A: 15/11-1990 InputEvent Handler    *
+# * Rev. A Update 2 1.1A: 21/11-1990 RunBack Hunk, KbdBuf. *
+# * Rev. A Update 3 1.1A: 02/12-1990 iffld,loopspr,scopefix*
+# * Rev. A Update 4 1.1A: 05/12-1990 virusattack,dirbrowse *
+# * Rev. A Update 5 1.1A: 20/12-1990 Testversion to Awesome*
+# * Rev. A Update 6 1.1A: 27/12-1990 Party-release (w/bugs)*
+# * Rev. B Update 1 1.1B: 01/01-1991 Bugfixing...          *
+# * Rev. B Update 2 1.1B: 05/01-1991 ---                   *
+# * Rev. B Update 3 1.1B: 08/01-1991 ScopeGfx, loadbug.    *
+# * Start V2.0A     2.0A: 12/02-1991 Wow! a new version... *
+# * Start V1.2A     1.2A: 13/07-1991 Kick 37.175 version   *
+
+
 # From PT.ReadMe!
 #
 # --- Protracker history ---
 # 
 # First Version 1.0 (A) - Full of bugs...
-# 
+
+protracker_10
+	Name: Protracker 1.0
+	Author: Lars 'ZAP' Hamre
+	Date: 1990-05-04		# First version
+	Comment: 'Full of bugs'\nHas E effects
+	Based on noisetracker_11 [
+		CIA timing
+		E effects
+	]
+	Based on soundtracker_25
+
 # Bugs corrected in V1.0 Release B:
 # ---------------------------------
 #  - PatternLoop (It always jumped to the start of the pattern, not the loop)
@@ -26,12 +62,11 @@ protracker_10b
 	Name: Protracker 1.0b
 	Author: Lars 'ZAP' Hamre
 	Date: 1990-10-01
-	Comment: Has E effects
-	Based on noisetracker_11 [
-		CIA timing?
-		Finetune
-		Glissando
+	Based on protracker_10 1000 [
+		Fix pattern loop
+		Fix finetune & glissando
 		Fix keyboard interrupt
+		Other bugfixes
 	]
 
 # Bugs corrected in V1.0 Release C:
@@ -47,7 +82,7 @@ protracker_10c
 	Name: Protracker 1.0c
 	Author: Lars 'ZAP' Hamre
 	Date: 1990-10-15
-	Based on protracker_10b [
+	Based on protracker_10b 2000 [
 		Fix finetune table
 		Fix guru in abort load
 		Fix tone portamento with finetune
@@ -60,7 +95,7 @@ protracker_11a
 	Author: Lars 'ZAP' Hamre
 	Date: 1990-12-27
 	Comment: Has arpeggio bug	# See 2.0a changelog
-	Based on protracker_10c [
+	Based on protracker_10c 2000 [
 		Inv.loop instead of funkrepeat,
 		Vibrato compatible with NT2.0
 	]
@@ -69,8 +104,20 @@ protracker_11a
 protracker_11b
 	Name: Protracker 1.1b
 	Author: Lars 'ZAP' Hamre
-	Date: 1991-01-06
+	# Date: 1991-01-06   reference?
+	Date: 1991-04			# Exotica
 	Based on protracker_11a 1000
+
+# Source file:
+#
+# *  Protracker Version 1.2 - Release A                    *
+# *  Amiga Freelancers 1991                                *
+# *                                                        *
+# *  Based on Soundtracker V2.5 / Noisetracker x.x)        *
+# *  Coding by Lars Hamre                                  *
+# *  with some "Resource" help from Anders Hamre           *
+# *  Thanks to Rune, and a hi there to Sven, Morten,       *
+# *  Per and Torgeir.                                      *
 
 protracker_12a
 	Name: Protracker 1.2a
@@ -88,7 +135,7 @@ protracker_12e
 	Name: Protracker 1.2e
 	Author: Raul Sobon
 	Date: 1994-01-09
-	Based on protracker_12a 1000
+	Based on protracker_12a
 
 protracker_18
 	Name: Protracker 1.8
@@ -122,15 +169,15 @@ protracker_13b
 #   with the C command.
 # - Volume will not be changed when resampling.
 # 
-# [CM] Is 2.0a based on 1.1a or 1.1b? The docs say 1.1a, but timing allows
-# 1.1b. And 2.0a sources says it comes from ST 2.5/NT x.x, we'll have to
+# [CM] 2.0a sources says it comes from ST 2.5/NT x.x, we'll have to
 # check if ST 2.5 code is actually in PT 2.0a.
 
 protracker_20a
 	Name: Protracker 2.0a
 	Author: Lars 'ZAP' Hamre
-	Date: 1991-02-12		# From history in 2.0a sources
-	Based on protracker_11a 2000 [
+	# Date: 1991-02-12		# Start in 2.0a sources
+	Date: 1992			# estimated, fixme
+	Based on protracker_12a 1000 [	# according to source changelog
 		Fix load gadget
 		Better file handling
 		IFF load fixes
@@ -154,7 +201,11 @@ protracker_23a
 	Name: Protracker 2.3a
 	Author: Peter 'Crayon' Hanning
 	Date: 1993-01-01
-	Based on protracker_22a 1000
+	Comment: Introduces M!K!
+	Based on protracker_22a 1000 [
+		Modules with 100 patterns
+		
+	]
 
 protracker_23d
 	Name: Protracker 2.3d
