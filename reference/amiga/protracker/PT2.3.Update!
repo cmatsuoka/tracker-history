@@ -1,0 +1,73 @@
+------------------------------------------------
+Bugfixes and improvements from PT2.2A to PT2.3A:
+------------------------------------------------
+-Mountlist in PLST is fixed. Before it asked for disks in all drives even if
+ you didn't have extradrives.
+
+-Helpfile fixed. In the betaversion the jumptable was corrupt.
+
+-Pointer color was green after succesful saving. This one is fixed now.
+
+-In the betaversion you couldn't exit POS-ed with ESC.
+
+-PT shouldn't quit with ESC. This is fixed now. Use Alt+Q (This one has been
+ there all the time) or click in the top-left corner to quit.
+
+-There was a bug in the Entry jump routine (Shift+Desired character) in
+ Disk.op, PLST and PresetED. If you had directories in the current path
+ PT jumped to the first DIRECTORY starting with the desired character instead
+ of searching for the first FILE beginning with that character.
+
+-Some minor bugs fixed as well.
+
+------------------------------------------------
+Bugfixes and improvements from PT2.1A to PT2.2A:
+------------------------------------------------
+
+- I have fixed the chip-mem bug from PT2.1A.(it didn't work with chipmem only)
+- When Preset-ed screen was shown,you couldn't use the gadgets on the lower
+  part of the main- or sample-screen.
+- When autoexitdirtoggle was off,PT didn't change the songname when you loaded
+  a new song/module until you exit from disk op.
+- If you resampled a sample with big difference between the tunetone and the
+  resampletone then the new length was incorrectly computed.
+- If you ran out of memory when allocating crunchbuffersize then ... software
+  failure! This should work just fine now.
+- If you loaded a sample with a '.' in the samplename then PT set the length
+  incorrectly in some cases (see below)
+- Save module should work fine now.(another nasty bug is swept away!)
+- The Sampler works fine on ks2.0 (This version tests diskactivity before
+  sampling, PT1.3 doesn't!)
+  ***********************************************************************
+  * Thanks to Matrix/LSD for sending the working piece of source to me! *
+  ***********************************************************************
+- The timer is updated when you play a song while jumping out to Workbench.
+- The Loopsprites are working fine with screenadjust.
+- Stepplay works fine now. Amiga+Backspace is gone though.
+- MIDI in functions are working now, I hope!
+- Inputhandler debugged a little.
+- ShowFreeDiskGadget debugged (again). Before it showed 2 sectors too much.
+- If you pressed the deletefile gadget and then pressed a directoryname in
+  the list then the dir was added to the path but the directory wasn't opened.
+  This is now fixed.
+- PrintSong now prints the patternlist with decimal values. It prints all
+  patterns.(Older versions of PT missed to print the highest pattern)
+- I have implemented a chord maker.
+- I have implemented e Position-Editor.
+- On request, I have made ''multitasking'' like in PT1.3.
+- ProTracker has it's own screen. When the PT screen is in front of all other
+  screens, PT will wake up.
+- The browse function is modified to act like PT1.3. It shows the current
+  devices and disknames.
+- If you hold the right mousebutton while pressing the browsegadget a disklist
+  will pop up showing all the device- and disknames from the browsegadget in
+  the filenamewindow. Pressing a name will autoload that directory.
+- If you press LeftShift+any key 0-9 a-z while in DiskOp,  PLST or PresetEd,
+  PT will move you to the position in the list with a name beginning with the
+  corresponding character.
+- If you use MIDI I've added two new keys. A-2 and B-2 on the Synthkeyboard
+  are used as SampleNumber Up/Down! I have also Transposed the MIDInotes input
+  one octave down (because Dolphin has a small keyboard and couldn't access
+  the upper octave,C#3 - B-3).
+- I have added a SaveExecutable option.
+- 9 new toggles.

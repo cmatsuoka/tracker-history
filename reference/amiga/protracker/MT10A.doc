@@ -1,0 +1,30 @@
+Short: MaxTracker V1.0, Release A
+
+ Another Protracker's clone, which should works fine on all Amigas.
+
+ It allows you to PLAY MODULES EVEN IN FAST-Memory, when XDMA Mode is on
+ ( Setup 2 screen ) , and DMAWait can be done without any processor loop,
+ so samples play even with a 68040/25 or 33Mhz.
+
+ Tested on Amigas from A500 to A4000/40, KickStart 1.2 to 3.0,
+ ChipSet SCS,ECS and AGA.
+
+ Just a little trouble with AGA & MultiSync screens ... See the MT.Readme!
+
+-----------------------------------------------------------------------------
+
+IMPORTANT: Message (in a bottle) to Protrackers Updaters...
+----------
+I didn't manage to find out any working E-Mail address to join you...
+... so please contact me !
+
+( I don't aim at making a new clone of Protracker...
+  ...But there are some features in MaxTracker I would like in the next
+  Protracker ! (Then MaxTracker will be useless...)
+  [ FAST-Mem player, DMAWait with processor, Keyboard recognition,
+    Correct MIDI routines :-> , ... ] )
+
+E-Mail: marchand@taliesin.emi.u-bordeaux.fr
+
+( Sylvain MARCHAND, 15-Feb-1994 )
+

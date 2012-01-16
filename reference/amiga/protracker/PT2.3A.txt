@@ -1,0 +1,274 @@
+
+----------------
+-*-  PT2.3A  -*-
+----------------
+    1/1 1993
+
+**************************************************************************
+**************************************************************************
+
+Bugs fixed in PT2.3A Final
+--------------------------------------------------------------------------
+Mountlist in PLST is fixed. Before it asked for disks in all drives even if
+you didn't have extradrives.
+
+Helpfile fixed. In the betaversion the jumptable was corrupt.
+
+Pointer color was green after succesful saving. This one is fixed now.
+
+In the betaversion you couldn't exit POS-ed with ESC.
+
+PT shouldn't quit with ESC. This is fixed now. Use Alt+Q (This one has been
+there all the time) or click in the top-left corner to quit.
+
+There was a bug in the Entry jump routine (Shift+Desired character) in
+Disk.op, PLST and PresetED. If you had directories in the current path
+PT jumped to the first DIRECTORY starting with the desired character instead
+of searching for the first FILE beginning with that character.
+
+Some minor bugs fixed as well.
+
+There is a lock function which was implemented in PT2.2A, but never
+explained in the helpfiles. Here we go:
+If you type lock, PT will ask you to type a password (max 8 chars) and press
+return. If you write the maximum 8 chars, you don't have to press return.
+PT will now be locked until you type the password again. If a song was
+playing when you typed lock then it will continue to play until you type
+the password and stop the song or someone turns the power off! Remember
+your password!
+Note: this can be used against you. Always save your work before you visit
+      the toilet or your little brother might lock PT and your module never
+      gets saved. (I take no responsibility for your little brothers actions)
+
+**************************************************************************
+**************************************************************************
+
+Bugs fixed in PT2.2A Beta:
+--------------------------------------------------------------------------
+
+I have fixed the chip-mem bug from PT2.1A. (it didn't work with chip-mem only)
+
+When Preset-ed screen was shown,you couldn't use the gadgets on the lower
+part of the main- or sample-screen.
+
+When autoexitdirtoggle was off, PT didn't change the songname when you loaded
+a new song/module until you exit from disk op.
+
+If you resampled a sample with big difference between the tunetone and the
+resampletone then the new length was incorrectly computed.
+
+If you ran out of memory when allocating crunchbuffersize then ... software
+failure! This should work just fine now.
+
+If you loaded a sample with a '.' in the samplename then PT set the length
+incorrectly in some cases (see below)
+
+Save module should work fine now.(another nasty bug is swept away!)
+
+The Sampler works fine on ks2.0 (This version tests diskactivity before
+sampling, PT1.3 doesn't!)
+ ***********************************************************************
+ * Thanks to Matrix/LSD for sending the working piece of source to me! *
+ ***********************************************************************
+
+The timer is updated when you play a song while jumping out to Workbench.
+
+The Loopsprites are working fine with screenadjust.
+
+Stepplay works fine now. Amiga+Backspace is gone though.
+
+MIDI in functions are working now, I hope!
+
+Inputhandler debugged a little.
+
+ShowFreeDiskGadget debugged (again). Before it showed 2 sectors too much.
+
+If you pressed the deletefile gadget and then pressed a directoryname in
+the list then the dir was added to the path but the directory wasn't opened.
+This is now fixed.
+
+PrintSong now prints the patternlist with decimal values. It prints all
+patterns.(Older versions of PT missed to print the highest pattern)
+
+
+**************************************************************************
+News News News News News News News News News News News News News News News
+**************************************************************************
+
+
+I have on request from Sun/Dreamdealers implemented a chord maker.
+Just press chord in edit op. 3 and you will see a new window for making chords.
+
+
+The gadgets:
+------------
+
+* Chord
+will make the chord, using the current sample and the notes chosen, and the
+chord will be put in the current sample or a free sample,depending on your
+choice (see below)
+
+* Reset
+will reset the notes and the length
+
+* Undo
+will undo the last change. (apart from multiple arrow up/down)
+
+* Length
+will set the length to the maximum value, depending on the length of the
+original sample and the notes you choose.This will ofcourse set the ':'
+after the 4 lengthdigits (see below)
+Holding the right mousebutton will set the length to the minimum depending
+on the notes chosen. '.' will be shown after the 4 digits. Mixing with the
+minimum length will make the sample as long as the shortest sample of the 4
+resampled notes.
+
+* Major
+will set a major chord, depending on the basenote.
+
+* Minor
+will set a minor chord, depending on the basenote.
+
+* Sus-4
+will set a sus-4 chord, depending on the basenote
+
+* Length string gadget
+will wait for you to enter a new length (not greater than the maxlength.
+If you want a longer sample then add more space after the mix has been done.)
+The ':' after the 4 digits shows that the samplelength is set to its maximum!
+
+* Major7
+will set a major7 chord, depending on the basenote.
+
+* Minor7
+will set a minor7 chord, depending on the basenote.
+
+* Major6
+will set a major6 chord, depending on the basenote.
+
+* Minor6
+will set a minor6 chord, depending on the basenote.
+
+* 4 notegadgets
+The upper one is the basenote.If you press a gadget, PT will wait for you to
+press a note.Holding the right mousebutton will reset the note
+
+* 4 Up/Down gadgets
+will add/sub 1 halfnote from the current note.Holding right button will
+add/sub 1 octave.You can reset the note by adding past B-3.
+
+* The 4 rightmost gadgets
+works just like the edit op gadgets. 1,2,3 takes you to the corresponding
+edit option, and E exits
+
+* The statusline
+pressing the upper line will toggle between New or Old sample:
+If N, then PT will search for an free sample to put the result.
+If O, then PT will put the result on the current sample, overwriting the
+original sample
+
+Note1!
+------
+This version of PT resets repeat and replen. PT also puts a '!' last in the
+samplename to show you that this is a chord sample.The '!' is for you to see
+where the destination-sample has gone,it has nothing to do with the program.
+You can take the '!' away and rename the sample to ...-major , ...-minor etc
+for instance.
+
+Note2!
+------
+The chosen option on the statusline in edit op. 3 ,H(alve) or C(lip)
+will affect the chord resampling and mixing!
+
+Ok, that was the chord gadgets!
+
+***********************************************************************
+
+Position-Editor
+---------------
+Press 'POS' on the mainscreen to get to the Position-Editor.
+All the gadgets should be well known, pressing the big gadget at the
+top will stop the song. Keyboard input works too,Left Alt,Left Amiga,space
+and the cursor up/down arrows.You can use the Position,pattern and length
+gadgets on the main screen, or click in the list to alter the current
+pattern or to enter a name to each pattern if you'd like to.
+The Patternnames will be loaded/saved if you have the corresponding toggles
+ON (load names,save names). The files will have the mod. exchanged to mod!
+just to distuingish them from the real modules. The patternnames will be
+cleared if you choose clear song or clear all.Another way is to click on
+each name you'd like to clear and then press the right mouse button.
+Patternplay works a little different from in the mainscreen.The pattern
+shown on the edit-row(the current position) will be played instead of the
+pattern currently shown in the notedatawindow.
+
+HEY! The patternnames has no effect on the module, they are just to remind
+the musician of the contents of the patterns, eg. you can name the first
+three patterns to INTRO just to remind yourself that those three patterns
+are the intro to your tune!
+
+***********************************************************************
+
+Other NEW things:
+-----------------
+
+On request, I have made ''multitasking'' like in PT1.3. I am not sure if
+this works correctly, but i have tested it a lot without trouble.
+LeftAmiga+N, LeftAmiga+M should work fine.
+
+
+ProTracker has it's own screen. When the PT screen is in front of all other
+screens, PT will wake up.
+
+
+The browse function is modified to act like PT1.3. It shows the current
+devices and disknames.
+If you hold the right mousebutton while pressing the browse gadget a disklist
+will pop up showing all the device- and disknames from the browsegadget in the
+filenamewindow. Pressing a name will autoload that directory. If there are
+more than eight entries, just use the arrow up/down keys or the up/down
+gadgets.
+
+
+If you press LeftShift+any key 0-9 a-z while in DiskOp,
+PLST or PresetEd, PT will move you to the position in the list with a name
+beginning with the corresponding character.If not found you will end up in
+the end of the list.
+
+
+If you use MIDI I've added two new keys. A-2 and B-2 on the Synthkeyboard
+are used as SampleNumber Up/Down! I have also Transposed the MIDInotes input
+one octave down (because one of my friends had a small keyboard and couldn't
+access the upper octave,C#3 - B-3).
+
+
+On request from 'The green Lark/Aliens' I have added a SaveExecutable option.
+Hold the right mousebutton while pressing save module. This will remove
+'mod.' from the filename and add '.exe', and save the file in the current
+modules-dir. This won't crunch the module though.
+
+
+9 new toggles: (all of them isn't working at the moment)
+--------------
+* Salvage
+* 100 Patterns
+* Save Icons
+* Load PatternNames
+* Save PatternNames
+* Load PLST when starting PT
+* Screen Adjust
+* Save IFF/Raw packed sample
+* System Requests
+
+You can now have modules with 100 patterns. If you save a module with more
+than 64 patterns then M.K. in the moduleheader will be changed to M!K!
+
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+
+
+                        Peter 'Crayon' Hanning
+                           Mushroom studios
+                             Noxious -92
+
+
+

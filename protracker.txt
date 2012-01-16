@@ -100,12 +100,33 @@ protracker_11a
 	]
 	Influenced by noisetracker_20 [ Drumpad ]
 
+# Bugfixes and changes from PT1.1A to PT1.1B:
+# -------------------------------------------
+# 
+# - Load gadget no longer hangs the program when trying to load a file that
+#   doesn't exist.
+# - Better filehandling with error messages.
+# - Repeat and replen check installed (Rel. A hanged when replen accidentally
+#   got the value zero).
+# - Repeat and replen were swapped when loading an IFF sample.
+# - Only RepLen values in IFF samples were added in the preset-editor.
+# - Tune memory wasn't always updated when editing samples.
+# - Swap Buffer debugged.
+# - The arpeggio sounded weird because the pitch wasn't set back at the
+#   right time.
+# - Shift speeds up the scrolling in the PLST and preset-editor.
+ 
 protracker_11b
 	Name: Protracker 1.1b
 	Author: Lars 'ZAP' Hamre
 	# Date: 1991-01-06   reference?
 	Date: 1991-04			# Exotica
-	Based on protracker_11a 1000
+	Based on protracker_11a 1000 [
+		Fix load gadget
+		Better file handling
+		Fix IFF sample loading
+		Fix arpeggio effect
+	]
 
 # Source file:
 #
@@ -187,7 +208,7 @@ protracker_18
 	Name: Protracker 1.8
 	Author: Bagitman - Scandal
 	Date: 1994-02			# 1994
-	Based on protracker_12e		# not sure
+	Based on protracker_23d [ ? ]	# not sure
 
 protracker_13b
 	Name: Protracker 1.3b
@@ -198,18 +219,7 @@ protracker_13b
 # Bugfixes and changes from PT1.1A to PT2.0
 # -----------------------------------------
 # 
-# - Load gadget no longer hangs the program when trying to load a file that
-#   doesn't exist.
-# - Better filehandling with error messages.
-# - Repeat and replen check installed (Rel. A hanged when replen accidentally
-#   got the value zero).
-# - Repeat and replen were swapped when loading an IFF sample.
-# - Only RepLen values in IFF samples were added in the preset-editor.
-# - Tune memory wasn't always updated when editing samples.
-# - Swap Buffer debugged.
-# - The arpeggio sounded weird because the pitch wasn't set back at the
-#   right time.
-# - Shift speeds up the scrolling in the PLST and preset-editor.
+# (... list from 1.1A -> 1.1B ...)
 # - Improved requester checking.
 # - No more clicks when a sample has volume $40 and you set a low volume
 #   with the C command.
@@ -224,10 +234,6 @@ protracker_20a
 	# Date: 1991-02-12		# Start in 2.0a sources
 	Date: 1992			# estimated, fixme
 	Based on protracker_12b 1000 [	# forked from 1.1b (source changelog)
-		Fix load gadget
-		Better file handling
-		IFF load fixes
-		Fix arpeggio effect
 		Fix volume setting clicks
 	]
 
@@ -243,6 +249,10 @@ protracker_22a
 	Date: 1992-06-22
 	Based on protracker_21a 1000
 
+# -------------------------------------------------------------------------
+# Protracker V2.3 Release A - (C) 1993 Mushroom Studios/Noxious   1/1-1993
+# -------------------------------------------------------------------------
+
 protracker_23a
 	Name: Protracker 2.3a
 	Author: Peter 'Crayon' Hanning
@@ -257,7 +267,7 @@ protracker_23d
 	Name: Protracker 2.3d
 	Author: Detron and Duff
 	Date: 1994
-	Based on protracker_23a 1000 [ AGA fix ]
+	Based on protracker_23a 2000 [ AGA fix ]
 
 protracker_300b
 	Name: Protracker 3.00 Beta

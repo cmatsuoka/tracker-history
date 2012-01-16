@@ -1,0 +1,354 @@
+-------------------------------------------------------------------------
+Protracker V2.3 Release A - (C) 1993 Mushroom Studios/Noxious   1/1-1993
+-------------------------------------------------------------------------
+
+Protracker is a Public Domain program, and may may be copied freely and
+included in any PD library. You may not charge anything for the program
+other than the cost of the disk and the PD-service.
+
+This disk should contain the following files:
+
+  PT2.3A                 -  The main program.
+  PT2.3A.info            -  The Icon for Protracker. (drawn by Markus Jentsch)
+  PROP                   -  Protracker module player.
+  PT.TempoCalc.txt       -  How to calculate tempo etc.
+  PT-Play.s              -  Playroutine for the Seka or DevPac assemblers.
+  PT-CIAPlay.s           -  Playroutine for CIA timing.
+  PT.FileFormat.txt      -  Description of the file format.
+  PT.Effects.txt         -  Quick help on all effect commands.
+  PT.help                -  Online helpfile for PT2.3A (press the Help key).
+  PT.help.txt            -  Read-/Printable version of the help file.
+  PT.help.txt.info       -  Icon for the PT.help.txt file.
+  PT.config-00           -  Default configuration file.
+  PT.Update!             -  Textfile with changes from PT2.2A
+  PT.Update!.info        -  Icon for the PT.Update! file.
+  PT.ReadMe!             -  ****--> This file <--**** 
+  PT.ReadMe!.info        -  Icon for the PT.ReadMe! file.
+
+Some info..
+-----------
+
+This disk contains all the necessary files to run Shell, CLI, and all the
+most used CLI-Commands. It is possible to print songs, but we'we only
+included the Generic printerdriver, so you'll have to install your own.
+Remember to set the new printerdriver with Preferences. If you make your
+own workdisk, remember to copy the commands "Run" and "EndCLI".
+
+If you are going to make make a compact-disk containing Protracker, please 
+include PT.help and powerpacker.library!!! THIS IS VERY IMPORTANT!!!
+
+             DO NOT ATTEMPT TO EDIT THE HELP-FILE!!!
+
+The first 1024 bytes are a text-offset index for Protracker, so keep off. 
+
+For more info, press the HELP key when you have started Protracker.
+
+It isn't possible to load old configuration files with PT2.3A, but if you
+load an old config-file into an editor and change the first 5 letters to
+"PT2.3", you might be able to use it, but some new functions may be set to
+zero though. Remember to check the DMA-wait and all the other functions
+or you'll experience some crashes etc...
+
+
+
+--- Protracker history ---
+
+First Version 1.0 (A) - Full of bugs...
+
+Bugs corrected in V1.0 Release B:
+---------------------------------
+ - PatternLoop (It always jumped to the start of the pattern, not the loop)
+ - Zap had put FineTune AND Glissando-Control in the same command! (E3)
+ - Fade Up / Down caused shit and even a few gurus!
+ - Delete Pos inserted pattern 77 (!) at position 127 in the song, causing
+   it to be longer than 80k!
+ - Filter All Samples was slow as hell because it tried to filter non-
+   existant samples.
+ - If you selected sample 0 from the keypad, it always played the last
+   sample played as sample 0!
+ - A590 harddisk owners couldn't use the keyboard because of the way Mahoney
+   & Kaktus set up the keyboard interrupt (we used their NT1.1 routine).
+ - Entering the help screen when in the midi screen fucked up the display.
+ - Escaping from Mix exited from the whole edit op.!
+ - CutBeg no longer fucks up the Sample length and Pos.
+ - The help file was FULL of bugs / misspellings.
+
+Bugs corrected in V1.0 Release C:
+---------------------------------
+ - Error in Finetune-table2 (note B-2)
+ - Abort Load sometimes caused a guru!
+ - Toneportamento (cmd 3) didn't work correctly with finetune.
+ - PLST screen was one pixel off.
+
+ MIDI screen was removed.
+
+
+Changes and improvements from Protracker V1.0C to V1.1A:
+--------------------------------------------------------
+
+General:
+  - Protracker will now run if you have Kickstart 2.0 installed!
+    (A500, A1000, A2000, A3000 etc...)
+  - Protracker will also "Auto runback" when you start from CLI!
+    There's no need to use the 'run' command.
+  - Keyboard and mouse input is provided by an InputHandler with prior-
+    ity 52. The handler will grab all RAWKEY and RAWMOUSE events from
+    the input.device before they reach intuition. PT will no longer
+    interfere with windows and gadgets on the intuition screen behind.
+  - Keyboard buffer. Wow!!! Now you can play really fast, and PT won't
+    miss a single key (...well, not as many as it used to before...).
+  - The vertical blank interrupt no longer patches the vector itself, but
+    uses the AddIntServer function.
+  - The playroutine creates it's own CIA or VBLANK interrupt, and it will
+    not be removed if a song is playing when you go to CLI/Workbench.
+  - Text input routine changed a little. Use mouse to set pos and to exit.
+  - Improved "Out of memory" handling (hopefully no more gurus...).
+  - Only the first 2 bytes of a sample will be zeroed (were the first 4).
+  - Lots of new keyboard commands/shortcuts using the Alt key.
+  - Vibrato depth changed to be compatible with NT2.0. Double all your
+    depth numbers if you load old protracker songs.
+  - Funk Repeat changed to Invert Loop (may trash your samples though).
+  - Play samples from the keypad (dot mode) when pressing backslash.
+
+Main Screen:
+  - MIDI screen has been removed. Changed to sampler instead. MIDI input
+    is still there, but there's no MIDI output. Sorry...
+  - Quadrascope. Four channel oscilloscope that displays the samples
+    in real-time, even when playing from keyboard. The good old spectrum
+    analyzer is still there, just click on the scope to toggle.
+  - Tempo gadget. Default is 125 BPM (normal vblank speed), but that can be
+    changed if you select CIA timing on Setup2. Range is 32-255 BPM, and
+    can also be changed with the 'F' effect command (speed/tempo).
+  - Repeat and replen will be updated in the samples when you change them.
+    You no longer have to press a key to hear the new loop.
+  - Protracker should now be able to show up to 10/16 megs of freemem.
+  - Error messages when PLST or Config not found.
+  - Click to enter position, pattern and length with the keyboard.
+
+Disk Op.:
+  - Choose RAW or IFF when saving samples.
+  - Samples can be saved with IFF-loops.
+  - Change path without reading directory.
+  - All 30 characters in filename/directory stored (was 24).
+  - Shows directories, just click to add directory to path.
+  - Parent directory gadget.
+  - One preset and several default paths for modules/songs/samples.
+  - PT will now read an "unlimited" number of directory entries (was 200).
+
+Setup:
+  - The only thing that's happened here is a small gadget labeled "2".
+    Pressing it will put you in...
+
+Setup2:
+  - 8 new on/off toggles.
+    Override: Load/save sample from samplepath even if there's a path
+      in the samplename. ST-37:bigbadbass with override will be loaded
+      from DF0: (or whatever) instead of ST-37:. You may want to put
+      all your samples in one big directory on your harddisk...
+    NoSamples: Will load a song without asking for the samples.
+    BlankZero: This will show the samplenumbers in the pattern in the
+      same way as Noisetracker 1.2 (Zeros are blanked out).
+    Show Dirs: If on, directories will be shown in Disk Op.
+    Show Publ: If on, PT will show all free Public memory, otherwise
+      just free Chip memory.
+    CutToBuff: If on, the part of the sample cut away in the sample
+      editor will be saved in the copybuffer.
+    Load Loop: Will load loops from an IFF file when loading a sample,
+      or adding a path in the sampleeditor.
+    Slow Mode: Use this toggle if you have a 25 Mhz A3000 where every-
+      thing is faster. Turning it on might help.
+  - Set Default paths.
+  - You can set the maximum number of presets (used to be 2500).
+  - DMA wait. Use this on 25MHz Amigas (normally 300, use 900 on A3000).
+  - Set tuning tone (note and volume).
+  - Select CIA or VBlank timing.
+  - Set default CIA tempo.
+  - Spectrum Analyzer/VU-meter copper color editor!
+
+Preset Editor:
+  - Use Preset removed, inserted Delete Disk instead.
+  - You can now save Finetune instead of Volume in the PLST. 
+  - ST-disk number changed to hex (ST-00 --> ST-FF)!
+  - Adding samples with IFF-loops to the presetlist is possible.
+  - Proper PLST allocation. Protracker will no longer allocate
+    any memory if there's no PLST.
+ 
+PLST:
+  - ST-disk number changed to HEX. This means you can have
+    up to $FF, or 255 ST-disks (used to be 99).
+
+Sampler/Sample Editor:
+  - Sample Graphing like Audiomaster. With Show Range, Show All,
+    Zoom Out, Range All, etc...
+  - Play either Waveform, Display or Range.
+  - Repeat points are shown, and can be dragged around.
+  - Loop on/off toggle.
+  - A line shows current position when playing back a sample.
+  - A sampler just like on NT2.0.
+  - Resample function w/tuning tone.
+  - Cut, Copy and Paste functions.
+  - Cursor to beginning/end.
+  - Swap current sample with copybuffer.
+
+Edit Op.:
+  1 - Transpose All bug removed.
+  2 - Move changed to Copy (use this to copy samples too).
+  3 - Upsample changed a tiny bit (allocation).
+  3 - Most functions will now work with marked ranges.
+
+Bugfixes and changes from PT1.1A to PT1.1B:
+-------------------------------------------
+
+- Load gadget no longer hangs the program when trying to load a file that
+  doesn't exist.
+- Better filehandling with error messages.
+- Repeat and replen check installed (Rel. A hanged when replen accidentally
+  got the value zero).
+- Repeat and replen were swapped when loading an IFF sample.
+- Only RepLen values in IFF samples were added in the preset-editor.
+- Tune memory wasn't always updated when editing samples.
+- Swap Buffer debugged.
+- The arpeggio sounded weird because the pitch wasn't set back at the
+  right time.
+- Shift speeds up the scrolling in the PLST and preset-editor.
+
+---------------------------------------------------------
+Bugfixes and improvements from PT1.1B(& PT2.0) to PT2.1A:
+---------------------------------------------------------
+
+- mod. prefix was shown in the file-list if it wasn't lowercase only.
+- ReturnfromCLI requester enhanced with quitgadget.
+- Gadgetpositions fixed properly.
+- Accidental and Diskspace bugs fixed.
+- Editskip has now got an indicator.
+- DISK OP., PLST and PRESET-ED screens have TOP/BOTTOM gadgets.
+- PLST screen has now got Up/Down arrows.
+- PT can load&save powerpacked samples/modules.
+- PT can load&save tracks/patterns.
+- Format disk bug has been fixed (I hope).
+- Volume,Repeat,Replen,Pos & Mod is now editable from the keyboard.
+  Just click on the numbergadgets.
+- You can now choose an autoinserteffect of your own.(One of the ten
+  effectmacros).
+- The bug that completely turned the sound off when stopping the recording
+  has now been fixed.
+- You are now able to fastscroll the file- and presetlist to the next
+  startcharacter.Try it out yourselves...hard to explain.
+- The preset-ed routines have been corrected.To use your old PLST, simply
+  delete preset #0.
+- The metronome has now got an accent on the first beat.
+- A metronome keyboard toggle has been included.
+- The metronomechannel can easily be changed to the current cursorposition.
+- Most of the numbergadgets can now be zero'ed.
+- Better patternrefresh when doing keyboard I/O.
+- PT now reads the dir after rename/save/delete if the Autodirtoggle is on.
+- You can solo a channel with the mouse by holding the right mousebutton
+  while pressing 1,2,3 or 4.
+- You can pass an argument from workbench/shell/cli to automatically load
+  a module when PT starts.
+- Powerpacker crunching/decrunching with powerpacker.library!
+  PT will automaticly append/remove ".pp" to/from the filename.
+- You can save an Icon together with the module.
+
+------------------------------------------------
+Bugfixes and improvements from PT2.1A to PT2.2A:
+------------------------------------------------
+
+- I have fixed the chip-mem bug from PT2.1A.(it didn't work with chipmem only)
+- When Preset-ed screen was shown,you couldn't use the gadgets on the lower
+  part of the main- or sample-screen.
+- When autoexitdirtoggle was off,PT didn't change the songname when you loaded
+  a new song/module until you exit from disk op.
+- If you resampled a sample with big difference between the tunetone and the
+  resampletone then the new length was incorrectly computed.
+- If you ran out of memory when allocating crunchbuffersize then ... software
+  failure! This should work just fine now.
+- If you loaded a sample with a '.' in the samplename then PT set the length
+  incorrectly in some cases (see below)
+- Save module should work fine now.(another nasty bug is swept away!)
+- The Sampler works fine on ks2.0 (This version tests diskactivity before
+  sampling, PT1.3 doesn't!)
+  ***********************************************************************
+  * Thanks to Matrix/LSD for sending the working piece of source to me! *
+  ***********************************************************************
+- The timer is updated when you play a song while jumping out to Workbench.
+- The Loopsprites are working fine with screenadjust.
+- Stepplay works fine now. Amiga+Backspace is gone though.
+- MIDI in functions are working now, I hope!
+- Inputhandler debugged a little.
+- ShowFreeDiskGadget debugged (again). Before it showed 2 sectors too much.
+- If you pressed the deletefile gadget and then pressed a directoryname in
+  the list then the dir was added to the path but the directory wasn't opened.
+  This is now fixed.
+- PrintSong now prints the patternlist with decimal values. It prints all
+  patterns.(Older versions of PT missed to print the highest pattern)
+- I have implemented a chord maker.
+- I have implemented e Position-Editor.
+- On request, I have made ''multitasking'' like in PT1.3.
+- ProTracker has it's own screen. When the PT screen is in front of all other
+  screens, PT will wake up.
+- The browse function is modified to act like PT1.3. It shows the current
+  devices and disknames.
+- If you hold the right mousebutton while pressing the browsegadget a disklist
+  will pop up showing all the device- and disknames from the browsegadget in
+  the filenamewindow. Pressing a name will autoload that directory.
+- If you press LeftShift+any key 0-9 a-z while in DiskOp,  PLST or PresetEd,
+  PT will move you to the position in the list with a name beginning with the
+  corresponding character.
+- If you use MIDI I've added two new keys. A-2 and B-2 on the Synthkeyboard
+  are used as SampleNumber Up/Down! I have also Transposed the MIDInotes input
+  one octave down (because Dolphin has a small keyboard and couldn't access
+  the upper octave,C#3 - B-3).
+- I have added a SaveExecutable option.
+- 9 new toggles.
+
+------------------------------------------------
+Bugfixes and improvements from PT2.2A to PT2.3A:
+------------------------------------------------
+-Mountlist in PLST is fixed. Before it asked for disks in all drives even if
+ you didn't have extradrives.
+
+-Helpfile fixed. In the betaversion the jumptable was corrupt.
+
+-Pointer color was green after succesful saving. This one is fixed now.
+
+-In the betaversion you couldn't exit POS-ed with ESC.
+
+-PT shouldn't quit with ESC. This is fixed now. Use Alt+Q (This one has been
+ there all the time) or click in the top-left corner to quit.
+
+-There was a bug in the Entry jump routine (Shift+Desired character) in
+ Disk.op, PLST and PresetED. If you had directories in the current path
+ PT jumped to the first DIRECTORY starting with the desired character instead
+ of searching for the first FILE beginning with that character.
+
+-Some minor bugs fixed as well.
+
+
+
+Known bugs, errors, stupid things and other crap:
+-------------------------------------------------
+
+- If you load a song or module that's not a proper ST-module,
+  Protracker may trash the upper left of the screen and/or crash.
+  This screen-trashing may also happen other times. Don't ask us why
+  or when. There is really no proper way to check if a file is a module
+  or song. We check for "M.K." at offset 1080, and if isn't found,
+  Protracker asks if you want to load it with 31 samples, since it may
+  be a Startrekker module. If you answer no, PT assumes it's an old
+  15 samples song/module.
+
+- If you format a disk with Protracker, it's possible to save files to the
+  disk, but if you try to load the files you just saved, nothing comes up
+  in the disk op. screen.  If could be that the Amiga has some problems
+  validating the disk, but there are no such messages. We'll have a look
+  at the Format routine.If you get any problems, try to take out the disk
+  and insert it again.PT should now re-read the dir.
+
+- You cannot have two presets with the same name on different ST-disks.
+
+- I have noticed that powerpacker.library crunches some samples/modules
+  improperly. (This goes with the powerpacker program as well).
+  Be sure to check the packed files before you delete the sourcefiles!
+
+

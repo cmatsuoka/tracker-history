@@ -59,7 +59,7 @@ hearttracker_233
 	Name: Hearttracker 2.33
 	Author: Crayon for Melon Dezign
 	Date: 1993-12
-	Based on protracker_11b 100
+	Based on protracker_23a
 
 icetracker_10
 	Name: IceTracker 1.0
@@ -74,11 +74,29 @@ icetracker_11
 	Date: 1993-01-10
 	Based on icetracker_10 1000
 
+# Short: MaxTracker V1.0, Release A
+# (...)
+# ( I don't aim at making a new clone of Protracker...
+#   ...But there are some features in MaxTracker I would like in the next
+#   Protracker ! (Then MaxTracker will be useless...)
+#   [ FAST-Mem player, DMAWait with processor, Keyboard recognition,
+#     Correct MIDI routines :-> , ... ] )
+# 
+# E-Mail: marchand@taliesin.emi.u-bordeaux.fr
+# 
+# ( Sylvain MARCHAND, 15-Feb-1994 )
+
 maxtracker_10a
 	Name: MaxTracker 1.0A
 	Author: Sylvain 'Zygen' Marchand
-	Date: 1993-10
-	Based on protracker_20a
+	Date: 1994-02-15
+	Comments: Supports AGA
+	Based on protracker_23d [	# ancestry uncertain
+		FAST-Mem player
+		DMAWait with processor
+		Keyboard recognition
+		Correct MIDI routines
+	]
 
 # See ftp://www.back2roots.org/pub/back2roots/disks/toga/dms/1993/
 

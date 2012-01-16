@@ -1,0 +1,14 @@
+
+This program has been tested on all Amigas, KickStart from 1.2 to 3.0,
+ ChipSet SCS,ECS and AGA.
+
+Known bugs:
+ - The sampler bugs sometimes ... like in PT2.0 ;-)
+
+All other bugs should have been removed.
+
+For AGA Users: (With MultiSync screen)
+--------------
+If MaxTracker Screen display is strange, then press Ctrl-N (NewDisplay),
+and it will works fine...
+
