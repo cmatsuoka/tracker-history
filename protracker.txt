@@ -127,9 +127,18 @@ protracker_12a
 
 protracker_13a
 	Name: Protracker 1.3a
-	Author: Morten Lund & Lars Hamre
+	Author: Morten Lund
 	Date: 1992
-	Based on protracker_12a
+	Comment: 'only a BETA version'
+	Based on protracker_12a [
+		Not case sensitive on 'MOD.'
+		Inputhandler bugs fixed
+		Fix Single Step forward and backward
+		Fix Sample function with OS2.0
+		No hang when R/W-error in OS2.0
+		No crash when loading non-module
+		MIDI In works as it should!!!
+	]
 
 protracker_12e
 	Name: Protracker 1.2e
@@ -145,7 +154,7 @@ protracker_18
 
 protracker_13b
 	Name: Protracker 1.3b
-	Author: Morten Lund & Lars Hamre
+	Author: Morten Lund
 	Date: 1992-01	# 1992
 	Based on protracker_13a
 

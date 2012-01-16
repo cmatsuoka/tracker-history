@@ -1,0 +1,29 @@
+ProTracker V1.3B
+----------------
+
+Fixed from V1.2 to V1.3B :
+
+ - Save Module works again!
+
+Fixed in V1.3B :
+
+ - Not case sensitive on 'MOD.'
+ - 'MOD.' bug when switching to and from modules dir.
+ - Inputhandler bugs fixed.
+ - Single Step forward and backward works properly.
+ - The Sample function works with OS2.0
+ - No hang when a R/W-error occurs in OS2.0
+ - No crash when loading a non-module file.
+ - MIDI In works as it should!!!
+
+V1.3B news :
+
+ - PT on Pseudo system screen (?)
+ - [LEFT Amiga] M and [LEFT Amiga] N works within ProTracker.
+ - Improved multitasking!
+ - Screen Adjust (for A3000).
+ - No slowmode necessary for turbo Amigas. Auto init of DMAWait.
+ - System requesters ON/OFF function.
+ - Finds volumes and diskdrives in filerequester.
+
+PS:  ProTracker V1.3A was only a BETA version.
