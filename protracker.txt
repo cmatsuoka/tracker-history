@@ -124,12 +124,23 @@ protracker_12a
 	Date: 1991-07
 	Based on protracker_11b 2000
 
+# [CM] No info on this one except:
+# * Protracker 1.2e "same as the old protracker 1.2b"
+# * MyM.lha in Aminet "Protracker 1.2b  module composed by Fermix"
+
+protracker_12b
+	Name: Protracker 1.2b
+	Author: Lars 'ZAP' Hamre
+	Date: 1991-08			# just a guess
+	Comment: (uncertain date)
+	Based on protracker_12a 1000 [ ? ]
+
 protracker_13a
 	Name: Protracker 1.3a
 	Author: Morten Lund
 	Date: 1992
 	Comment: 'only a BETA version'
-	Based on protracker_12a [
+	Based on protracker_12b [
 		Not case sensitive on 'MOD.'
 		Inputhandler bugs fixed
 		Fix Single Step forward and backward
@@ -139,11 +150,38 @@ protracker_13a
 		MIDI In works as it should!!!
 	]
 
+# "This is the same as the old protracker 1.2b or so
+#  but with the added benefit of doing real 8 channel
+#  modules. What you do is hook up two amigas via a null
+#  cable (serial to serial)  and then when you play/record
+#  on one amiga it instantly (with maximum 20ms delay apart)
+#  does the same on the other one, so just make two modules
+#  which play well together and pressplay on either ONE!"
+
+protracker_12d
+	Name: Protracker 1.2d
+	Author: Raul Sobon
+	Date: 1993-01			# "12 months ago"
+	Comment: 8 channels in 2 Amigas\n(date uncertain)
+	Based on protracker_12b [
+		Dual-host 8 channels
+	]
+
+# "Sorry for the last version being bugged up, that is
+#  because I just grabbed my old disk and sent it up
+#  assuming it worked , at least it did on 2 A500's
+#  12months ago, but now???, so I hooked my A500 up
+#  next to my A1200 to be sure this time, and what do you
+#  know, BANG it crashed , so I went on to fix it and
+#  here it is!"
+
 protracker_12e
 	Name: Protracker 1.2e
 	Author: Raul Sobon
 	Date: 1994-01-09
-	Based on protracker_12a
+	Based on protracker_12d [
+		Bugfixes
+	]
 
 protracker_18
 	Name: Protracker 1.8
@@ -185,7 +223,7 @@ protracker_20a
 	Author: Lars 'ZAP' Hamre
 	# Date: 1991-02-12		# Start in 2.0a sources
 	Date: 1992			# estimated, fixme
-	Based on protracker_12a 1000 [	# according to source changelog
+	Based on protracker_12b 1000 [	# forked from 1.1b (source changelog)
 		Fix load gadget
 		Better file handling
 		IFF load fixes
