@@ -1,0 +1,396 @@
+-------------------------------------------------------------------------
+Protracker V2.0 Release A - (C) 1991 Amiga Freelancers           Feb. '91
+-------------------------------------------------------------------------
+
+This disk should contain the following files:
+
+  PT2.0                  -  The main program (not packed, do it yourself).
+  PT2.0.info             -  The Icon for Protracker, by Quantarc.
+  PROP                   -  Protracker module player.
+  TempoCalc.txt          -  How to calculate tempo etc.
+  PT-Play.s              -  Playroutine for the Seka or DevPac assemblers.
+  PT-CIAPlay.s           -  Playroutine for CIA timing.
+  PTFileFormat.txt       -  Description of the file format.
+  PTEffects.txt          -  Quick help on all effect commands.
+  PT.help                -  Online helpfile (press the Help key).
+  PT.help.txt            -  Read-/Printable version of the help file.
+  PT.help.txt.info       -  Icon for the PT.help.txt file, by Quantarc.
+  PT.config-00           -  Default configuration file.
+  PT.ReadMe!             -  ****--> This file <--**** 
+  PT.ReadMe!.info        -  Icon for the ReadMe! file, by Quantarc.
+
+If you pack Protracker, please use a packer with real hunk-handling.
+Powerpacker or Imploder will do just fine. No absolute-address crap!!!
+
+
+Some info..
+-----------
+
+This disk contains all the necessary files to run Shell, CLI, and all the
+most used CLI-Commands. It is possible to print songs, but we'we only
+included the Generic printerdriver, so you'll have to install your own.
+Remember to set the new printerdriver with Preferences. If you make your
+own workdisk, remember to copy the commands "Run" and "EndCLI".
+
+If you are going to make make a compact-disk containing Protracker, please 
+include PT.help!!! THIS IS VERY IMPORTANT!!!
+
+             DO NOT ATTEMPT TO EDIT THE HELP-FILE!!!
+
+The first 1024 bytes are a text-offset index for Protracker, so keep off. 
+
+For more info, press the HELP key when you have started Protracker.
+
+
+--- Protracker history ---
+
+First Version 1.0 (A) - Full of bugs...
+
+Bugs corrected in V1.0 Release B:
+---------------------------------
+ - PatternLoop (It always jumped to the start of the pattern, not the loop)
+ - Zap had put FineTune AND Glissando-Control in the same command! (E3)
+ - Fade Up / Down caused shit and even a few gurus!
+ - Delete Pos inserted pattern 77 (!) at position 127 in the song, causing
+   it to be longer than 80k!
+ - Filter All Samples was slow as hell because it tried to filter non-
+   existant samples.
+ - If you selected sample 0 from the keypad, it always played the last
+   sample played as sample 0!
+ - A590 harddisk owners couldn't use the keyboard because of the way Mahoney
+   & Kaktus set up the keyboard interrupt (we used their NT1.1 routine).
+ - Entering the help screen when in the midi screen fucked up the display.
+ - Escaping from Mix exited from the whole edit op.!
+ - CutBeg no longer fucks up the Sample length and Pos.
+ - The help file was FULL of bugs / misspellings.
+
+Bugs corrected in V1.0 Release C:
+---------------------------------
+ - Error in Finetune-table2 (note B-2)
+ - Abort Load sometimes caused a guru!
+ - Toneportamento (cmd 3) didn't work correctly with finetune.
+ - PLST screen was one pixel off.
+
+ MIDI screen was removed.
+
+
+Changes and improvements from Protracker V1.0C to V1.1A:
+--------------------------------------------------------
+
+General:
+  - Protracker will now run if you have Kickstart 2.0 installed!
+    (A500, A1000, A2000, A3000 etc...)
+  - Protracker will also "Auto runback" when you start from CLI!
+    There's no need to use the 'run' command.
+  - Keyboard and mouse input is provided by an InputHandler with prior-
+    ity 52. The handler will grab all RAWKEY and RAWMOUSE events from
+    the input.device before they reach intuition. PT will no longer
+    interfere with windows and gadgets on the intuition screen behind.
+  - Keyboard buffer. Wow!!! Now you can play really fast, and PT won't
+    miss a single key (...well, not as many as it used to before...).
+  - The vertical blank interrupt no longer patches the vector itself, but
+    uses the AddIntServer function.
+  - The playroutine creates it's own CIA or VBLANK interrupt, and it will
+    not be removed if a song is playing when you go to CLI/Workbench.
+  - Text input routine changed a little. Use mouse to set pos and to exit.
+  - Improved "Out of memory" handling (hopefully no more gurus...).
+  - Only the first 2 bytes of a sample will be zeroed (were the first 4).
+  - Lots of new keyboard commands/shortcuts using the Alt key.
+  - Vibrato depth changed to be compatible with NT2.0. Double all your
+    depth numbers if you load old protracker songs.
+  - Funk Repeat changed to Invert Loop (may trash your samples though).
+  - Play samples from the keypad (dot mode) when pressing backslash.
+
+Main Screen:
+  - MIDI screen has been removed. Changed to sampler instead. MIDI input
+    is still there, but there's no MIDI output. Sorry...
+  - Quadrascope. Four channel oscilloscope that displays the samples
+    in real-time, even when playing from keyboard. The good old spectrum
+    analyzer is still there, just click on the scope to toggle.
+  - Tempo gadget. Default is 125 BPM (normal vblank speed), but that can be
+    changed if you select CIA timing on Setup2. Range is 32-255 BPM, and
+    can also be changed with the 'F' effect command (speed/tempo).
+  - Repeat and replen will be updated in the samples when you change them.
+    You no longer have to press a key to hear the new loop.
+  - Protracker should now be able to show up to 10/16 megs of freemem.
+  - Error messages when PLST or Config not found.
+  - Click to enter position, pattern and length with the keyboard.
+
+Disk Op.:
+  - Choose RAW or IFF when saving samples.
+  - Samples can be saved with IFF-loops.
+  - Change path without reading directory.
+  - All 30 characters in filename/directory stored (was 24).
+  - Shows directories, just click to add directory to path.
+  - Parent directory gadget.
+  - One preset and several default paths for modules/songs/samples.
+  - PT will now read an "unlimited" number of directory entries (was 200).
+
+Setup:
+  - The only thing that's happened here is a small gadget labeled "2".
+    Pressing it will put you in...
+
+Setup2:
+  - 8 new on/off toggles.
+    Override: Load/save sample from samplepath even if there's a path
+      in the samplename. ST-37:bigbadbass with override will be loaded
+      from DF0: (or whatever) instead of ST-37:. You may want to put
+      all your samples in one big directory on your harddisk...
+    NoSamples: Will load a song without asking for the samples.
+    BlankZero: This will show the samplenumbers in the pattern in the
+      same way as Noisetracker 1.2 (Zeros are blanked out).
+    Show Dirs: If on, directories will be shown in Disk Op.
+    Show Publ: If on, PT will show all free Public memory, otherwise
+      just free Chip memory.
+    CutToBuff: If on, the part of the sample cut away in the sample
+      editor will be saved in the copybuffer.
+    Load Loop: Will load loops from an IFF file when loading a sample,
+      or adding a path in the sampleeditor.
+    Slow Mode: Use this toggle if you have a 25 Mhz A3000 where every-
+      thing is faster. Turning it on might help.
+  - Set Default paths.
+  - You can set the maximum number of presets (used to be 2500).
+  - DMA wait. Use this on 25MHz Amigas (normally 300, use 900 on A3000).
+  - Set tuning tone (note and volume).
+  - Select CIA or VBlank timing.
+  - Set default CIA tempo.
+  - Spectrum Analyzer/VU-meter copper color editor!
+
+Preset Editor:
+  - Use Preset removed, inserted Delete Disk instead.
+  - You can now save Finetune instead of Volume in the PLST. 
+  - ST-disk number changed to hex (ST-00 --> ST-FF)!
+  - Adding samples with IFF-loops to the presetlist is possible.
+  - Proper PLST allocation. Protracker will no longer allocate
+    any memory if there's no PLST.
+ 
+PLST:
+  - ST-disk number changed to HEX. This means you can have
+    up to $FF, or 255 ST-disks (used to be 99).
+
+Sampler/Sample Editor:
+  - Sample Graphing like Audiomaster. With Show Range, Show All,
+    Zoom Out, Range All, etc...
+  - Play either Waveform, Display or Range.
+  - Repeat points are shown, and can be dragged around.
+  - Loop on/off toggle.
+  - A line shows current position when playing back a sample.
+  - A sampler just like on NT2.0.
+  - Resample function w/tuning tone.
+  - Cut, Copy and Paste functions.
+  - Cursor to beginning/end.
+  - Swap current sample with copybuffer.
+
+Edit Op.:
+  1 - Transpose All bug removed.
+  2 - Move changed to Copy (use this to copy samples too).
+  3 - Upsample changed a tiny bit (allocation).
+  3 - Most functions will now work with marked ranges.
+
+Bugfixes and changes from PT1.1A to PT2.0
+-----------------------------------------
+
+- Load gadget no longer hangs the program when trying to load a file that
+  doesn't exist.
+- Better filehandling with error messages.
+- Repeat and replen check installed (Rel. A hanged when replen accidentally
+  got the value zero).
+- Repeat and replen were swapped when loading an IFF sample.
+- Only RepLen values in IFF samples were added in the preset-editor.
+- Tune memory wasn't always updated when editing samples.
+- Swap Buffer debugged.
+- The arpeggio sounded weird because the pitch wasn't set back at the
+  right time.
+- Shift speeds up the scrolling in the PLST and preset-editor.
+- Improved requester checking.
+- No more clicks when a sample has volume $40 and you set a low volume
+  with the C command.
+- Volume will not be changed when resampling.
+
+
+Known bugs, errors, stupid things and other crap:
+-------------------------------------------------
+
+- If you load a song or module that's not a proper ST-module,
+  Protracker may trash the upper left of the screen and/or crash.
+  This screen-trashing may also happen other times. Don't ask us why
+  or when. There is really no proper way to check if a file is a module
+  or song. We check for "M.K." at offset 1080, and if isn't found,
+  Protracker asks if you want to load it with 31 samples, since it may
+  be a Startrekker module, or a module where the 'M.K.' text has been
+  changed. If you answer no, PT assumes it's an old 15 samples song/module.
+
+- There's something wrong with the spectrum analyzer. Sometimes the
+  analyzer is cleared without the volume being set to zero. This creates
+  "holes" which are pretty annoying to look at, but they disappear if you
+  let the analyzer fall down to zero (stop the song).
+
+- If you format a disk with Protracker, it's possible to save files to the
+  disk, but if you try to load the files you just saved, nothing comes up
+  in the disk op. screen.  If could be that the Amiga has some problems
+  validating the disk, but there are no such messages. We'll have a look
+  at the Format routine.
+
+- We're not sure that the MIDI input routines work at all...
+
+- You cannot have two presets with the same name on different ST-disks.
+
+If you send us bug reports, please describe the bugs properly, so that we
+can figure them out without too much trouble. State how, when and where
+the bug appeared, if it's there all the time, or just happened once.
+If you can tell us how to duplicate what you did to get the bug, it
+would be great. THEN we can try to eliminate it, ok?
+
+
+
+And now we will try to explain some common misunderstandings:
+--------------------------------------------------------------
+
+> Look at this man! This new tracker's got a really mind-blowing equalizer!
+
+  No, it doesn't. In fact we have never seen a single Amiga program with an
+  equalizer. But VU-meters (Volume Unit that is) and Spectrum Analyzers
+  are featured on most demos and soundtrackers. An equalizer is just like
+  an tone control with cut/boost controls for each frequency range. Just
+  take a look at your stereo, and maybe you'll find some sliders marked 125,
+  250, 500, 1k, 2k, 4k etc. That is an Graphic Equalizer. There are also
+  Parametric Equalizers where you can change the center frequency and Q-
+  factor (bandwidth) of each band, but they are usually found on mixer
+  consoles and other equipment. Spectrum Analyzers shows the relative volume
+  of each frequency band, but of course the Amiga cannot analyze the spectrum
+  of the samples in real time, so it will will just show which notes you
+  play. VU-meters are even simpler, they show the volume of the sound.
+  But again, the Amiga cannot (it could, but it would take up a lot of time)
+  show the real volume of the samples, so the VU-meter just pops up to
+  the volume you have set for a sample, and falls back to zero.
+  Not even the scopes will show the sample just as it is. They show 40 (or
+  was it 48?) bytes of the sound, and will just "scroll" through the sample
+  as it plays back.
+
+  Besides, if you're so keen on calling them Equalizers, can't you at
+  least spell it right....Equilisers.....ARRGGHH!
+
+> I have got all the ST sample disks. From ST-01 to ST-99.
+
+  No you haven't. There are no standard set of 99 sample disks. You just
+  name a disk ST-something, and copy all your samples to it. Wonga! You've
+  got a new sample disk! If you really have 99 disks, we don't think it would
+  hurt to throw away some of your least used samples. Who needs disks with
+  aliased, untuned samples with 2k dead air in the beginning of each of them?
+  No need to fill your harddisk with them either. Please tune your samples to
+  C-2 or C-3 (use the resampling function), and cut away that ugly silence
+  in the beginning...
+  (BTW: Aliasing is something you get when recording a sample, NOT when
+  you play it back.)
+
+> I really liked your PlayList editor!
+
+  No you didn't. PLST is an abbreviation for PresetList!!!
+
+
+
+Things you want, that we don't want:
+------------------------------------
+
+> 8 Channels, like Startrekker and Oktalyzer.
+
+Nope! The Amiga has only got four real audiochannels, so in order to play
+eight channel music the CPU has to read the samples itself, and feed them
+to the four channels byte by byte. This will use most the available time,
+and you'll not be able to do anything else at the same time. Normally
+sample playback is done by DMA (Direct Memory Access), were the sampledata
+if fetched automatically from memory without the processor intervening.
+
+
+Things we want, but don't know how to do:
+-----------------------------------------
+
+- Reverb...
+
+Hmmm... I know what it is, and I even have an Alesis Midiverb II Digital
+Effects Processor with reverb and other nice effects. But how do you create
+reverb on an Amiga? Well, first there is Direct Sound; that's just the
+original sample. Then there's Early Reflections, which is the first part of
+the reflected sound. It's just a few short delays with perhaps some lowpass
+filtering, and I have already solved that part of the problem. With long
+delays it sounds like echos, but shorter delays makes it sound more muddy,
+and in stereo, it spreads the sound image.
+But then there's reverb, which is sound that has reflected more than once.
+It could probably be implemented as a series of delays with feedback, plus
+some damping filters here and there, but the results so far has been dis-
+appointing. It sounds like resonant echos, or it overloads and clips the
+sample. Grrrr!!!
+So if you have a reverb algorithm or a book that explains how to do such
+things, please let me know. We will include it in the next version of PT.
+Some info on digital filters (how to calculate those damned coefficients)
+would be nice too (FIR & IIR filters).
+
+
+Things to come in newer versions:
+---------------------------------
+
+- Synthetic sounds
+
+  Yes, yes, yes!!! But how do you want it implemented?
+  It would be nice if you could draw some examples and send them to us.
+  Please don't send us a letter that just says: "I want it to be just like
+  on <name of musicprogram>". Programs using synthetic sounds has usually
+  envelopes, modulation, wavetables and other stuff for each instrument,
+  while the tracker way to it is to set all that using effect commands.
+  How should we combine the good old samples with the new synthetic sounds?
+  We still haven't got all music programs for the Amiga, so if you have
+  seen something great on any program that you want to have in PT, please
+  send a disk with the program. We have most of the trackers, but not all
+  the synthetic sound programs.
+
+- MIDI
+
+  Look, boys (and girls). Protracker is not supposed to be a MIDI sequencer.
+  It's a music program that you use to create music for demos, games, music
+  disks or just to listen to on your Amiga. MIDI sequencers has got a much
+  higher timing resolution and lots of tracks, while Protracker has 16ths
+  and only four tracks. Some of you want to hear your music played on your
+  synthesizers too, but the tracker was not really designed to do that.
+  The MIDI screen on PT1.0A&B looked so promising, but we didn't have time
+  to finish it. The MIDI functions will have to be coded some day, but we
+  just don't know when that will be...
+
+  In the mean time you can use the terrible NoiseTracker 2.0 (Oh no!).
+
+
+
+Amiga Freelancers are:
+
+  Lars Hamre    ==> ZAP
+  Anders Hamre  ==> The Mad Martian
+  Rune Johnsrud ==> Quantarc
+  Sven Vahsen   ==> The Moose
+
+
+If you want to contact us for any reason (please do) write to:
+
+  Lars & Anders Hamre / Amiga Freelancers
+  Bekkeliveien 10
+  N-2010 STRØMMEN
+  Norway
+
+  Phone: (06) 817466
+
+
+Or to:
+
+  Rune Johnsrud / Amiga Freelancers
+  Skogveien 16
+  N-2010 STRØMMEN
+  Norway
+
+  Phone: (06) 813850
+
+
+  You can also contact us at the Crusaders BBS, by writing a message to:
+  ANDERS HAMRE, LARS HAMRE, RUNE JOHNSRUD or THE MOOSE.
+
+  Phone Norway: +47-2-523819
+             or +47-2-524033
+
+/* End of File */

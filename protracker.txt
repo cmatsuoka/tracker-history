@@ -1,19 +1,65 @@
+# From PT.ReadMe!
+#
+# --- Protracker history ---
+# 
+# First Version 1.0 (A) - Full of bugs...
+# 
+# Bugs corrected in V1.0 Release B:
+# ---------------------------------
+#  - PatternLoop (It always jumped to the start of the pattern, not the loop)
+#  - Zap had put FineTune AND Glissando-Control in the same command! (E3)
+#  - Fade Up / Down caused shit and even a few gurus!
+#  - Delete Pos inserted pattern 77 (!) at position 127 in the song, causing
+#    it to be longer than 80k!
+#  - Filter All Samples was slow as hell because it tried to filter non-
+#    existant samples.
+#  - If you selected sample 0 from the keypad, it always played the last
+#    sample played as sample 0!
+#  - A590 harddisk owners couldn't use the keyboard because of the way Mahoney
+#    & Kaktus set up the keyboard interrupt (we used their NT1.1 routine).
+#  - Entering the help screen when in the midi screen fucked up the display.
+#  - Escaping from Mix exited from the whole edit op.!
+#  - CutBeg no longer fucks up the Sample length and Pos.
+#  - The help file was FULL of bugs / misspellings.
+
 protracker_10b
 	Name: Protracker 1.0b
 	Author: Lars 'ZAP' Hamre
 	Date: 1990-10-01
-	Based on noisetracker_11 [ CIA timing?, Finetune, Glissando ]
+	Comment: Has E effects
+	Based on noisetracker_11 [
+		CIA timing?
+		Finetune
+		Glissando
+		Fix keyboard interrupt
+	]
+
+# Bugs corrected in V1.0 Release C:
+# ---------------------------------
+#  - Error in Finetune-table2 (note B-2)
+#  - Abort Load sometimes caused a guru!
+#  - Toneportamento (cmd 3) didn't work correctly with finetune.
+#  - PLST screen was one pixel off.
+# 
+#  MIDI screen was removed.
 
 protracker_10c
 	Name: Protracker 1.0c
 	Author: Lars 'ZAP' Hamre
 	Date: 1990-10-15
-	Based on protracker_10b
+	Based on protracker_10b [
+		Fix finetune table
+		Fix guru in abort load
+		Fix tone portamento with finetune
+		Fix PLST screen
+		MIDI screen removed
+	]
 
 protracker_11a
 	Name: Protracker 1.1a
 	Author: Lars 'ZAP' Hamre
 	Date: 1990-12-27
+	Comment: Has arpeggio bug	# See 2.0a changelog
 	Based on protracker_10c [
 		Inv.loop instead of funkrepeat,
 		Vibrato compatible with NT2.0
@@ -56,15 +102,41 @@ protracker_13b
 	Date: 1992-01	# 1992
 	Based on protracker_13a
 
-# Is 2.0a based on 1.1a or 1.1b? The docs say 1.1a, but timing allows 1.1b.
-# And 2.0a sources says it comes from ST 2.5/NT x.x, we'll have to check
-# if ST 2.5 code is actually in PT 2.0a.
+# Bugfixes and changes from PT1.1A to PT2.0
+# -----------------------------------------
+# 
+# - Load gadget no longer hangs the program when trying to load a file that
+#   doesn't exist.
+# - Better filehandling with error messages.
+# - Repeat and replen check installed (Rel. A hanged when replen accidentally
+#   got the value zero).
+# - Repeat and replen were swapped when loading an IFF sample.
+# - Only RepLen values in IFF samples were added in the preset-editor.
+# - Tune memory wasn't always updated when editing samples.
+# - Swap Buffer debugged.
+# - The arpeggio sounded weird because the pitch wasn't set back at the
+#   right time.
+# - Shift speeds up the scrolling in the PLST and preset-editor.
+# - Improved requester checking.
+# - No more clicks when a sample has volume $40 and you set a low volume
+#   with the C command.
+# - Volume will not be changed when resampling.
+# 
+# [CM] Is 2.0a based on 1.1a or 1.1b? The docs say 1.1a, but timing allows
+# 1.1b. And 2.0a sources says it comes from ST 2.5/NT x.x, we'll have to
+# check if ST 2.5 code is actually in PT 2.0a.
 
 protracker_20a
 	Name: Protracker 2.0a
 	Author: Lars 'ZAP' Hamre
 	Date: 1991-02-12		# From history in 2.0a sources
-	Based on protracker_11a 2000
+	Based on protracker_11a 2000 [
+		Fix load gadget
+		Better file handling
+		IFF load fixes
+		Fix arpeggio effect
+		Fix volume setting clicks
+	]
 
 protracker_21a
 	Name: Protracker 2.1a
