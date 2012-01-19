@@ -263,6 +263,8 @@ protracker_23a
 		
 	]
 
+# "ProTracker V2.3b - Fixed for AGA by Detron in 1994"
+#
 # http://www.youtube.com/watch?v=nnm-n2wYQzM
 # ProTracker V2.3b
 # Fixed for AGA by Detron
@@ -277,14 +279,13 @@ protracker_23a
 protracker_23b
 	Name: Protracker 2.3b
 	Author: Detron
-	Date: 1993-04			# date unknown
-	Comment: (uncertain date)
+	Date: 1994			# text in binary
 	Based on protracker_23a 1000 [ AGA fix ]
 
 protracker_23d
 	Name: Protracker 2.3d
 	Author: Detron and Duff
-	Date: 1994
+	Date: 1994-02			# estimate, we know it's 1994
 	Based on protracker_23b 2000
 
 protracker_300b
