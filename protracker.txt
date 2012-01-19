@@ -276,14 +276,14 @@ protracker_23a
 
 protracker_23b
 	Name: Protracker 2.3b
-	Author: Detron and Duff
+	Author: Detron
 	Date: 1993-04			# date unknown
 	Comment: (uncertain date)
 	Based on protracker_23a 1000 [ AGA fix ]
 
 protracker_23d
 	Name: Protracker 2.3d
-	Author: Detron
+	Author: Detron and Duff
 	Date: 1994
 	Based on protracker_23b 2000
 
