@@ -208,7 +208,7 @@ protracker_18
 	Name: Protracker 1.8
 	Author: Bagitman - Scandal
 	Date: 1994-02			# 1994
-	Based on protracker_23d [ ? ]	# not sure
+	Comment: Unknown ancestry
 
 protracker_13b
 	Name: Protracker 1.3b
@@ -263,11 +263,29 @@ protracker_23a
 		
 	]
 
+# http://www.youtube.com/watch?v=nnm-n2wYQzM
+# ProTracker V2.3b
+# Fixed for AGA by Detron
+#
+# http://amp.dascene.net/detail.php?view=5920&detail=interview
+# "And PROtracker 2.3b still is the music program i use mostly." 
+#
+# http://h2g2.com/dna/h2g2/F47271?thread=106287
+# "Protracker's best incarnation was/is version 2.3b which was the
+# definitive one"
+
+protracker_23b
+	Name: Protracker 2.3b
+	Author: Detron and Duff
+	Date: 1993-04			# date unknown
+	Comment: (uncertain date)
+	Based on protracker_23a 1000 [ AGA fix ]
+
 protracker_23d
 	Name: Protracker 2.3d
-	Author: Detron and Duff
+	Author: Detron
 	Date: 1994
-	Based on protracker_23a 2000 [ AGA fix ]
+	Based on protracker_23b 2000
 
 protracker_300b
 	Name: Protracker 3.00 Beta
