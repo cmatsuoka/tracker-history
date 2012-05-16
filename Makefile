@@ -6,7 +6,7 @@ AMIGA_TRACKERS	= soundtracker noisetracker startrekker protracker med \
 PC_TRACKERS	= fasttracker screamtracker impulsetracker digitrakker \
 		  realtracker other-pc
 
-WIN_TRACKERS	= modplugtracker buzz other-windows
+WIN_TRACKERS	= modplugtracker buzz berotracker other-windows
 
 # Any Unix goes here
 LINUX_TRACKERS	= other-linux

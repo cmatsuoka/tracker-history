@@ -1,0 +1,22 @@
+# Contributed by Benjamin Rosseaux <benjamin@rosseaux.de>
+# updated from time to time (without any major verson number changes)
+
+berotracker
+	Name: BeRoTracker
+	Author: Benjamin 'BeRo' Rosseaux
+	Date: 2004-12-13
+	Influenced by it_214v5 [
+		Interface
+		File format
+	]
+	#Influenced by ft_209 [ File format ]
+	#Influenced by st_321 [ File format ]
+	#Influenced by protracker_353 [ File format ]
+	Comment: Two GUIs (Win32 & IT-style)
+
+berotracker_last
+	Name: BeRoTracker (current)
+	Author: Benjamin 'BeRo' Rosseaux
+	Date: 2012-05-15
+	Based on berotracker
+	Comment: Current version as from 2012-05-15
