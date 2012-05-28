@@ -70,23 +70,32 @@ openmpt_117_02_54
 	Date: 2009-06-23		# Sourceforge
 	Based on openmpt_117_02_48 1000
 
+openmpt_118_02_00
+	Name: OpenMPT 1.18.02.00
+	Author: Saga Musix
+	Date: 2010-06-19		# Johannes Schultz
+	Based on openmpt_117_02_54 1000
+
 openmpt_118_03_00
 	Name: OpenMPT 1.18.03.00
 	Author: Saga Musix
 	Date: 2010-08-13		# announcement
-	Based on openmpt_117_02_54 1000
+	Based on openmpt_118_02_00 1000
 
-openmpt_119_00_00
-	Name: OpenMPT 1.19.00.00
-	Author: Saga Musix
-	Date: 2010-10-29		# changelog
-	Based on openmpt_118_03_00 1000
+# OpenMPT 1.19.00.00 was actually not very wide spread, since it was a test
+# build. I'd remove it from the timeline. -- Johannes Schultz
+#
+#openmpt_119_00_00
+#	Name: OpenMPT 1.19.00.00
+#	Author: Saga Musix
+#	Date: 2010-10-29		# changelog
+#	Based on openmpt_118_03_00 1000
 
 openmpt_119_01_00
 	Name: OpenMPT 1.19.01.00
 	Author: Saga Musix
 	Date: 2011-04-04		# changelog, 2011-04-01 announcement
-	Based on openmpt_119_00_00 1000
+	Based on openmpt_118_03_00 1000
 
 openmpt_119_02_00
 	Name: OpenMPT 1.19.02.00
@@ -94,8 +103,20 @@ openmpt_119_02_00
 	Date: 2011-05-26		# changelog
 	Based on openmpt_119_01_00 1000
 
+openmpt_119_03_00
+	Name: OpenMPT 1.19.03.00
+	Author: Saga Musix
+	Date: 2011-07-22		# Johannes Schultz
+	Based on openmpt_119_02_00 1000
+
 openmpt_119_04_00
 	Name: OpenMPT 1.19.04.00
 	Author: Saga Musix
 	Date: 2011-09-09		# changelog
-	Based on openmpt_119_02_00 1000
+	Based on openmpt_119_03_00 1000
+
+openmpt_120_01_00
+	Name: OpenMPT 1.20.01.00
+	Author: Saga Musix
+	Date: 2012-05-05		# Johannes Schultz
+	Based on openmpt_119_04_00
