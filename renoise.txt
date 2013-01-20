@@ -3,8 +3,14 @@
 # Renoise was originally written from the code of another tracker called
 # NoiseTrekker, made by Juan Antonio Arguelles Rius (Arguru). The then
 # unnamed Renoise project was initiated by Eduard Mueller (Taktik) and
-# Zvonko Tesic (Phazze) during December 2000. By early 2002 stable
-# versions (such as 1.27) were available.
+# Zvonko Tesic (Phazze) during December 2000. The development team
+# planned to take tracking software into a new standard of quality,
+# enabling tracking scene composers to make audio of the same quality as
+# other existing professional packages, while still keeping the proven
+# layout that originated with Soundtracker in 1987. By early 2002 stable
+# versions (such as 1.27) were available. Over the years the development
+# team has grown to distribute the tasks of testing, administrative,
+# support and web duties among several people.
 
 renoise_15
 	Name: Renoise 1.5
