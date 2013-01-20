@@ -87,3 +87,9 @@ renoise_272
 	Author: Eduard Mueller & Zvonko Tesic
 	Date: 2011-07-01		# changelog
 	Based on renoise_271 [ Maintenance update for OSX Lion ]
+
+renoise_280
+	Name: Renoise 2.8.0
+	Author: Eduard Mueller & Zvonko Tesic
+	Date: 2012-03-15		# changelog
+	Based on renoise_272
