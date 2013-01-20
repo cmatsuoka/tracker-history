@@ -93,3 +93,9 @@ renoise_280
 	Author: Eduard Mueller & Zvonko Tesic
 	Date: 2012-03-15		# changelog
 	Based on renoise_272
+
+renoise_281
+	Name: Renoise 2.8.1
+	Author: Eduard Mueller & Zvonko Tesic
+	Date: 2012-08-15		# changelog
+	Based on renoise_280 [ Small maintenance update ]
