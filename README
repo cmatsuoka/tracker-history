@@ -10,7 +10,7 @@ You can obtain the latest version of the tracker history files at
 http://helllabs.org/tracker-history/. A git repository is also available,
 you can get it with
 
-	git clone http://helllabs.org/git/tracker-history.git
+	git clone git://github.com/cmatsuoka/tracker-history.git
 
 If you add new nodes or fix errors in the existing nodes, please send the
 patches or new files to cmatsuoka@gmail.com.
