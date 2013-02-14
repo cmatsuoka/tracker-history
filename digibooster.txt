@@ -25,8 +25,20 @@ dbpro_221
 
 dbpro_3beta
 	Name: DigiBooster Pro 3 beta
-	Author: Andreas Magerl
+	Author: APC&TCP & Grzegorz Kraszewski
 	Date: 2011-02-12		# announcement
 	Comment: For AmigaOS 4 and MorphOS
 	Influenced by dbpro_221 1000
 	
+# http://www.digiboosterpro.de/en/index.php
+# 12 Jan 2012
+# After almost a year since the previous public version, APC&TCP releases
+# the next public beta of DigiBooster 3 music tracker. Beta 22 is available
+# for immediate download for AmigaOS 3, AmigaOS 4 and MorphOS operating systems
+
+db3_beta22
+	Name: DigiBooster 3 Beta 22
+	Author: APC&TCP & Grzegorz Kraszewski
+	Date: 2012-01-12
+	Comment: For AmigaOS3, AmigaOS4, MorphOS
+	Based on dbpro_3beta
