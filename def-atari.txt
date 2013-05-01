@@ -1,1 +1,1 @@
-.COLOR f0aaaa
+.COLOR ffc0c0

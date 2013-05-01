@@ -16,3 +16,26 @@ gtk_08890
 	Based on gtk_08770
 	Influenced by gt2_00014
 
+flextrax_09
+	Name: FlexTrax 0.9
+	Author: Thomas Bergström
+	Date: 2000-09-24		# Web page
+	Comment: Reverb, delay
+
+octalyser_050
+	Name: Octalyser 0.50
+	Author: ?
+	Date: 1992-12-25		# "At about X-mas time"
+	Comment: 8-channel
+
+octalyser_080
+	Name: Octalyser 0.80
+	Author: ?
+	Date: 1993-06			# ?
+	Based on octalyser_050
+
+octalyser_096
+	Name: Octalyser 0.96
+	Author: Tord Jansson?
+	Date: 1994
+	Based on octalyser_080
