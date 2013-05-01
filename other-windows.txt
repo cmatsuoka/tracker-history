@@ -29,3 +29,20 @@ medss_21
 	Date: 2010-10-04		# file date
 	Based on medss_17
 
+gt2_00001
+	Name: Graoumf Tracker 2 v0.0001
+	Author: Laurent de Soras
+	Date: 1998-12-15
+	Based on gtk_08770
+
+gt2_00014
+	Name: Graoumf Tracker 2 v0.0014
+	Author: Laurent de Soras
+	Date: 1999-08-21
+	Based on gt2_00001
+
+gt2_00017
+	Name: Graoumf Tracker 2 v0.0017
+	Author: Laurent de Soras
+	Date: 2004-11-06
+	Based on gt2_00014

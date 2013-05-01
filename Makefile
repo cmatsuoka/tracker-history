@@ -11,6 +11,9 @@ WIN_TRACKERS	= modplugtracker buzz berotracker other-windows
 # Any Unix goes here
 LINUX_TRACKERS	= other-linux
 
+# ST, Falcon, etc
+ATARI_TRACKERS	= other-atari
+
 # Portable or not tied to a specific platform
 PORT_TRACKERS	= schism skale milkytracker chibi renoise other-portable
 
@@ -20,6 +23,7 @@ TRACKERS	= def-amiga.txt  $(addsuffix .txt, $(AMIGA_TRACKERS)) \
 		  def-win.txt    $(addsuffix .txt, $(WIN_TRACKERS)) \
 		  def-linux.txt  $(addsuffix .txt, $(LINUX_TRACKERS)) \
 		  def-port.txt   $(addsuffix .txt, $(PORT_TRACKERS)) \
+		  def-atari.txt  $(addsuffix .txt, $(ATARI_TRACKERS))
 
 DATE		= `date +%Y%m%d`
 THPKG		= tracker-history.tar.gz

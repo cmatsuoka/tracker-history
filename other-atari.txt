@@ -1,0 +1,18 @@
+gtk_05000
+	Name: Graoumf Tracker v0.5000
+	Author: Laurent de Soras
+	Date: 1994
+
+gtk_08770
+	Name: Graoumf Tracker v0.8770
+	Author: Laurent de Soras
+	Date: 1996-12-05
+	Based on gtk_05000
+
+gtk_08890
+	Name: Graoumf Tracker v0.8890
+	Author: Graoumf Devteam
+	Date: 2000
+	Based on gtk_08770
+	Influenced by gt2_00014
+
