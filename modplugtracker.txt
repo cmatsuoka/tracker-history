@@ -144,3 +144,16 @@ openmpt_121_01_00
 	Author: Saga Musix
 	Date: 2012-12-22		# History.txt
 	Based on openmpt_120_04_00
+
+openmpt_122_01_00
+	Name: OpenMPT 1.22.01.00
+	Author: Saga Musix
+	Date: 2013-04-06		# History.txt
+	Based on openmpt_121_01_00
+
+openmpt_122_02_00
+	Name: OpenMPT 1.22.02.00
+	Author: Saga Musix
+	Date: 2013-04-20		# History.txt
+	Based on openmpt_122_01_00
+
