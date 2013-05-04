@@ -5,6 +5,7 @@ berotracker
 	Name: BeRoTracker
 	Author: Benjamin 'BeRo' Rosseaux
 	Date: 2004-12-13
+	Comment: Two GUIs (Win32 & IT-style)
 	Influenced by it_214v5 [
 		Interface
 		File format
@@ -12,11 +13,15 @@ berotracker
 	#Influenced by ft_209 [ File format ]
 	#Influenced by st_321 [ File format ]
 	#Influenced by protracker_353 [ File format ]
-	Comment: Two GUIs (Win32 & IT-style)
 
-berotracker_last
-	Name: BeRoTracker (current)
+berotracker_20120515
+	Name: BeRoTracker 1.00.2012.05.15
 	Author: Benjamin 'BeRo' Rosseaux
 	Date: 2012-05-15
 	Based on berotracker
-	Comment: Current version as from 2012-05-15
+
+berotracker_20130404
+	Name: BeRoTracker 1.00.2013.04.04
+	Author: Benjamin 'BeRo' Rosseaux
+	Date: 2013-04-14
+	Based on berotracker_20120515
