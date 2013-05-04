@@ -1,0 +1,7 @@
+protracker_13b_rewrite
+	Name: ProTracker V1.3B rewrite
+	Author: Olav Sørensen
+	Date: 2010-08-07		# announced in http://eab.abime.net/showthread.php?t=54323
+	Based on protracker_13b [
+		Rewritten in C and SDL
+	]
