@@ -137,3 +137,9 @@ whacker101
 	Name: Whacker Tracker 1.01
 	Author: Håkan Gustavsson & Stein Norheim
 	Date: 1992-04-22
+
+tetra_compositor
+	Name: Tetra Compositor
+	Author: Bram Graveland
+	Date: 1991
+	Commented: Distributed by Creative Labs
