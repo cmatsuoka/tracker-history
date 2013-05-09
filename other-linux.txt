@@ -11,6 +11,12 @@ funkgold_15
 	Date: 1998-02-13		# date of version 1.5 from INSTALL
 	Based on funkgold_10
 
+qm
+	Name: Qm
+	Author: Andreas Fredriksson
+	Date: 1998-02-25		# announcement
+	Comment: Written in Qt
+
 mk_soundtracker_0.3.2
 	Name: SoundTracker 0.3.2
 	Author: Michael Krause
