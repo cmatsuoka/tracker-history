@@ -75,17 +75,40 @@ noisetracker_11
 		Safer memoryhandler
 	]
 
+# http://bitworld.bitfellas.org/demo.php?id=26796
+noisetracker_11plus
+	Name: Noisetracker 1.1+
+	Author: Riff Raff of UFO
+	Date: 1990-03
+	Based on noisetracker_11 500
+
+# Unsure if features introduced here or before 1.1+
 noisetracker_12
 	Name: Noisetracker 1.2
 	Author: Riff Raff of UFO
 	Date: 1990-05
-	Based on noisetracker_11 500 [ 128K samples, Scope ]
+	Based on noisetracker_11plus 1000 [ 128K samples, Scope ]
 
-noisetracker_13
-	Name: Noisetracker 1.3
+# http://bitworld.bitfellas.org/demo.php?id=16468
+noisetracker_12c2
+	Name: Noisetracker 1.2C2
+	Author: Riff Raff of UFO
+	Date: 1990-06-04
+	Based on noisetracker_12 1000
+
+# http://bitworld.bitfellas.org/demo.php?id=19909
+noisetracker_13a
+	Name: Noisetracker 1.3A
+	Author: Riff Raff of UFO
+	Date: 1991-02
+	Based on noisetracker_12c2 1000
+
+# http://bitworld.bitfellas.org/demo.php?id=19902
+noisetracker_13d
+	Name: Noisetracker 1.3D
 	Author: Riff Raff of UFO
 	Date: 1991-03
-	Based on noisetracker_12 1000
+	Based on noisetracker_13a 1000
 
 noisetracker_20
 	Name: Noisetracker 2.0
