@@ -91,21 +91,21 @@ noisetracker_12
 
 # http://bitworld.bitfellas.org/demo.php?id=16468
 noisetracker_12c2
-	Name: Noisetracker 1.2C2
+	Name: Noisetracker 1.2c2
 	Author: Riff Raff of UFO
 	Date: 1990-06-04
 	Based on noisetracker_12 1000
 
 # http://bitworld.bitfellas.org/demo.php?id=19909
 noisetracker_13a
-	Name: Noisetracker 1.3A
+	Name: Noisetracker 1.3a
 	Author: Riff Raff of UFO
 	Date: 1991-02
 	Based on noisetracker_12c2 1000
 
 # http://bitworld.bitfellas.org/demo.php?id=19902
 noisetracker_13d
-	Name: Noisetracker 1.3D
+	Name: Noisetracker 1.3d
 	Author: Riff Raff of UFO
 	Date: 1991-03
 	Based on noisetracker_13a 1000
