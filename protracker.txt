@@ -116,17 +116,25 @@ protracker_11a
 #   right time.
 # - Shift speeds up the scrolling in the PLST and preset-editor.
  
+# http://bitworld.bitfellas.org/demo.php?id=26374
 protracker_11b
 	Name: Protracker 1.1b
 	Author: Lars 'ZAP' Hamre
-	# Date: 1991-01-06   reference?
-	Date: 1991-04			# Exotica
+	Date: 1991-01-06		# bitworld says 1991-01
+	# Date: 1991-04			# Exotica
 	Based on protracker_11a 1000 [
 		Fix load gadget
 		Better file handling
 		Fix IFF sample loading
 		Fix arpeggio effect
 	]
+
+# http://bitworld.bitfellas.org/demo.php?id=25703
+protracker_11bplus
+	Name: Protracker 1.1b+
+	Author: Lars 'ZAP' Hamre
+	Date: 1991-04
+	Based on protracker_11b 1000
 
 # Source file:
 #
@@ -143,7 +151,7 @@ protracker_12a
 	Name: Protracker 1.2a
 	Author: Lars 'ZAP' Hamre
 	Date: 1991-07
-	Based on protracker_11b 2000
+	Based on protracker_11bplus 2000
 
 # [CM] No info on this one except:
 # * Protracker 1.2e "same as the old protracker 1.2b"
