@@ -38,7 +38,7 @@ protracker_10
 		CIA timing
 		E effects
 	]
-	Based on soundtracker_25
+	#Based on soundtracker_25
 
 # Bugs corrected in V1.0 Release B:
 # ---------------------------------
