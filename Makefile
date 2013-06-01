@@ -39,8 +39,8 @@ trackers.svg: trackers.dot
 trackers.ps: trackers.dot
 	dot -Tps -o$@ trackers.dot
 	
-trackers.dot: $(TRACKERS) $(TODOT) Makefile
-	$(TODOT) $(TRACKERS) > $@
+trackers.dot: timeline.txt $(TRACKERS) $(TODOT) Makefile
+	$(TODOT) timeline.txt $(TRACKERS) > $@
 
 dist:
 	rm -Rf $(THDIR)

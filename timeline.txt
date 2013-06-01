@@ -1,0 +1,148 @@
+_a1000
+	Name: Amiga 1000 released
+	Date: 1985-07-23
+	Comment: Motorola 68000 7.09 MHz\n256-512 kB RAM\nPaula 4x8bit 28kHz
+
+_a2000
+	Name: Amiga 2000 released
+	Date: 1987-03
+	Comment: Motorola 68000 7.09 MHz\n1 MB RAM\nPaula 4x8bit 28kHz
+	After _a1000
+
+_vga
+	Name: VGA introduced
+	Date: 1987-07
+	Comment: 320x200 in 256 colors\n640x480 in 16 colors
+	After _a2000
+
+_a500
+	Name: Amiga 500 released
+	Date: 1987-10
+	Comment: Motorola 68000 7.09 MHz\n512 kB RAM
+	After _vga
+
+_vgabook
+	Name: Richard Ferraro publishes\nProgrammer's guide to the\nEGA and VGA cards
+	Date: 1988
+	After _a500
+
+_sb10
+	Name: Sound Blaster card released
+	Date: 1989
+	Comment: 1x8bit 22kHz
+	After _vgabook
+
+_win30
+	Name: Windows 3.0 released
+	Date: 1990-05
+	Comment: Requires MS-DOS 3.1 or higher
+	After _sb10
+
+_a3000
+	Name: Amiga 3000 released
+	Date: 1990-06
+	Comment: Motorola 68030 16-25 MHz\n2 MB RAM\nKickstart 1.3
+	After _win30
+
+_sbpro
+	Name: Sound Blaster Pro released
+	Date: 1991-05
+	Comment: 2x8bit 22kHz
+	After _a3000
+
+_msdos50
+	Name: MS-DOS 5.0 released
+	Date: 1991-06
+	After _sbpro
+
+_drdos60
+	Name: DR DOS 6.0 released
+	Date: 1991-09
+	After _msdos50
+
+_asm92
+	Name: Unreal wins PC compo
+	Date: 1992-06-26
+	Comment: at the Assembly '92 party\nheld in Kerava, Finland
+	After _drdos60
+
+_a4000
+	Name: Amiga 4000 released
+	Date: 1992-10
+	Comment: Motorola 68040 25 MHz\n2 MB RAM\nAmigaOS 3.0
+	After _asm92
+
+_gus
+	Name: Gravis Ultrasound introduced
+	Date: 1992-10-01			# Uncertain date
+	Comment: 32 channels, onboard RAM
+	After _a4000
+
+_pentium
+	Name: Pentium processor introduced
+	Date: 1993-03-22
+	After _gus
+
+_tcc93
+	Name: Crystal Dream II wins PC compo
+	Date: 1993-05-31
+	Comment: at The Computer Crossroads '93\nin Gothenburg, Sweden
+	After _pentium
+
+_asm93
+	Name: 2nd Reality wins PC compo
+	Date: 1993-08-13
+	Comment: at the Assembly '93 party\nheld in Kerava, Finland
+	After _tcc93
+
+_win95
+	Name: Windows 95 released
+	Date: 1995-08
+	After _asm93
+
+_win98
+	Name: Windows 98 released
+	Date: 1998-06-25
+	After _win95
+
+_mp3
+	Name: MP3 becomes popular
+	Date: 1999
+	Comment: Portable MP3 players appear
+	After _win98
+
+_gpu
+	Name: Rise of the GPU
+	Date: 1999-08-31
+	Comment: NVIDIA introduces the GeForce
+	After _mp3
+
+_osx
+	Name: MacOS X released
+	Date: 2001-03-24
+	After _gpu
+
+_winxp
+	Name: Windows XP released
+	Date: 2001-10-25
+	After _osx
+
+_ubuntu
+	Name: Ubuntu released
+	Date: 2004-10-20
+	After _winxp
+
+_macintel
+	Name: iMac with Intel processor
+	Date: 2006-01-10
+	After _ubuntu
+
+_win7
+	Name: Windows 7 released
+	Date: 2009-07-22
+	After _macintel
+
+_win8
+	Name: Windows 8 released
+	Date: 2012-10-26
+	After _win7
