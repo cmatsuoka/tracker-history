@@ -208,7 +208,7 @@ protracker_12e
 	Name: Protracker 1.2e
 	Author: Raul Sobon
 	Date: 1994-01-09
-	Based on protracker_12d [
+	Based on protracker_12d 1000 [
 		Bugfixes
 	]
 
@@ -271,6 +271,38 @@ protracker_23a
 		
 	]
 
+#                         Protracker V2.95   Jan. '93
+#                         ---------------------------
+#
+#                          2.0+ compatability and bug
+#                        fixes by:  Apogee Technologies
+
+# http://bitworld.bitfellas.org/demo.php?id=23067
+
+protracker_295d
+	Name: Protracker 2.95d
+	Author: Apogee Globalsoft
+	Date: 1993-01
+	Based on protracker_20a [
+		AGA support
+		Kickstart 3.0
+	]
+
+#                         Protracker V3.10   jul. '93
+#                         ---------------------------
+#
+#                          2.0+ compatability and bug
+#                        fixes by:  Apogee Technologies
+
+# http://bitworld.bitfellas.org/demo.php?id=28402
+
+protracker_310apogee
+	Name: Protracker 3.10 (Apogee)
+	Author: Apogee Globalsoft
+	Date: 1993-07
+	Based on protracker_295d 1000
+
+
 # "ProTracker V2.3b - Fixed for AGA by Detron in 1994"
 #
 # http://www.youtube.com/watch?v=nnm-n2wYQzM
@@ -295,6 +327,8 @@ protracker_23d
 	Author: Detron and Duff
 	Date: 1994-02			# estimate, we know it's 1994
 	Based on protracker_23b 2000
+
+# 3.0 series
 
 protracker_300b
 	Name: Protracker 3.00 Beta
@@ -370,3 +404,4 @@ protracker_362_fix2
 	Author: Jan Poruba
 	Date: 2000-02-12
 	Based on protracker_362_fix1 [ Y2K fix, IFFMOD change ]
+
