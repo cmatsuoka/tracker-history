@@ -115,3 +115,12 @@ noisetracker_20
 	Author: Mahoney & Kaktus
 	Date: 1990-07-01
 	Based on noisetracker_11 [ NT file, Drumpad ]
+
+
+hmnoisetracker
+	Name: His Master's Noise tracker
+	Author: Pex \"Mahoney\" Tufvesson
+	Date: 1991-05-10
+	Comment: Used in His Master's Noise musicdisk
+	Based on noisetracker_20 [ Synth instruments ]
+
