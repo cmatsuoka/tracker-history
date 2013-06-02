@@ -117,10 +117,10 @@ noisetracker_20
 	Based on noisetracker_11 [ NT file, Drumpad ]
 
 
-hmnoisetracker
+smaksak
 	Name: His Master's Noise tracker
 	Author: Pex \"Mahoney\" Tufvesson
 	Date: 1991-05-10
-	Comment: Used in His Master's Noise musicdisk
+	Comment: A.k.a Smaksak-91\nUsed in His Master's Noise musicdisk
 	Based on noisetracker_20 [ Synth instruments ]
 
