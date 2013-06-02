@@ -108,9 +108,9 @@ _asm93
 	After _tcc93
 
 _powermac
-	Name: PowerMac 6100 is released
+	Name: PowerMac 6100 released
 	Date: 1994-03-14
-	Comment: using the PowerPC 601
+	Comment: PowerPC 601 60 MHz
 	After _asm93
 
 _commodore_bankrupt
