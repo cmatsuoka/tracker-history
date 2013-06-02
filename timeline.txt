@@ -23,7 +23,7 @@ _a500
 
 _vgabook
 	Name: Richard Ferraro publishes\nProgrammer's guide to the\nEGA and VGA cards
-	Date: 1988
+	Date: 1988-06		# Month estimated
 	After _a500
 
 _sb10
