@@ -60,16 +60,22 @@ _drdos60
 	Date: 1991-09
 	After _msdos50
 
+_a600
+	Name: Amiga 600 released
+	Date: 1992-03
+	Comment: Motorola 68000 7.09 MHz\n1 MB RAM\nAmigaOS 2.05
+	After _drdos60
+
 _asm92
 	Name: Unreal wins PC compo
 	Date: 1992-06-26
 	Comment: at the Assembly '92 party\nheld in Kerava, Finland
-	After _drdos60
+	After _a600
 
 _a4000
 	Name: Amiga 4000 released
-	Date: 1992-10
-	Comment: Motorola 68040 25 MHz\n2 MB RAM\nAmigaOS 3.0
+	Date: 1992-09
+	Comment: Motorola 68040 25 MHz\n2 MB RAM, AGA\nAmigaOS 3.0
 	After _asm92
 
 _gus
@@ -78,10 +84,16 @@ _gus
 	Comment: 32 channels, onboard RAM
 	After _a4000
 
+_a1200
+	Name: Amiga 1200 released
+	Date: 1992-12
+	Comment: Motorola 68020 14 MHz\n2 MB RAM, AGA\nAmigaOS 3.0
+	After _gus
+
 _pentium
 	Name: Pentium processor introduced
 	Date: 1993-03-22
-	After _gus
+	After _a1200
 
 _tcc93
 	Name: Crystal Dream II wins PC compo
@@ -95,21 +107,37 @@ _asm93
 	Comment: at the Assembly '93 party\nheld in Kerava, Finland
 	After _tcc93
 
+_powermac
+	Name: PowerMac 6100 is released
+	Date: 1994-03-14
+	Comment: using the PowerPC 601
+	After _asm93
+
+_commodore_bankrupt
+	Name: Commodore declares bankruptcy
+	Date: 1994-04-29
+	After _powermac
+
 _win95
 	Name: Windows 95 released
 	Date: 1995-08
-	After _asm93
+	After _commodore_bankrupt
 
 _win98
 	Name: Windows 98 released
 	Date: 1998-06-25
 	After _win95
 
+_imac
+	Name: iMac G3 released
+	Date: 1998-08-15
+	After _win98
+
 _mp3
 	Name: MP3 becomes popular
 	Date: 1999
 	Comment: Portable MP3 players appear
-	After _win98
+	After _imac
 
 _gpu
 	Name: Rise of the GPU
