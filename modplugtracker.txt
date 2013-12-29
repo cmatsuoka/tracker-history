@@ -157,3 +157,8 @@ openmpt_122_02_00
 	Date: 2013-04-20		# History.txt
 	Based on openmpt_122_01_00
 
+openmpt_122_06_00
+	Name: OpenMPT 1.22.06.00
+	Author: Saga Musix
+	Date: 2013-11-02
+	Based on openmpt_122_02_00

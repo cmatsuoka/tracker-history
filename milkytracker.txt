@@ -35,3 +35,9 @@ milky_0.90.85
 	Author: pailes
 	Date: 2010-01-01
 	Based on milky_0.90.80
+
+milky_0.90.86
+	Name: MilkyTracker 0.90.86
+	Author: pailes
+	Date: 2013-11-06
+	Based on milky_0.90.85

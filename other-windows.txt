@@ -3,11 +3,17 @@ noisetrekker_11
 	Author: Juan Antonio Arguelles Rius
 	Date: 1999-11-17		# from file in noisetrekker11.zip
 	
+renoise_100
+	Name: Renoise 1.0
+	Author: Eduard Mueller & Zvonko Tesic
+	Date: 2002-06-21		# release notes
+	Based on noisetrekker_11
+
 renoise_127
 	Name: Renoise 1.27
 	Author: Eduard Mueller & Zvonko Tesic
-	Date: 2002-01			# "early 2002"
-	Based on noisetrekker_11
+	Date: 2003-08-12		# release notes
+	Based on renoise_100
 
 # http://www.softandco.com/a/7501/med-soundstudio.html
 

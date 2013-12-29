@@ -160,17 +160,37 @@ _ubuntu
 	Date: 2004-10-20
 	After _winxp
 
+_osx_tiger
+	Name: OS X Tiger released
+	Date: 2005-04-29
+	After _ubuntu
+
 _macintel
 	Name: iMac with Intel processor
 	Date: 2006-01-10
-	After _ubuntu
+	After _osx_tiger
 
 _win7
 	Name: Windows 7 released
 	Date: 2009-07-22
 	After _macintel
 
+_corei5
+	Name: Core i5 introduced
+	Date: 2009-09-08
+	After _win7
+
+_osx_lion
+	Name: OS X Lion released
+	Date: 2011-07-20
+	After _corei5
+
 _win8
 	Name: Windows 8 released
 	Date: 2012-10-26
-	After _win7
+	After _osx_lion
+
+_osx_mavericks
+	Name: OS X Mavericks released
+	Date: 2013-10-22
+	After _win8

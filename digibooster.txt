@@ -27,7 +27,7 @@ dbpro_3beta
 	Name: DigiBooster Pro 3 beta
 	Author: APC&TCP & Grzegorz Kraszewski
 	Date: 2011-02-12		# announcement
-	Comment: For AmigaOS 4 and MorphOS
+	Comment: For AmigaOS4 and MorphOS
 	Influenced by dbpro_221 1000
 	
 # http://www.digiboosterpro.de/en/index.php
@@ -42,3 +42,18 @@ db3_beta22
 	Date: 2012-01-12
 	Comment: For AmigaOS3, AmigaOS4, MorphOS
 	Based on dbpro_3beta
+
+# http://digibooster.eu/pl/
+# 2013-10-06
+# We spent another, probably the last beta version before the release of
+# the DigiBooster 3 Beta 26 is already available for download in versions
+# for MorphOS, AmigaOS AmigaOS 4 and 3 Users are welcome to extensive
+# testing and reporting errors, such as on the official forum.
+
+db3_beta26
+	Name: DigiBooster 3 Beta 26
+	Author: APC&TCP & Grzegorz Kraszewski
+	Date: 2013-10-06
+	Comment: For AmigaOS3, AmigaOS4, MorphOS
+	Based on db3_beta22
+
