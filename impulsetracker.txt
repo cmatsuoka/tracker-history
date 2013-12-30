@@ -1,22 +1,96 @@
-# Jeffrey Lim doesn't like dates in changelogs
-# Also no information on Impulse Tracker 1.x
+# From update.doc in IT 2.06:
+#
+# 25/12/95 - Final Release for version 1.
+# 8/1/96   - Version 1.01
+# 20/1/96  - Version 1.02
+# 25/1/96  - Version 1.03
+# 23/2/96  - Version 1.04
+# xx/3/96  - Version 1.05
+# 8/4/96   - Version 1.06
+#
+# Version 2.00
+# Version 2.01
+# Version 2.02
+#
+# 15/7/96  - Version 2.03
+# Version 2.04 - final release, 28/7/96
+# Version 2.05
+# Version 2.06 - Final version of IT ?
+	
+
+it_1
+	Name: Impulse tracker 1
+	Author: Jeffrey Lim
+	Date: 1995-12-25
+	Influenced by st_321 500 [ Interface ]
+	Influenced by ft_203 500 [ Envelopes, Multisamples ]
+	Comment: NNA, Filter, 64 channel
+
+it_103
+	Name: Impulse Tracker 1.03
+	Author: Jeffrey Lim
+	Date: 1996-01-25
+	Based on it_1
+
+it_105
+	Name: Impulse Tracker 1.05
+	Author: Jeffrey Lim
+	Date: 1996-03
+	Based on it_103
+
+it_106
+	Name: Impulse Tracker 1.04
+	Author: Jeffrey Lim
+	Date: 1996-04-08
+	Based on it_105
 
 it_2
-	Name: Impulse Tracker 2.x
+	Name: Impulse Tracker 2.00
 	Author: Jeffrey Lim
-	Date: 1996-08		# it.txt: most of the work was completed in
-				# the summer holidays of '96. (in Australia)
-	Comment: NNA, Filter, 64 channel
-	Influenced by st_321 1000 [ Interface ]
-	Influenced by ft_206 500 [ Envelopes, Multisamples ]
+	Date: 1996-06		# estimated
+	Based on it_106 [
+		New instrument format
+	]
 
-# IT 2.06 is the first entry in update.txt
+it_203
+	Name: Impulse Tracker 2.03
+	Author: Jeffrey Lim
+	Date: 1996-07-15
+	Based on it_2 [
+		Preliminary mouse support
+		Interpolation in mixer
+	]
+
+it_204
+	Name: Impulse Tracker 2.04
+	Author: Jeffrey Lim
+	Date: 1996-07-28
+	Based on it_203 [
+		New channel allocation routine
+		Volume swing
+	]
+
+it_205
+	Name: Impulse Tracker 2.05
+	Author: Jeffrey Lim
+	Date: 1996-08-18	# Date in files
+	Based on it_204 [
+		Pan swing
+	]
+
+it_206
+	Name: Impulse Tracker 2.06
+	Author: Jeffrey Lim
+	Date: 1996-10-08	# Date in files
+	Based on it_205 [
+		Pan swing
+	]
 
 it_211
 	Name: Impulse Tracker 2.11
 	Author: Jeffrey Lim
 	Date: 1997-01-19	# Date in files
-	Based on it_2 1000
+	Based on it_206 1000
 
 it_212
 	Name: Impulse Tracker 2.12
