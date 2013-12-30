@@ -39,3 +39,27 @@ octalyser_096
 	Author: Tord Jansson?
 	Date: 1994
 	Based on octalyser_080
+
+megatracker_09
+	Name: Megatracker 0.9
+	Author: Guillaume Auduc & Stephane Lesage
+	Date: 1994-05-23		# changelog
+	Comment: Falcon-only
+
+megatracker_094
+	Name: Megatracker 0.94
+	Author: Guillaume Auduc & Steplhane Lesage
+	Date: 1994-12-01		# changelog
+	Based on megatracker_09
+
+megatracker_095
+	Name: Megatracker 0.95
+	Author: Guillaume Auduc & Stephane Lesage
+	Date: 1995-07-08		# changelog
+	Based on megatracker_094
+
+megatracker_097
+	Name: Megatracker 0.97
+	Author: Guillaume Auduc & Stephane Lesage
+	Date: 1995-09-08		# changelog
+	Based on megatracker_095

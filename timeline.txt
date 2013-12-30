@@ -72,11 +72,17 @@ _asm92
 	Comment: at the Assembly '92 party\nheld in Kerava, Finland
 	After _a600
 
+_falcon
+	Name: Atari Falcon released
+	Date: 1992-08-21		# Atari Messe 1992 in Düsseldorf
+	Comment: Motorola 68030 16 MHz\nMotorola 56001 DSP
+	After _asm92
+
 _a4000
 	Name: Amiga 4000 released
 	Date: 1992-09
 	Comment: Motorola 68040 25 MHz\n2 MB RAM, AGA\nAmigaOS 3.0
-	After _asm92
+	After _falcon
 
 _gus
 	Name: Gravis Ultrasound introduced
