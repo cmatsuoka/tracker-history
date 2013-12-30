@@ -118,7 +118,7 @@ ult_16
 pt4gus
 	Name: Protracker 4 GUS
 	Author: Phantom/Epical
-	Date: 1994
+	Date: 1994-91-24		# file date
 	Comment: Protracker clone
 
 digistudio
