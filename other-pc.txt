@@ -19,7 +19,7 @@ moded_301
 c667
 	Name: Composer 667
 	Author: Tomasz Pytel
-	Date: 1991-12			# from Wikipedia on Composer 669
+	Date: 1991-12-11		# file date
 	Comment: OPL2 tracker
 	
 c669
