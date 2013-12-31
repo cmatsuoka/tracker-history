@@ -5,7 +5,7 @@ _a1000
 
 _386pc
 	Name: Compaq Deskpro 386
-	Date: 1986
+	Date: 1986-06		# Month estimated
 	Comment: First PC with 386 processor
 	After _a1000
 
@@ -27,10 +27,15 @@ _a500
 	Comment: Motorola 68000 7.09 MHz\n512 kB RAM
 	After _vga
 
+_korgm1
+	Name: Korg M1 synthesizer released
+	Date: 1988-03		# Month estimated
+	After _a500
+
 _vgabook
 	Name: Richard Ferraro publishes\nProgrammer's guide to the\nEGA and VGA cards
 	Date: 1988-06		# Month estimated
-	After _a500
+	After _korgm1
 
 _sb10
 	Name: Sound Blaster card released
