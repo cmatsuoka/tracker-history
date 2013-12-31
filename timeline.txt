@@ -3,11 +3,17 @@ _a1000
 	Date: 1985-07-23
 	Comment: Motorola 68000 7.09 MHz\n256-512 kB RAM\nPaula 4x8bit 28kHz
 
+_386pc
+	Name: Compaq Deskpro 386
+	Date: 1986
+	Comment: First PC with 386 processor
+	After _a1000
+
 _a2000
 	Name: Amiga 2000 released
 	Date: 1987-03
 	Comment: Motorola 68000 7.09 MHz\n1 MB RAM\nPaula 4x8bit 28kHz
-	After _a1000
+	After _386pc
 
 _vga
 	Name: VGA introduced
@@ -182,7 +188,7 @@ _win7
 	After _macintel
 
 _corei5
-	Name: Core i5 introduced
+	Name: Core i5 released
 	Date: 2009-09-08
 	After _win7
 
