@@ -98,7 +98,10 @@ protracker_11a
 		Inv.loop instead of funkrepeat,
 		Vibrato compatible with NT2.0
 	]
-	Influenced by noisetracker_20 [ Drumpad ]
+	Influenced by noisetracker_20 [
+		Drumpad
+		Vibrato adjust
+	]
 
 # Bugfixes and changes from PT1.1A to PT1.1B:
 # -------------------------------------------
