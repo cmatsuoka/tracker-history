@@ -1,0 +1,69 @@
+# http://www.ctgmusic.com/community-interviews.php?id=9
+#
+# "The work on MadTracker started when I was around 13-14 years old.
+#  MadTracker 1 was released in 1995 - if I'm not mistaken - but only in
+#  a French computer magazine. Later, I started to work on MadTracker 2
+#  and it was released in late 1998 (after 3 years of development with gaps). 
+
+mt_1
+	Name: MadTracker 1
+	Author: Yannick Delwiche
+	Date: 1995-06			# estimated date
+
+mt_2
+	Name: MadTracker 2
+	Author: Yannick Delwiche
+	Date: 1998-10			# "late 1998"
+	Based on mt_1
+
+mt_209
+	Name: MadTracker 2.0.9
+	Author: Yannick Delwiche
+	Date: 2001-05-30		# announcement in forum
+	Based on mt_2
+
+mt_210
+	Name: MadTracker 2.1.0
+	Author: Yannick Delwiche
+	Date: 2001-07-20		# announcement in forum
+	Based on mt_209
+
+mt_230
+	Name: MadTracker 2.3.0
+	Author: Yannick Delwiche
+	Date: 2003-08-29		# announcement in forum
+	Based on mt_210
+
+mt_232
+	Name: MadTracker 2.3.2
+	Author: Yannick Delwiche
+	Date: 2003-10-14		# announcement in forum
+	Based on mt_230
+
+mt_250
+	Name: MadTracker 2.5
+	Author: Yannick Delwiche
+	Date: 2005-06-11		# announcement in forum
+	Based on mt_232 [
+		VST support
+		ReWire support
+		Track EQ
+		MIDI import/export
+	]
+
+mt_260
+	Name: MadTracker 2.6.2
+	Author: Yannick Delwiche
+	Date: 2005-12-25		# announcement in forum
+	Based on mt_250 [
+		ASIO support
+	]
+
+mt_261
+	Name: MadTracker 2.6.1
+	Author: Yannick Delwiche
+	Date: 2006-02-17		# announcement
+	Based on mt_260 [
+		Bugfixes
+	]
+
