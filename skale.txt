@@ -9,11 +9,18 @@
 # Skale features ASIO, WAV-renderer, support for SF2 and AKAI-instruments,
 # MIDI I/O, VST instrument support and more.
 
+ft3_chanka
+	Name: Fast Tracker 3 beta
+	Author: Ruben Ramos Salvador
+	Date: 2000
+	Comment: (platform unsure)
+	Influenced by ft_209 [ Interface ]
+	
 skale_0802
 	Name: Skale Tracker beta 0.802
 	Author: Ruben Ramos Salvador
 	Date: 2005-08-23		# From Skale.txt
-	Influenced by ft_209 [ Interface ]
+	Based on ft3_chanka
 
 skale_081
 	Name: Skale Tracker beta 0.81
