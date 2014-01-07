@@ -42,6 +42,12 @@ chiptracker_10
 	Author: Kris of Anarchy
 	Date: 1991-02-23
 
+psttracker_104
+	Name: PSTTracker V1.04
+	Author: John 'SHAYERA' Hinge
+	Date: 1992-06-29
+	Based on protracker_12a [ Solo, Sampler, No MIDI ]
+
 #             PSTTracker V1.11   Nov/Dec 92'
 #             ------------------------------
 #                 (C)1992 PARASITE (tm)
@@ -53,7 +59,7 @@ psttracker_111
 	Name: PSTTracker V1.11
 	Author: John 'SHAYERA' Hinge
 	Date: 1992-12
-	Based on protracker_12a [ Solo, Sampler, No MIDI ]
+	Based on psttracker_104
 
 hearttracker_233
 	Name: Hearttracker 2.33
@@ -127,3 +133,11 @@ adepttracker_10
 	Date: 1997			# Best guess based on copyright
 	Comment: Uses system GUI
 	Influenced by protracker_23a [ Interface layout ]
+
+# http://janeway.exotica.org.uk/release.php?id=17703:
+
+trashtracker_21
+	Name: Trash Tracker 2.1
+	Author: Silents & Channel 42
+	Date: 1990-10			# Exotica says "1990"
+	Based on noisetracker_20
