@@ -52,3 +52,28 @@ gt2_00017
 	Author: Laurent de Soras
 	Date: 2004-11-06
 	Based on gt2_00014
+
+buze_058
+	Name: Buzé 0.5.8
+	Author: Anders Ervik
+	Date: 2008-07-21		# old site news
+	Comment: First usable beta
+	Influenced by buzz_12
+
+buze_071
+	Name: Buzé 0.7.1
+	Author: Anders Ervik
+	Date: 2011-12-30		# announcement
+	Based on buze_058
+
+buze_080
+	Name: Buzé 0.8.0
+	Author: Anders Ervik
+	Date: 2012-07-29		# annoucement
+	Based on buze_071
+
+buze_084
+	Name: Buzé 0.8.4
+	Author: Anders Ervik
+	Date: 2013-10-13		# annoucement
+	Based on buze_080

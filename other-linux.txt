@@ -82,3 +82,33 @@ cheese_0.9.15.4
 	Author: J. Phelps
 	Date: 2008-02-17		# sourceforge
 	Based on cheese_0.9.15.3 1000
+
+buzztard_010
+	Name: Buzztard 0.1.0
+	Author: Stefan Kost
+	Date: 2006-10-30		# date in files
+	Influenced by buzz_12
+
+buzztard_040
+	Name: Buzztard 0.4.0
+	Author: Stefan Kost
+	Date: 2008-11-26		# date in files
+	Based on buzztard_010
+
+buzztard_050
+	Name: Buzztard 0.5.0
+	Author: Stefan Kost
+	Date: 2009-09-05		# date in files
+	Based on buzztard_040
+
+buzztard_060
+	Name: Buzztard 0.6.0
+	Author: Stefan Sauer
+	Date: 2011-12-25		# date in files
+	Based on buzztard_050
+
+buzztard_070
+	Name: Buzztard 0.7.0
+	Author: Stefan Sauer
+	Date: 2013-01-18		# date in files
+	Based on buzztard_060

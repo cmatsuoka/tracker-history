@@ -34,6 +34,7 @@ buzz_12
 	Name: Buzz 1.2 beta
 	Author: Oskari Tammelin
 	Date: 2000-10-05
+	Comment: Source code lost
 	Based on buzz_10
 
 # [Wikipedia] The development of the core program, buzz.exe, was halted on
@@ -41,3 +42,33 @@ buzz_12
 # Nonetheless, since then many new and unique ideas have evolved using the
 # existing plugin interface.
 
+# It was announced in June 2008 that development would begin again, and the
+# several subsequent releases have regained much of the functionality of the
+# last 2000 software release, and have included some modernised features and
+# graphics.
+
+buzz_1001
+	Name: Buzz Build 1001
+	Author: Oskari Tammelin
+	Date: 2008-06-16
+	Comment: Requires Windows 8/7/Vista/2K8
+	Influenced by buzz_12
+
+buzz_1051
+	Name: Buzz Build 1051
+	Author: Oskari Tammelin
+	Date: 2009-03-12
+	Based on buzz_1001
+
+buzz_1190
+	Name: Buzz Build 1190
+	Author: Oskari Tammelin
+	Date: 2010-02-25
+	Comment: Requires .NET Framework 4 Client Profile
+	Based on buzz_1051
+
+buzz_1495
+	Name: Buzz Build 1495
+	Author: Oskari Tammelin
+	Date: 2013-09-25
+	Based on buzz_1190
