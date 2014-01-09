@@ -2,7 +2,7 @@
 
 digitrakker_10
 	Name: Digital Tracker 1.0
-	Author: Prodatron
+	Author: Jörn Mika
 	Date: 1994-02-01
 	Comment: 4 channel, unreleased
 
@@ -10,50 +10,51 @@ digitrakker_10
 
 digitrakker_20
 	Name: Digitrakker 2.0
-	Author: Prodatron
+	Author: Jörn Mika
 	Date: 1995-03-02
 	Based on digitrakker_10 500 [ 32 channels ]
 	Influenced by ft_200
 
 digitrakker_21
 	Name: Digitrakker 2.1
-	Author: Prodatron
+	Author: Jörn Mika
 	Date: 1995-03-28
 	Based on digitrakker_20 1000 [ XM export ]
 
 digitrakker_22b
 	Name: Digitrakker 2.2 beta
-	Author: Prodatron
+	Author: Jörn Mika
 	Date: 1995-06-03
 	Based on digitrakker_21 1000 [ PTM import ]
 
 digitrakker_23
 	Name: Digitrakker 2.3
-	Author: Prodatron
+	Author: Jörn Mika
 	Date: 1995-07-08
 	Based on digitrakker_22b 1000
 	#Influenced by ft_209 [ Instrument system ]
 
 digitrakker_299b
 	Name: Digitrakker 2.99 beta
-	Author: Prodatron
+	Author: Jörn Mika
 	Date: 1995-10-22
 	Based on digitrakker_23 1000
 
 digitrakker_30
 	Name: Digitrakker 3.0
-	Author: Prodatron
+	Author: Jörn Mika
 	Date: 1996-01-25
 	Based on digitrakker_299b 1000 [ Soundblaster support, Save composer name ]
 
 digitrakker_31
 	Name: Digitrakker 3.1
-	Author: Prodatron
+	Author: Jörn Mika
 	Date: 1996-03-29
 	Based on digitrakker_30 1000 [ SB16 support, Multi-retrig, Set envelope ]
 
 digitrakker_32
 	Name: Digitrakker 3.2
-	Author: Prodatron
+	Author: Jörn Mika
 	Date: 1997-01-07
+	Comment: Source code lost
 	Based on digitrakker_31 1000
