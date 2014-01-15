@@ -70,11 +70,20 @@ openmpt_117_02_54
 	Date: 2009-06-23		# Sourceforge
 	Based on openmpt_117_02_48 1000
 
+openmpt_117_03_02
+	Name: OpenMPT 1.17.03.02
+	Author: Saga Musix & relabs
+	Date: 2009-09-22		# Johannes Schultz
+	Based on openmpt_117_02_54 1000 [
+		Plugin parameter control events
+		IT "note fade" notes
+	]
+
 openmpt_118_02_00
 	Name: OpenMPT 1.18.02.00
 	Author: Saga Musix
 	Date: 2010-06-19		# Johannes Schultz
-	Based on openmpt_117_02_54 1000
+	Based on openmpt_117_03_02 1000
 
 openmpt_118_03_00
 	Name: OpenMPT 1.18.03.00
@@ -95,7 +104,11 @@ openmpt_119_01_00
 	Name: OpenMPT 1.19.01.00
 	Author: Saga Musix
 	Date: 2011-04-04		# changelog, 2011-04-01 announcement
-	Based on openmpt_118_03_00 1000
+	Based on openmpt_118_03_00 1000 [
+		Per-pattern time signatures
+		Cues in WAV export
+		Edit history in IT / MPTM files
+	]
 
 openmpt_119_02_00
 	Name: OpenMPT 1.19.02.00
@@ -119,7 +132,12 @@ openmpt_120_01_00
 	Name: OpenMPT 1.20.01.00
 	Author: Saga Musix
 	Date: 2012-05-05		# Johannes Schultz
-	Based on openmpt_119_04_00
+	Based on openmpt_119_04_00 [
+		Template system
+		Crash recovery
+		Rewritten resonant filter
+		Sample tuner
+	]
 
 openmpt_120_02_00
 	Name: OpenMPT 1.20.02.00
@@ -143,13 +161,22 @@ openmpt_121_01_00
 	Name: OpenMPT 1.21.01.00
 	Author: Saga Musix
 	Date: 2012-12-22		# History.txt
-	Based on openmpt_120_04_00
+	Based on openmpt_120_04_00 [
+		FLAC samples
+		Record quantization
+	]
 
 openmpt_122_01_00
 	Name: OpenMPT 1.22.01.00
 	Author: Saga Musix
 	Date: 2013-04-06		# History.txt
-	Based on openmpt_121_01_00
+	Based on openmpt_121_01_00 [
+		IT-compressed samples
+		Clipboard manager
+		Rewritten audio output engine
+		Plugin preset bank (FXB) support
+		MP3 import
+	]
 
 openmpt_122_02_00
 	Name: OpenMPT 1.22.02.00
