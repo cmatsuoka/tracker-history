@@ -76,7 +76,7 @@ openmpt_117_03_02
 	Date: 2009-09-22		# Johannes Schultz
 	Based on openmpt_117_02_54 1000 [
 		Plugin parameter control events
-		IT "note fade" notes
+		IT \"note fade\" notes
 	]
 
 openmpt_118_02_00
@@ -168,7 +168,7 @@ openmpt_121_01_00
 
 openmpt_122_01_00
 	Name: OpenMPT 1.22.01.00
-	Author: Saga Musix
+	Author: Saga Musix & manx
 	Date: 2013-04-06		# History.txt
 	Based on openmpt_121_01_00 [
 		IT-compressed samples
@@ -180,12 +180,12 @@ openmpt_122_01_00
 
 openmpt_122_02_00
 	Name: OpenMPT 1.22.02.00
-	Author: Saga Musix
+	Author: Saga Musix & manx
 	Date: 2013-04-20		# History.txt
 	Based on openmpt_122_01_00
 
 openmpt_122_06_00
 	Name: OpenMPT 1.22.06.00
-	Author: Saga Musix
+	Author: Saga Musix & manx
 	Date: 2013-11-02
 	Based on openmpt_122_02_00
