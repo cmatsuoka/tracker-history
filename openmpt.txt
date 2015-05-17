@@ -194,4 +194,21 @@ openmpt_123_01_00
 	Name: OpenMPT 1.23.01.00
 	Author: Saga Musix & manx
 	Date: 2014-03-29
-	Based on openmpt_122_06_00
+	Based on openmpt_122_06_00 [
+		64-bit version
+		Plugin bridge
+		Up to 250 plugins per song
+	]
+
+openmpt_124_01_00
+	Name: OpenMPT 1.24.01.00
+	Author: Saga Musix & manx
+	Date: 2015-04-19
+	Based on openmpt_123_01_00 [
+		External samples in MPTM format
+		Song window positions are saved
+		Subtune detection in length calculation
+		Improved resampler in sample editor
+		SoundTracker 2.6 / Ice Tracker module import
+		Rewritten MT2 support
+	]
