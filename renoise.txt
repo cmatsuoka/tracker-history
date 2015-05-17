@@ -112,3 +112,9 @@ renoise_282
 	Date: 2013-11-06
 	Based on renoise_281
 	
+renoise_300
+	Name: Renoise 3.0.0
+	Author: Eduard Mueller & Zvonko Tesic
+	Date: 2013-12-21
+	Based on renoise_282
+
