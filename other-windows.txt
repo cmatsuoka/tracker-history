@@ -77,3 +77,22 @@ buze_084
 	Author: Anders Ervik
 	Date: 2013-10-13		# annoucement
 	Based on buze_080
+
+buze_085
+	Name: Buzé 0.8.5
+	Author: Anders Ervik
+	Date: 2014-02-14		# annoucement
+	Based on buze_084
+
+buze_088
+	Name: Buzé 0.8.8
+	Author: Anders Ervik
+	Date: 2014-07-26		# annoucement
+	Based on buze_085
+
+buze_089
+	Name: Buzé 0.8.9
+	Author: Anders Ervik
+	Date: 2015-02-09		# annoucement
+	Based on buze_088
+
