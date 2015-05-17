@@ -57,3 +57,17 @@ db3_beta26
 	Comment: For AmigaOS3, AmigaOS4, MorphOS
 	Based on db3_beta22
 
+db3
+	Name: DigiBooster 3
+	Author: APC&TCP & Grzegorz Kraszewski
+	Date: 2014-02-03
+	Comment: 24bit, 192kHz
+	Based on db3_beta26
+
+db31
+	Name: DigiBooster 3.1
+	Author: APC&TCP & Grzegorz Kraszewski
+	Date: 2014-09-25
+	Based on db3
+	
+
