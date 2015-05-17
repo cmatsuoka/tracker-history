@@ -211,3 +211,13 @@ _osx_mavericks
 	Name: OS X Mavericks released
 	Date: 2013-10-22
 	After _win8
+
+_osx_yosemite
+	Name: OS X Yosemite released
+	Date: 2014-07-24
+	After _osx_mavericks
+
+_it_source
+	Name: Impulse Tracker source\ncode released
+	Date: 2014-10-19
+	After _osx_yosemite 
