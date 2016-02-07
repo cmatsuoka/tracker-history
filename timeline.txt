@@ -187,20 +187,35 @@ _macintel
 	Date: 2006-01-10
 	After _osx_tiger
 
+_osx_leopard
+	Name: OS X Leopard released
+	Date: 2007-10-26
+	After _macintel
+
 _win7
 	Name: Windows 7 released
 	Date: 2009-07-22
-	After _macintel
+	After _osx_leopard
+
+_osx_snow_leopard
+	Name: OS X Snow Leopard released
+	Date: 2009-08-28
+	After _win7
 
 _corei5
 	Name: Core i5 released
 	Date: 2009-09-08
-	After _win7
+	After _osx_snow_leopard
+
+_ipad
+	Name: iPad annouced
+	Date: 2010-01-27
+	After _corei5
 
 _osx_lion
 	Name: OS X Lion released
 	Date: 2011-07-20
-	After _corei5
+	After _ipad
 
 _win8
 	Name: Windows 8 released
