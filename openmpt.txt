@@ -212,3 +212,10 @@ openmpt_124_01_00
 		SoundTracker 2.6 / Ice Tracker module import
 		Rewritten MT2 support
 	]
+
+openmpt_125_01_00
+	Name: OpenMPT 1.25.01.00
+	Author: Saga Musix & manx
+	Date: 2015-08-16		# Announcement
+	Based on openmpt_124_01_00
+
