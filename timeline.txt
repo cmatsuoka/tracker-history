@@ -187,10 +187,15 @@ _macintel
 	Date: 2006-01-10
 	After _osx_tiger
 
+_iphone
+	Name: 1st gen iPhone
+	Date: 2007-06-29
+	After _macintel
+
 _osx_leopard
 	Name: OS X Leopard released
 	Date: 2007-10-26
-	After _macintel
+	After _iphone
 
 _win7
 	Name: Windows 7 released
@@ -208,7 +213,7 @@ _corei5
 	After _osx_snow_leopard
 
 _ipad
-	Name: iPad annouced
+	Name: iPad announced
 	Date: 2010-01-27
 	After _corei5
 
