@@ -1,0 +1,78 @@
+# Radium was written from scratch in 1999/2000. Some parts were inspired by Octamed.
+radium_040
+	Name: Radium 0.40
+	Author: Kjetil Matheussen
+	Date: 2000-10-25               # announcement.
+	Comment: Amiga. MIDI only
+	Influenced by octamed_ss_103c
+
+radium_043
+	Name: Radium 0.43
+	Author: Kjetil Matheussen
+	Date: 2001-05-28               # announcement
+	Based on radium_040
+
+radium_050
+	Name: Radium 0.50
+	Author: Kjetil Matheussen
+	Date: 2001-06-12               # file date
+	Based on radium_043
+
+radium_061
+	Name: Radium 0.61
+	Author: Kjetil Matheussen
+	Date: 2002-05-23               # file date
+	Based on radium_050
+
+radium_061f
+	Name: Radium 0.61f
+	Author: Kjetil Matheussen
+	Date: 2006-09-29               # file date.
+	Comment: Last Amiga release
+	Based on radium_061
+
+radium_063
+	Name: Radium 0.63
+	Author: Kjetil Matheussen
+	Date: 2004-04-15               # file date.
+	Comment: First Linux release
+	Based on radium_061
+
+radium_065
+	Name: Radium 0.63
+	Author: Kjetil Matheussen
+	Date: 2012-07-04               # announement.
+	Based on radium_063
+
+radium_0684
+	Name: Radium 0.68.4
+	Author: Kjetil Matheussen
+	Date: 2012-09-01               # announement.
+	Comment: Linux / OSX / Windows
+	Based on radium_065
+
+radium_192
+	Name: Radium 1.9.2
+	Author: Kjetil Matheussen
+	Date: 2012-11-12
+	Based on radium_0684
+	Influenced by buzz_12
+
+radium_1943
+	Name: Radium 1.9.43
+	Author: Kjetil Matheussen
+	Date: 	2014-08-30
+	Based on radium_192
+
+radium_300
+	Name: Radium 3.0.0
+	Author: Kjetil Matheussen
+	Date: 	2015-05-04
+	Based on radium_1943
+
+radium_400
+	Name: Radium 4.0.0
+	Author: Kjetil Matheussen
+	Date: 2016-07-26
+	Based on radium_300
+
