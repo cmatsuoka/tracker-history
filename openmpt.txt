@@ -217,5 +217,46 @@ openmpt_125_01_00
 	Name: OpenMPT 1.25.01.00
 	Author: Saga Musix & manx
 	Date: 2015-08-16		# Announcement
-	Based on openmpt_124_01_00
+	Based on openmpt_124_01_00 [
+		Song artist stored in IT / XM / MPTM files
+		File-specific resampling option in MPTM
+		Decimal tempos in MPTM
+		Tempo shuffle in MPTM
+		Media Foundation sample decoding
+		Smooth pattern scrolling
+		Tremor for instrument plugins
+	]
+
+openmpt_126_01_00
+	Name: OpenMPT 1.26.01.00
+	Author: Saga Musix & manx
+	Date: 2016-05-21		# Announcement
+	Based on openmpt_125_01_00 [
+		More fine-grained legacy compatibility settings
+		Find & Replace value ranges
+		Improved song cleanup
+		DigiBooster Pro Echo DSP emulation
+		Per-sequence restart position in MPTM
+		SoundFX / MultiMedia Sound and ProTracker 3.6 module import
+		Built-in MO3 decoder
+		Improved MT2 support
+	]
+
+openmpt_127_01_00
+	Name: OpenMPT 1.27.01.00
+	Author: Saga Musix & manx
+	Date: 2017-09-27		# Announcement
+	Based on openmpt_126_01_00 [
+		Support for Windows 98 / ME / 2000 dropped
+		Rewritten MIDI import
+		SFZ instrument import
+		Undo / Redo for instruments
+		VU meters for instrument plugins
+		Amiga BLEP resampler
+		Increased precision of sample playback position
+		SoundTracker Pro II and Digital Tracker / Digital Home Studio module import
+		Built-in emulation of DMO effects
+		Improved tuning editor
+		Lock playback to pattern selection
+	]
 
