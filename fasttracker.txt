@@ -58,7 +58,7 @@ ft_208
 
 ft_209
 	Name: Fast Tracker 2.09
-	Author: Andreas Viklund
+	Author: Fredrik Huss & Magnus Hogdahl
 	Date: 1998-02-04		# From exit message
-	Comment: Broken GUS support
+	Comment: (unofficial release)\nBroken GUS support
 	Based on ft_208 1000 [ bugfixes ]
