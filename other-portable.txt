@@ -1,6 +1,6 @@
 protracker_23d_clone
 	Name: ProTracker V2.3D clone
-	Author: Olav Sørensen
+	Author: Olav \"8bitbubsy\" Sørensen
 	Date: 2010-08-07		# announced in http://eab.abime.net/showthread.php?t=54323
 	Based on protracker_13b [
 		Rewritten in C and SDL
