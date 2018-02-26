@@ -122,5 +122,9 @@ smaksak
 	Author: Pex \"Mahoney\" Tufvesson
 	Date: 1991-05-10
 	Comment: A.k.a Smaksak-91\nUsed in His Master's Noise musicdisk
-	Based on noisetracker_20 [ Synth instruments ]
+	Based on noisetracker_20 [
+		Finetune
+		Mega-arp
+		Pattern-instruments
+	]
 
