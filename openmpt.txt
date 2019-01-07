@@ -260,3 +260,19 @@ openmpt_127_01_00
 		Lock playback to pattern selection
 	]
 
+openmpt_128_01_00
+	Name: OpenMPT 1.28.01.00
+	Author: Saga Musix & manx
+	Date: 2018-12-23		# Announcement
+	Based on openmpt_127_01_00 [
+		Support for AdLib instruments in S3M and MPTM
+		LAME encoder shipped with application
+		New icon art
+		C67 module import
+		CAF, W64 and SBI sample import
+		S3I and SFZ instrument export
+		Sample length optimizer
+		Support for undocumented IT MIDI macros
+		Improved release node behaviour
+		Improved MIDI export
+	]
