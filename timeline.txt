@@ -242,7 +242,13 @@ _it_source
 	Date: 2014-10-19
 	After _osx_yosemite 
 
+_win10
+	Name: Windows 10 released
+	Date: 2015-07-29
+	After _it_source
+
 _mp3_patents
 	Name: Last MP3 patent expired
 	Date: 2017-04-09
-	After _it_source 
+	After _win10
+
