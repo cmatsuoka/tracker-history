@@ -30,25 +30,25 @@ it_103
 	Name: Impulse Tracker 1.03
 	Author: Jeffrey Lim
 	Date: 1996-01-25
-	Based on it_1
+	Based on it_1 1000
 
 it_105
 	Name: Impulse Tracker 1.05
 	Author: Jeffrey Lim
 	Date: 1996-03
-	Based on it_103
+	Based on it_103 2000
 
 it_106
 	Name: Impulse Tracker 1.04
 	Author: Jeffrey Lim
 	Date: 1996-04-08
-	Based on it_105
+	Based on it_105 2000
 
 it_2
 	Name: Impulse Tracker 2.00
 	Author: Jeffrey Lim
 	Date: 1996-06		# estimated
-	Based on it_106 [
+	Based on it_106 2000 [
 		New instrument format
 	]
 
@@ -56,7 +56,7 @@ it_203
 	Name: Impulse Tracker 2.03
 	Author: Jeffrey Lim
 	Date: 1996-07-15
-	Based on it_2 [
+	Based on it_2 2000 [
 		Preliminary mouse support
 		Interpolation in mixer
 	]
@@ -65,7 +65,7 @@ it_204
 	Name: Impulse Tracker 2.04
 	Author: Jeffrey Lim
 	Date: 1996-07-28
-	Based on it_203 [
+	Based on it_203 2000 [
 		New channel allocation routine
 		Volume swing
 	]
@@ -74,7 +74,7 @@ it_205
 	Name: Impulse Tracker 2.05
 	Author: Jeffrey Lim
 	Date: 1996-08-18	# Date in files
-	Based on it_204 [
+	Based on it_204 2000 [
 		Pan swing
 	]
 
@@ -82,7 +82,7 @@ it_206
 	Name: Impulse Tracker 2.06
 	Author: Jeffrey Lim
 	Date: 1996-10-08	# Date in files
-	Based on it_205 [
+	Based on it_205 2000 [
 		Pan swing
 	]
 
@@ -90,19 +90,19 @@ it_211
 	Name: Impulse Tracker 2.11
 	Author: Jeffrey Lim
 	Date: 1997-01-19	# Date in files
-	Based on it_206 1000
+	Based on it_206 2000
 
 it_212
 	Name: Impulse Tracker 2.12
 	Author: Jeffrey Lim
 	Date: 1997-04-23	# Date in files
-	Based on it_211 1000
+	Based on it_211 2000
 
 it_213
 	Name: Impulse Tracker 2.13
 	Author: Jeffrey Lim
 	Date: 1997-05-25	# Date in files
-	Based on it_212 1000
+	Based on it_212 2000
 
 # IT214 - Version jump to make sure samples don't get screwed up by the
 #         prerelease (IT213) loader. This is the FINAL public release. Apart
@@ -116,13 +116,13 @@ it_214
 	Name: Impulse Tracker 2.14
 	Author: Jeffrey Lim
 	Date: 1997-09-02	# Date in files
-	Based on it_213 1000 [ Sample compression ]
+	Based on it_213 2000 [ Sample compression ]
 
 it_214v3
 	Name: Impulse Tracker 2.14 Patch 3
 	Author: Jeffrey Lim
 	Date: 1997-12-21	# Date in files
-	Based on it_214 1000
+	Based on it_214 2000
 	
 # IT214 Patch 4 - This release has been made entirely for the VSOUND drivers,
 #                 which will allow you to setup IT to run under Windows '95/'98
@@ -140,5 +140,5 @@ it_214v5
 	Name: Impulse Tracker 2.14 Patch 5
 	Author: Jeffrey Lim
 	Date: 1999-04-08	# also date in file
-	Based on it_214v3 1000 [ IT215 file format saving ]
+	Based on it_214v3 2000 [ IT215 file format saving ]
 	

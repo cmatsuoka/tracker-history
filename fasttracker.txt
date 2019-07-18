@@ -62,3 +62,24 @@ ft_209
 	Date: 1998-02-04		# From exit message
 	Comment: (unofficial release)\nBroken GUS support
 	Based on ft_208 1000 [ bugfixes ]
+
+ft_210c
+	Name: Fast Tracker 2.10c
+	Author: Olav \"8bitbubsy\" Sørensen
+	Date: 2019-04-05
+	Comment: Many bugfixes and\nsmaller .EXE
+	Based on ft_209 1000 [
+		Removed GUS InterWave support
+		Improved scrollbars
+		Waveform display fixes
+		44100Hz mixing rate
+		Channel numbers start at 1
+		WAV loader fixes
+		Fix replay crashes
+		Clamp instrument data on load
+		Fix replen on MOD export
+		Fix SB output rate
+		Fix pattern mark bugs
+		Fix Nibbles grid
+	]
+

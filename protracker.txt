@@ -331,6 +331,12 @@ protracker_23d
 	Date: 1994-02			# estimate, we know it's 1994
 	Based on protracker_23b 2000
 
+protracker_23e
+	Name: Protracker 2.3e
+	Author: Olav \"8bitbubsy\" Sørensen
+	Date: 2019-02-23
+	Based on protracker_23d 1000
+
 # 3.0 series
 
 protracker_300b
