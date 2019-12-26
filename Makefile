@@ -15,7 +15,7 @@ LINUX_TRACKERS	= other-linux
 ATARI_TRACKERS	= other-atari
 
 # Portable or not tied to a specific platform
-PORT_TRACKERS	= schism skale milkytracker chibi renoise other-portable
+PORT_TRACKERS	= schism skale milkytracker chibi renoise radium other-portable
 
 TODOT		= ./todot
 TRACKERS	= def-amiga.txt  $(addsuffix .txt, $(AMIGA_TRACKERS)) \
@@ -38,7 +38,7 @@ trackers.svg: trackers.dot
 
 trackers.ps: trackers.dot
 	dot -Tps -o$@ trackers.dot
-	
+
 trackers.dot: timeline.txt $(TRACKERS) $(TODOT) Makefile
 	$(TODOT) timeline.txt $(TRACKERS) > $@
 
